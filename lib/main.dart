@@ -1,3 +1,4 @@
+import 'package:app_avaliacao_ifma/LoginAdimim/login_page_adimim.dart';
 import 'package:app_avaliacao_ifma/LoginAluno/boas_vindas.dart';
 import 'package:app_avaliacao_ifma/LoginAluno/login_page_aluno.dart';
 import 'package:flutter/material.dart';
@@ -8,6 +9,8 @@ class MyApp extends StatelessWidget {
   final routes = <String, WidgetBuilder>{
     LoginPageAluno.tag: (context) => LoginPageAluno(),
     BoasVindasAluno.tag: (context) => BoasVindasAluno(),
+    LoginPageAdim.tag: (context) => LoginPageAdim(),
+    
 
   };
 
@@ -17,7 +20,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp( 
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.lightGreen,
+        primarySwatch: Colors.green,
         fontFamily: 'Nunito',
       ),
       home:LoginPageAluno(),

@@ -1,13 +1,14 @@
 import 'dart:math';
+import 'package:app_avaliacao_ifma/LoginAdimim/login_page_adimim.dart';
 import 'package:flutter/material.dart';
 
 class LoginPageAluno extends StatefulWidget {
   static String tag = 'login-page';
   @override
-  _LoginPageState createState() => new _LoginPageState();
+  _LoginPageAlunoState createState() => new _LoginPageAlunoState();
 }
 
-class _LoginPageState extends State<LoginPageAluno> {
+class _LoginPageAlunoState extends State<LoginPageAluno> {
   @override
   Widget build(BuildContext context) {
 
@@ -69,7 +70,7 @@ class _LoginPageState extends State<LoginPageAluno> {
           //Navigator.of(context).pushNamed(HomePage.tag);           
         },
         padding: EdgeInsets.all(12),
-        color: Colors.lightGreen,
+        color: Colors.green,
         child: Text('Entrar', style: TextStyle(color: Colors.white)),
       ),
     );
@@ -80,6 +81,15 @@ class _LoginPageState extends State<LoginPageAluno> {
         style: TextStyle(color: Colors.black54),
       ),
       onPressed: () {},
+    );
+    final telaAdimim = FlatButton(
+      child: Text(
+        'Entrar como Adiministrador',
+        style: TextStyle(color: Colors.black54),
+      ),
+      onPressed: () {
+        Navigator.of(context).pushNamed(LoginPageAdim.tag);
+      },
     );
 
     //Gerador de elementos da tela
@@ -97,6 +107,7 @@ class _LoginPageState extends State<LoginPageAluno> {
             password,
             SizedBox(height: 24.0),
             loginButton,
+            telaAdimim,
             forgotLabel
           ],
         ),
