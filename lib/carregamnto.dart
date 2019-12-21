@@ -1,6 +1,8 @@
 import 'package:app_avaliacao_ifma/LoginAluno/login_page_aluno.dart';
 import 'package:flutter/material.dart';
 import 'package:splashscreen/splashscreen.dart';
+import 'package:flutter/cupertino.dart';
+
 
 
 class LoadingPage extends StatefulWidget {
@@ -21,7 +23,8 @@ class _LoadingPageState extends State<LoadingPage> {
           end: Alignment.bottomLeft,
           colors: [
             Colors.green,
-            Colors.lightGreen
+            Colors.lightGreen,
+            //Colors.lightGreenAccent
           ],
         ),
         navigateAfterSeconds: LoginPageAluno(),
