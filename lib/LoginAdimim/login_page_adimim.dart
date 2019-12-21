@@ -13,8 +13,7 @@ class _LoginPageAdimimState extends State<LoginPageAdim> {
 
     //Sorteios de Imagens aleatorias
     Random random = new Random();
-    var j = random.nextInt(30) + 1;
-    //print(j);        
+    var j = random.nextInt(3) + 1;  
 
     //Gerador de imagens
     final logo = Hero(
@@ -22,7 +21,8 @@ class _LoginPageAdimimState extends State<LoginPageAdim> {
       child: CircleAvatar(
         backgroundColor: Colors.transparent,
         radius: 48.0,
-        child: Image.asset('assets/img'+ j.toString()+'.png'),
+        child: Image.asset('assets/adim'+ j.toString()+'.png'),
+        
       ),
     );
 

@@ -10,9 +10,7 @@ class MyApp extends StatelessWidget {
     LoginPageAluno.tag: (context) => LoginPageAluno(),
     BoasVindasAluno.tag: (context) => BoasVindasAluno(),
     LoginPageAdim.tag: (context) => LoginPageAdim(),
-    
-
-  };
+};
 
   @override
   Widget build(BuildContext context) {

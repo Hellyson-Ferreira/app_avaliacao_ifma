@@ -1,5 +1,6 @@
 import 'dart:math';
 import 'package:app_avaliacao_ifma/LoginAdimim/login_page_adimim.dart';
+import 'package:app_avaliacao_ifma/LoginAluno/boas_vindas.dart';
 import 'package:flutter/material.dart';
 
 class LoginPageAluno extends StatefulWidget {
@@ -67,7 +68,7 @@ class _LoginPageAlunoState extends State<LoginPageAluno> {
           ///if(n.validarLogiin(_matric.text, _senha.text)){
             //Navigator.of(context).pushNamed(HomePage.tag);
           //}
-          //Navigator.of(context).pushNamed(HomePage.tag);           
+          Navigator.of(context).pushNamed(BoasVindasAluno.tag);           
         },
         padding: EdgeInsets.all(12),
         color: Colors.green,
