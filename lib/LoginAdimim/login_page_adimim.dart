@@ -13,7 +13,7 @@ class _LoginPageAdimimState extends State<LoginPageAdim> {
 
     //Sorteios de Imagens aleatorias
     Random random = new Random();
-    var j = random.nextInt(3) + 1;  
+    var j = random.nextInt(2) + 1;  
 
     //Gerador de imagens
     final logo = Hero(

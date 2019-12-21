@@ -63,7 +63,7 @@ Python
       decoration: BoxDecoration(
         gradient: LinearGradient(colors: [
           Colors.green,
-          Colors.lightGreen,
+          Colors.green,
           
         ]),
       ),
