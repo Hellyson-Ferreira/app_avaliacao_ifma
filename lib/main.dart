@@ -8,10 +8,11 @@ void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   final routes = <String, WidgetBuilder>{
+    LoadingPage.tag: (context) => LoadingPage(),
     LoginPageAluno.tag: (context) => LoginPageAluno(),
     BoasVindasAluno.tag: (context) => BoasVindasAluno(),
     LoginPageAdim.tag: (context) => LoginPageAdim(),
-    LoadingPage.tag: (context) => LoadingPage(),
+    
 
 };
 

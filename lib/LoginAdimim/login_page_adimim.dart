@@ -78,7 +78,7 @@ class _LoginPageAdimimState extends State<LoginPageAdim> {
           padding: EdgeInsets.only(left: 24.0, right: 24.0),
           children: <Widget>[
             logo,
-            SizedBox(height: 48.0),
+            SizedBox(height: 25.0),
             matricula,
             SizedBox(height: 8.0),
             password,
