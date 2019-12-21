@@ -61,19 +61,15 @@ class _LoginPageAdimimState extends State<LoginPageAdim> {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(24),
         ),
-        onPressed: () {
-          //Validacao n = new Validacao();
-          ///if(n.validarLogiin(_matric.text, _senha.text)){
-            //Navigator.of(context).pushNamed(HomePage.tag);
-          //}
-          //Navigator.of(context).pushNamed(HomePage.tag);           
+        onPressed: () {    
         },
         padding: EdgeInsets.all(12),
         color: Colors.green,
         child: Text('Entrar', style: TextStyle(color: Colors.white)),
       ),
     );
-        //Gerador de elementos da tela
+    
+    //Gerador de elementos da tela
     return Scaffold(
       backgroundColor: Colors.white,
       body: Center(
