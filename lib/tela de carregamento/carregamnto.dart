@@ -3,14 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:splashscreen/splashscreen.dart';
 import 'package:flutter/cupertino.dart';
 
-
-
 class LoadingPage extends StatefulWidget {
   static String tag = 'loading-page';
   @override
   _LoadingPageState createState() => _LoadingPageState();
 }
-
 class _LoadingPageState extends State<LoadingPage> {
   @override
   Widget build(BuildContext context) {

@@ -1,6 +1,6 @@
 import 'dart:math';
 import 'package:app_avaliacao_ifma/LoginAdimim/login_page_adimim.dart';
-import 'package:app_avaliacao_ifma/LoginAluno/boas_vindas.dart';
+import 'package:app_avaliacao_ifma/tela_boas_vindas.dart/boas_vindas.dart';
 import 'package:flutter/material.dart';
 
 class LoginPageAluno extends StatefulWidget {
