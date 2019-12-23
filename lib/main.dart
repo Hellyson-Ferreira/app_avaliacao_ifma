@@ -13,7 +13,6 @@ class MyApp extends StatelessWidget {
     BoasVindasAluno.tag: (context) => BoasVindasAluno(),
     LoginPageAdim.tag: (context) => LoginPageAdim(),
     
-
 };
 
   @override
@@ -24,7 +23,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.green,
         fontFamily: 'Nunito',
-      ),
+      ), 
       home:LoadingPage(),
       routes: routes,
     );

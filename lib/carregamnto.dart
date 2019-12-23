@@ -18,6 +18,13 @@ class _LoadingPageState extends State<LoadingPage> {
     children: <Widget>[
       SplashScreen(
         seconds: 5,
+        // title:new Text('Avaliação de professores',
+        // style: new TextStyle(
+          // fontWeight: FontWeight.bold,
+          // fontSize: 20.0
+        // ),),
+        // styleTextUnderTheLoader: new TextStyle(),
+        // photoSize: 0,
         gradientBackground: LinearGradient(
           begin: Alignment.topRight,
           end: Alignment.bottomLeft,
@@ -28,9 +35,11 @@ class _LoadingPageState extends State<LoadingPage> {
           ],
         ),
         navigateAfterSeconds: LoginPageAluno(),
-        loaderColor: Colors.transparent,
+        loaderColor: Colors.blueGrey,
       ),
+    
       Container(
+        // height: 700,
         decoration: BoxDecoration(
           image: DecorationImage(
             image: AssetImage("assets/logo.png"),
