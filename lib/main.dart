@@ -1,6 +1,6 @@
 import 'package:app_avaliacao_ifma/LoginAdimim/login_page_adimim.dart';
 import 'package:app_avaliacao_ifma/LoginAluno/login_page_aluno.dart';
-import 'package:app_avaliacao_ifma/tela%20de%20carregamento/carregamnto.dart';
+import 'package:app_avaliacao_ifma/tela_de_carregamento/carregamnto.dart';
 import 'package:app_avaliacao_ifma/tela_boas_vindas.dart/boas_vindas.dart';
 import 'package:flutter/material.dart';
 
