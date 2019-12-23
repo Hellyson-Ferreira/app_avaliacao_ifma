@@ -11,22 +11,18 @@ class _LoginPageAdimimState extends State<LoginPageAdim> {
   @override
   Widget build(BuildContext context) {
 
-    //Sorteios de Imagens aleatorias
-    Random random = new Random();
-    var j = random.nextInt(2) + 1;  
-
-    //Gerador de imagens
+   //Gerador de imagens
     final logo = Hero(
       tag: 'hero',
       child: CircleAvatar(
         backgroundColor: Colors.transparent,
         radius: 48.0,
-        child: Image.asset('assets/adim'+ j.toString()+'.png'),
+        child: Image.asset('assets/adimim.png'),
         
       ),
     );
 
-    //Variaveis que guardam valor de codigo e senha do adm
+    //Variaveis que recebeem o valor de codigo e senha do adm
     final _codigo = TextEditingController();
     final _senha = TextEditingController();
     
@@ -37,7 +33,7 @@ class _LoginPageAdimimState extends State<LoginPageAdim> {
       autofocus: false,
 
       decoration: InputDecoration(
-        hintText: 'Codigo',
+        hintText: 'Código',
         contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
         border: OutlineInputBorder(borderRadius: BorderRadius.circular(32.0)),
       ),

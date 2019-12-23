@@ -28,7 +28,7 @@ class _LoginPageAlunoState extends State<LoginPageAluno> {
       ),
     );
 
-    //Variaveis que guardam valor de matricula e senha
+    //Variaveisque recebeem o  valor de matricula e senha
     final _matric = TextEditingController();
     final _senha = TextEditingController();
     
@@ -39,7 +39,7 @@ class _LoginPageAlunoState extends State<LoginPageAluno> {
       autofocus: false,
       //initialValue: '20181IC.CAX0007',
       decoration: InputDecoration(
-        hintText: 'Matricula',
+        hintText: 'Matrícula',
         contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
         border: OutlineInputBorder(borderRadius: BorderRadius.circular(32.0)),
       ),

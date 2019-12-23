@@ -6,7 +6,7 @@ import 'package:flutter/cupertino.dart';
 
 
 class LoadingPage extends StatefulWidget {
-  static String tag = 'carregar-page';
+  static String tag = 'loading-page';
   @override
   _LoadingPageState createState() => _LoadingPageState();
 }
