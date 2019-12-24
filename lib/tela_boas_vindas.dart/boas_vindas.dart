@@ -1,3 +1,4 @@
+import 'package:app_avaliacao_ifma/homeAluno/home_aluno.dart';
 import 'package:flutter/material.dart';
 
 class BoasVindasAluno extends StatelessWidget {
@@ -49,7 +50,9 @@ Python
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(24),
         ),
-        onPressed: () {},
+        onPressed: () {
+          Navigator.of(context).pushNamed(HomeAluno.tag,);
+        },
         padding: EdgeInsets.all(12),
         //color: Colors.lightBlueAccent,
         color: Colors.white,
