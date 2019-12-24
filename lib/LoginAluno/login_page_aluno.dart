@@ -15,8 +15,7 @@ class _LoginPageAlunoState extends State<LoginPageAluno> {
 
     //Sorteios de Imagens aleatorias
     Random random = new Random();
-    var j = random.nextInt(30) + 1;
-    //print(j);        
+    var j = random.nextInt(40) + 1;   
 
     //Gerador de imagens
     final logo = Hero(
@@ -102,7 +101,7 @@ class _LoginPageAlunoState extends State<LoginPageAluno> {
           padding: EdgeInsets.only(left: 24.0, right: 24.0),
           children: <Widget>[
             logo,
-            SizedBox(height: 48.0),
+            SizedBox(height: 38.0),
             matricula,
             SizedBox(height: 8.0),
             password,

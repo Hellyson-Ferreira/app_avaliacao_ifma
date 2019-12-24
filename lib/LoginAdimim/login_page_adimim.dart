@@ -15,7 +15,7 @@ class _LoginPageAdimimState extends State<LoginPageAdim> {
       tag: 'hero',
       child: CircleAvatar(
         backgroundColor: Colors.transparent,
-        radius: 48.0,
+        radius: 66.0,
         child: Image.asset('assets/adimim.png'),
         
       ),
