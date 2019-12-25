@@ -1,3 +1,4 @@
+import 'package:app_avaliacao_ifma/LoginAluno/login_page_aluno.dart';
 import 'package:flutter/material.dart';
 
 class DrawerAdimim extends StatelessWidget {
@@ -23,7 +24,7 @@ class DrawerAdimim extends StatelessWidget {
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
                       image: DecorationImage(
-                        image: AssetImage('assets/adimim.png'),
+                        image: AssetImage('assets/filho.jpg'),
                         fit: BoxFit.fill
                       )
                     ),
@@ -37,7 +38,7 @@ class DrawerAdimim extends StatelessWidget {
                 ),
                 ),
                 Text(
-                  'filho.r@ifma.edu.br',
+                  'raimundofilho@ifma.edu.br',
                    style: TextStyle(
                      color: Colors.white
 
@@ -113,7 +114,7 @@ class DrawerAdimim extends StatelessWidget {
             ),
             ),
             onTap: (){
-               //Navigator.of(context).pushNamed(HomeAluno.tag,);
+               Navigator.of(context).pushNamed(LoginPageAluno.tag,);
             }
             
 

@@ -1,7 +1,10 @@
 import 'dart:math';
 import 'package:app_avaliacao_ifma/LoginAdimim/login_page_adimim.dart';
+import 'package:app_avaliacao_ifma/homeAluno/home_aluno.dart';
+import 'package:app_avaliacao_ifma/main.dart';
 import 'package:app_avaliacao_ifma/tela_boas_vindas.dart/boas_vindas.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 class LoginPageAluno extends StatefulWidget {
   static String tag = 'login-page';
@@ -93,25 +96,33 @@ class _LoginPageAlunoState extends State<LoginPageAluno> {
     );
 
     //Gerador de elementos da tela
-    return Scaffold(
-      backgroundColor: Colors.white,
-      body: Center(
-        child: ListView(
-          shrinkWrap: true,
-          padding: EdgeInsets.only(left: 24.0, right: 24.0),
-          children: <Widget>[
-            logo,
-            SizedBox(height: 38.0),
-            matricula,
-            SizedBox(height: 8.0),
-            password,
-            SizedBox(height: 24.0),
-            loginButton,
-            telaAdimim,
-            forgotLabel
-          ],
+    return WillPopScope(
+      onWillPop: _onBackPressed,
+      child:Scaffold(
+        backgroundColor: Colors.white,
+        body: Center(
+          child: ListView(
+            shrinkWrap: true,
+            padding: EdgeInsets.only(left: 24.0, right: 24.0),
+            children: <Widget>[
+              logo,
+              SizedBox(height: 38.0),
+              matricula,
+              SizedBox(height: 8.0),
+              password,
+              SizedBox(height: 24.0),
+              loginButton,
+              telaAdimim,
+              forgotLabel
+            ],
+          ),
         ),
       ),
     );
   }
+
+  Future<bool> _onBackPressed() {
+    return SystemNavigator.pop();
+  }
+
 }

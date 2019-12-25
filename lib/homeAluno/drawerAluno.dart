@@ -1,3 +1,4 @@
+import 'package:app_avaliacao_ifma/LoginAluno/login_page_aluno.dart';
 import 'package:flutter/material.dart';
 
 class DrawerAluno extends StatelessWidget {
@@ -23,13 +24,15 @@ class DrawerAluno extends StatelessWidget {
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
                       image: DecorationImage(
-                        image: AssetImage('assets/img4.png'),
+                        image: AssetImage('assets/hellyson.jpg'),
+                        // image: AssetImage('assets/felipe.jpg'),
                         fit: BoxFit.fill
                       )
                     ),
                   ),
                 Text(
                   'Hellyson Ferreira',
+                  // 'Felipe Torres',
                    style: TextStyle(
                      fontSize: 22,
                      color: Colors.white
@@ -38,6 +41,7 @@ class DrawerAluno extends StatelessWidget {
                 ),
                 Text(
                   '20181IC.CAX0007',
+                  // '20181IC.CAX0005',
                    style: TextStyle(
                      color: Colors.white
 
@@ -87,7 +91,8 @@ class DrawerAluno extends StatelessWidget {
             ),
             ),
             onTap: (){
-               //Navigator.of(context).pushNamed(HomeAluno.tag,);
+              //  Navigator.of(context).pushNamed(LoginPageAluno.tag,);
+              Navigator.popAndPushNamed(context, LoginPageAluno.tag);
             }
             
 
