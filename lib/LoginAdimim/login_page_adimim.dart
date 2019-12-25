@@ -1,3 +1,4 @@
+import 'package:app_avaliacao_ifma/homeAdimin/home_adimim.dart';
 import 'package:flutter/material.dart';
 
 class LoginPageAdim extends StatefulWidget {
@@ -25,8 +26,8 @@ class _LoginPageAdimimState extends State<LoginPageAdim> {
     final _codigo = TextEditingController();
     final _senha = TextEditingController();
     
-    //Disign Box matricula
-    final matricula = TextFormField(
+    //Disign Box codigo
+    final codigo = TextFormField(
       controller: _codigo,
       keyboardType: TextInputType.visiblePassword,
       autofocus: false,
@@ -50,13 +51,14 @@ class _LoginPageAdimimState extends State<LoginPageAdim> {
     
     );
     //Disign do botão entrar
-    final loginButton = Padding(
+    final loginButtonadm = Padding(
       padding: EdgeInsets.symmetric(vertical: 16.0),
       child: RaisedButton(
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(24),
         ),
-        onPressed: () {    
+        onPressed: () {   
+           Navigator.of(context).pushNamed(HomeAdimim.tag);
         },
         padding: EdgeInsets.all(12),
         color: Colors.green,
@@ -74,11 +76,11 @@ class _LoginPageAdimimState extends State<LoginPageAdim> {
           children: <Widget>[
             logo,
             SizedBox(height: 24.0),
-            matricula,
+            codigo,
             SizedBox(height: 8.0),
             password,
             SizedBox(height: 24.0),
-            loginButton,
+            loginButtonadm,
           ],
         ),
       ),

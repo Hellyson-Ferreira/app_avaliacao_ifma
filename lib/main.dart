@@ -1,5 +1,6 @@
 import 'package:app_avaliacao_ifma/LoginAdimim/login_page_adimim.dart';
 import 'package:app_avaliacao_ifma/LoginAluno/login_page_aluno.dart';
+import 'package:app_avaliacao_ifma/homeAdimin/home_adimim.dart';
 import 'package:app_avaliacao_ifma/homeAluno/home_aluno.dart';
 import 'package:app_avaliacao_ifma/tela_de_carregamento/carregamnto.dart';
 import 'package:app_avaliacao_ifma/tela_boas_vindas.dart/boas_vindas.dart';
@@ -14,6 +15,7 @@ class MyApp extends StatelessWidget {
     BoasVindasAluno.tag: (context) => BoasVindasAluno(),
     LoginPageAdim.tag: (context) => LoginPageAdim(),
     HomeAluno.tag: (context) => HomeAluno(),
+    HomeAdimim.tag: (context) => HomeAdimim(),
     
 };
 
@@ -27,6 +29,7 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Nunito',
       ), 
       home:LoadingPage(),
+      // home: LoginPageAluno(),
       routes: routes,
     );
   }

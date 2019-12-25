@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class DrawerAluno extends StatelessWidget {
+class DrawerAdimim extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -23,13 +23,13 @@ class DrawerAluno extends StatelessWidget {
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
                       image: DecorationImage(
-                        image: AssetImage('assets/img4.png'),
+                        image: AssetImage('assets/adimim.png'),
                         fit: BoxFit.fill
                       )
                     ),
                   ),
                 Text(
-                  'Hellyson Ferreira',
+                  'Raimundo Filho',
                    style: TextStyle(
                      fontSize: 22,
                      color: Colors.white
@@ -37,7 +37,7 @@ class DrawerAluno extends StatelessWidget {
                 ),
                 ),
                 Text(
-                  '20181IC.CAX0007',
+                  'filho.r@ifma.edu.br',
                    style: TextStyle(
                      color: Colors.white
 
@@ -50,6 +50,32 @@ class DrawerAluno extends StatelessWidget {
             leading: Icon(Icons.person),
             title: Text(
               'Perfil',
+              style: TextStyle(
+                fontSize: 18,
+
+            ),
+            ),
+            onTap: (){
+               //Navigator.of(context).pushNamed(HomeAluno.tag,);
+            }
+          ),
+          ListTile(
+            leading: Icon(Icons.people),
+            title: Text(
+              'Turmas',
+              style: TextStyle(
+                fontSize: 18,
+
+            ),
+            ),
+            onTap: (){
+               //Navigator.of(context).pushNamed(HomeAluno.tag,);
+            }
+          ),
+          ListTile(
+            leading: Icon(Icons.file_download),
+            title: Text(
+              'Downloads',
               style: TextStyle(
                 fontSize: 18,
 
