@@ -44,7 +44,7 @@ class _HomeAdimimState extends State<HomeAdimim> {
             title: Text('Gráficos'),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.question_answer),
+            icon: Icon(Icons.info),
             title: Text('Sobre'),
           ),
         ],
@@ -62,7 +62,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Icon(
-      Icons.home, size: 100
+      Icons.home, size: 150
     );
   }
 }
@@ -71,7 +71,7 @@ class BusinessPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Icon(
-      Icons.cloud_download, size: 100
+      Icons.cloud_download, size: 150
     );
   }
 }
@@ -80,7 +80,7 @@ class SchoolPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Icon(
-      Icons.question_answer, size: 100
+      Icons.info, size: 150
     );
   }
 }

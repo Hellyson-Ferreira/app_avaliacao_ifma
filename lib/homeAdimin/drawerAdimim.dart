@@ -101,6 +101,21 @@ class DrawerAdimim extends StatelessWidget {
             
 
           ),
+          ListTile(
+            leading: Icon(Icons.help),
+            title: Text(
+              'Ajuda',
+              style: TextStyle(
+                fontSize: 18,
+
+            ),
+            ),
+            onTap: (){
+               //Navigator.of(context).pushNamed(HomeAluno.tag,);
+            }
+            
+
+          ),
           new Divider(
             color: Colors.grey,
           ),

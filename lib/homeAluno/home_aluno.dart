@@ -27,7 +27,13 @@ class _HomeAlunoState extends State<HomeAluno> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Nome do APP'),
+        //centerTitle: true,
+        title: const Text(
+          'Aluno ',
+          style: TextStyle(
+            fontSize: 20
+
+        ),),
       ),
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
@@ -44,7 +50,7 @@ class _HomeAlunoState extends State<HomeAluno> {
             title: Text('Business'),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.question_answer),
+            icon: Icon(Icons.info),
             title: Text('Sobre'),
           ),
         ],
@@ -61,7 +67,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Icon(
-      Icons.home, size: 100
+      Icons.home, size: 150
     );
   }
 }
@@ -70,7 +76,7 @@ class BusinessPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Icon(
-      Icons.business, size: 100
+      Icons.cloud_download, size: 150
     );
   }
 }
@@ -79,7 +85,7 @@ class SchoolPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Icon(
-      Icons.question_answer, size: 100
+      Icons.info, size: 150
     );
   }
 }
