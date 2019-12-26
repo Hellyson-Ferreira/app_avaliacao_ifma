@@ -36,7 +36,11 @@ class PerfilAdimim extends StatelessWidget {
                 width: 100.0,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
-                  color: Colors.blue
+                  image: DecorationImage(
+                    // image: AssetImage('assets/hellyson.jpg'),
+                    image: AssetImage('assets/filho.jpg'),
+                      fit: BoxFit.fill
+                  )
                 ),
               ),
             )

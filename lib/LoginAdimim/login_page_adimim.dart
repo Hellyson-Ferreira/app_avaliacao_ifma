@@ -18,27 +18,24 @@ class _LoginPageAdimimState extends State<LoginPageAdim> {
         backgroundColor: Colors.transparent,
         radius: 66.0,
         child: Image.asset('assets/adimim.png'),
-        
       ),
     );
 
     //Variaveis que recebeem o valor de codigo e senha do adm
     final _codigo = TextEditingController();
     final _senha = TextEditingController();
-    
     //Disign Box codigo
     final codigo = TextFormField(
       controller: _codigo,
       keyboardType: TextInputType.visiblePassword,
       autofocus: false,
-
       decoration: InputDecoration(
         hintText: 'Código',
         contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
         border: OutlineInputBorder(borderRadius: BorderRadius.circular(32.0)),
-      ),
-      
+      ), 
     );
+
     //Disign Box senha
     final password = TextFormField(
       controller: _senha,
@@ -48,8 +45,8 @@ class _LoginPageAdimimState extends State<LoginPageAdim> {
         contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
         border: OutlineInputBorder(borderRadius: BorderRadius.circular(32.0)),
       ),
-    
     );
+
     //Disign do botão entrar
     final loginButtonadm = Padding(
       padding: EdgeInsets.symmetric(vertical: 16.0),
