@@ -43,6 +43,9 @@ flutter:
   
   assets:
     - assets/logo.png
+    - assets/logo3.png
+    - assets/logo2.png
+    
     - assets/filho.jpg
     - assets/felipe.jpg
     - assets/hellyson.jpg

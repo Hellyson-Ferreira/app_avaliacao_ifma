@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Nunito',
       ), 
       home:LoadingPage(),
-      // home: LoginPageAluno(),
+      // home: LoginPageAluno(), 
       routes: routes,
     );
   }

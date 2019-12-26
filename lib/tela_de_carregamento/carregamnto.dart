@@ -28,8 +28,10 @@ class _LoadingPageState extends State<LoadingPage> {
           begin: Alignment.topRight,
           end: Alignment.bottomLeft,
           colors: [
-            Colors.green,
-            Colors.lightGreen,
+            // Colors.green,
+            // Colors.lightGreen,
+            
+            // Colors.lightGreen,
             //Colors.lightGreenAccent
           ],
         ),
@@ -38,10 +40,9 @@ class _LoadingPageState extends State<LoadingPage> {
       ),
     
       Container(
-        // height: 700,
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("assets/logo.png"),
+            image: AssetImage("assets/logo3.png"),
             fit: BoxFit.none,
           ),
         ),
