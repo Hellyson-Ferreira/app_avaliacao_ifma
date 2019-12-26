@@ -24,7 +24,7 @@ class _LoginPageAlunoState extends State<LoginPageAluno> {
       child: CircleAvatar(
         backgroundColor: Colors.transparent,
         radius: 48.0,
-        child: Image.asset('assets/img'+ j.toString()+'.png'),
+        child: Image.asset('assets/imgs/img'+ j.toString()+'.png'),
       ),
     );
 
