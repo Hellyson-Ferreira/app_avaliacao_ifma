@@ -1,0 +1,55 @@
+name: login
+description: A new Flutter project.
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^0.1.0
+ 
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/logo.png
+    - assets/img1.png
+    - assets/img2.png
+    - assets/img3.png
+    - assets/img4.png
+    - assets/img5.png
+    - assets/img6.png
+    - assets/img7.png
+    - assets/img8.png
+    - assets/img9.png
+    - assets/img10.png
+    - assets/img11.png
+    - assets/img12.png
+    - assets/img13.png
+    - assets/img14.png
+    - assets/img15.png
+    - assets/img16.png
+    - assets/img17.png
+    - assets/img18.png
+    - assets/img19.png
+    - assets/img20.png
+    - assets/img21.png
+    - assets/img22.png
+    - assets/img23.png
+    - assets/img24.png
+    - assets/img25.png
+    - assets/img26.png
+    - assets/img27.png
+    - assets/img28.png
+    - assets/img29.png
+    - assets/img30.png
+
+
+    
+    
+  fonts:
+      - family: Nunito
+        fonts:
+          - asset: assets/Nunito.ttf
