@@ -16,7 +16,7 @@ class _LoadingPageState extends State<LoadingPage> {
     return Stack(
     children: <Widget>[
       SplashScreen(
-        seconds: 5,
+        seconds: 4,
         // title:new Text('Avaliação de professores',
         // style: new TextStyle(
           // fontWeight: FontWeight.bold,
@@ -28,8 +28,8 @@ class _LoadingPageState extends State<LoadingPage> {
           begin: Alignment.topRight,
           end: Alignment.bottomLeft,
           colors: [
-            // Colors.green,
-            // Colors.lightGreen,
+            Colors.white,
+            Colors.white24,
             
             // Colors.lightGreen,
             //Colors.lightGreenAccent

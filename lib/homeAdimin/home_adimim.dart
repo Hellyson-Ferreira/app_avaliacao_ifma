@@ -27,7 +27,7 @@ class _HomeAdimimState extends State<HomeAdimim> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Adiministrador'),
+        title: const Text('Administrador'),
       ),
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
