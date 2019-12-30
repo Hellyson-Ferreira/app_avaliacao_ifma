@@ -85,7 +85,7 @@ class _LoginPageAlunoState extends State<LoginPageAluno> {
     );
     final telaAdimim = FlatButton(
       child: Text(
-        'Entrar como Adiministrador',
+        'Entrar como Administrador',
         style: TextStyle(color: Colors.black54),
       ),
       onPressed: () {
