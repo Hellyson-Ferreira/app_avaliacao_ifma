@@ -62,7 +62,8 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Icon(
-      Icons.home, size: 150
+      Icons.home,
+      size: 150
     );
   }
 }
@@ -71,7 +72,8 @@ class BusinessPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Icon(
-      Icons.cloud_download, size: 150
+      Icons.cloud_download,
+      size: 150
     );
   }
 }
@@ -80,7 +82,8 @@ class SchoolPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Icon(
-      Icons.info, size: 150
+      Icons.info, 
+      size: 150
     );
   }
 }
