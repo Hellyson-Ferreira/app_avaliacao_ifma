@@ -49,6 +49,8 @@ class _LoginPageAlunoState extends State<LoginPageAluno> {
     final password = TextFormField(
       controller: _senha,
       autofocus: false,
+      obscureText: true,
+      keyboardType: TextInputType.visiblePassword,
       decoration: InputDecoration(
         hintText: 'Senha do Suap',
         contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),

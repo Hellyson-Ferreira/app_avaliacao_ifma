@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.green,
         fontFamily: 'Nunito',
       ), 
-      home:HomeAluno2(),
+      home:LoadingPage(),
       // home: LoginPageAluno(), 
       routes: routes,
     );

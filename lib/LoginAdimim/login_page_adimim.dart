@@ -39,6 +39,8 @@ class _LoginPageAdimimState extends State<LoginPageAdim> {
     //Disign Box senha
     final password = TextFormField(
       controller: _senha,
+      obscureText: true,
+      keyboardType: TextInputType.visiblePassword,
       autofocus: false,
       decoration: InputDecoration(
         hintText: 'Senha',

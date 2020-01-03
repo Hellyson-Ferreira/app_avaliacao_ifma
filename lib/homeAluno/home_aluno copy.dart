@@ -19,7 +19,9 @@ class _HomeAluno2State extends State<HomeAluno2> with SingleTickerProviderStateM
   ];
    static const _ktabs = <Tab>[
      Tab(
-       icon: Icon(Icons.home),
+       icon: Icon(Icons.home,
+       color: Colors.black54,
+       ),
        //text: 'fkdkfk',
 
      ),
