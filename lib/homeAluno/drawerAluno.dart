@@ -1,5 +1,4 @@
 import 'package:app_avaliacao_ifma/LoginAluno/login_page_aluno.dart';
-import 'package:app_avaliacao_ifma/homeAluno/perfil_aluno.dart';
 import 'package:flutter/material.dart';
 
 class DrawerAluno extends StatelessWidget {
@@ -52,19 +51,6 @@ class DrawerAluno extends StatelessWidget {
             ),
           ),
           ListTile(
-            leading: Icon(Icons.person),
-            title: Text(
-              'Perfil',
-              style: TextStyle(
-                fontSize: 18,
-
-            ),
-            ),
-            onTap: (){
-               Navigator.of(context).pushNamed(PerfilAluno.tag,);
-            }
-          ),
-          ListTile(
             leading: Icon(Icons.settings),
             title: Text(
               'Configurações',
@@ -94,6 +80,7 @@ class DrawerAluno extends StatelessWidget {
             
 
           ),
+        
           new Divider(
             color: Colors.grey,
           ),
@@ -107,7 +94,6 @@ class DrawerAluno extends StatelessWidget {
             ),
             ),
             onTap: (){
-              //  Navigator.of(context).pushNamed(LoginPageAluno.tag,);
               Navigator.popAndPushNamed(context, LoginPageAluno.tag);
             }
             

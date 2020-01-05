@@ -49,19 +49,6 @@ class DrawerAdimim extends StatelessWidget {
             ),
           ),
           ListTile(
-            leading: Icon(Icons.person),
-            title: Text(
-              'Perfil',
-              style: TextStyle(
-                fontSize: 18,
-
-            ),
-            ),
-            onTap: (){
-               Navigator.of(context).pushNamed(PerfilAdimim.tag,);
-            }
-          ),
-          ListTile(
             leading: Icon(Icons.people),
             title: Text(
               'Turmas',

@@ -9,6 +9,9 @@ class HomeAluno extends StatefulWidget {
 }
 
 class _HomeAlunoState extends State<HomeAluno> {
+  bool _pinned = true;
+  bool _snap = false;
+  bool _floating = false;
   int _selectedIndex = 0;
   static const double IconSize = 200; 
   static List<Widget> _widgetOptions = <Widget>[
@@ -25,20 +28,32 @@ class _HomeAlunoState extends State<HomeAluno> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        //centerTitle: true,
-        title: const Text(
-          'Aluno ',
-          style: TextStyle(
-            fontSize: 20
-
-        ),),
-      ),
-      body: Center(
+   return Scaffold(
+      body: CustomScrollView(
+        slivers: <Widget>[
+          SliverAppBar(
+            pinned: this._pinned,
+            snap: this._snap,
+            floating: this._floating,
+            expandedHeight: 160.0,
+            flexibleSpace: FlexibleSpaceBar(
+              title: Text("Home Aluno"),
+              background: Image.asset(
+                'assets/IFMA.jpg',
+                fit: BoxFit.fill,
+              ),
+            ),
+          ),
+          // If the main content is a list, use SliverList instead.
+          SliverFillRemaining(
+            child: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
       ),
+          ),
+        ],
+      ),
       drawer: DrawerAluno(),
+      // bottomNavigationBar: this._getBottomAppBar(),
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
@@ -46,8 +61,8 @@ class _HomeAlunoState extends State<HomeAluno> {
             title: Text('Home'),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.business),
-            title: Text('Business'),
+            icon: Icon(Icons.event),
+            title: Text('calendario'),
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.info),
@@ -76,7 +91,7 @@ class BusinessPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Icon(
-      Icons.cloud_download, size: 150
+      Icons.event, size: 150
     );
   }
 }

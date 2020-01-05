@@ -10,6 +10,9 @@ class HomeAdimim extends StatefulWidget {
 
 class _HomeAdimimState extends State<HomeAdimim> {
   int _selectedIndex = 0;
+  bool _pinned = true;
+  bool _snap = false;
+  bool _floating = false;
   static const double IconSize = 200; 
   static List<Widget> _widgetOptions = <Widget>[
     HomePage(),
@@ -26,11 +29,29 @@ class _HomeAdimimState extends State<HomeAdimim> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Administrador'),
-      ),
-      body: Center(
+     
+      body: CustomScrollView(
+        slivers: <Widget>[
+          SliverAppBar(
+            pinned: this._pinned,
+            snap: this._snap,
+            floating: this._floating,
+            expandedHeight: 160.0,
+            flexibleSpace: FlexibleSpaceBar(
+              title: Text('Administrador'),
+              background: Image.asset(
+                'assets/IFMA.jpg',
+                fit: BoxFit.fill,
+              ),
+            ),
+          ),
+          // If the main content is a list, use SliverList instead.
+          SliverFillRemaining(
+            child: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
+      ),
+          ),
+        ],
       ),
       drawer: DrawerAdimim(),
       bottomNavigationBar: BottomNavigationBar(

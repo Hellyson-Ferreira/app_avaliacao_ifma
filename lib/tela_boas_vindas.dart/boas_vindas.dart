@@ -1,4 +1,3 @@
-import 'package:app_avaliacao_ifma/homeAluno/home_aluno%20copy.dart';
 import 'package:app_avaliacao_ifma/homeAluno/home_aluno.dart';
 import 'package:flutter/material.dart';
 
@@ -60,22 +59,6 @@ Python
         child: Text('Continuar', style: TextStyle(color: Colors.black)),
       ),
     );
-    final iniciarButton2 = Padding(
-      padding: EdgeInsets.symmetric(vertical: 16.0),
-      child: RaisedButton(
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(24),
-        ),
-        onPressed: () {
-          Navigator.of(context).pushNamed(HomeAluno2.tag,);
-        },
-        padding: EdgeInsets.all(12),
-        //color: Colors.lightBlueAccent,
-        color: Colors.white,
-        child: Text('Continuar tela 02', style: TextStyle(color: Colors.black)),
-      ),
-    );
-
     final body = Container(
       width: MediaQuery.of(context).size.width,
       padding: EdgeInsets.all(28.0),
@@ -92,7 +75,6 @@ Python
           welcome,
            lorem,
            iniciarButton,
-           iniciarButton2
            ],
       ),
     );
