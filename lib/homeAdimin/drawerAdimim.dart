@@ -1,5 +1,4 @@
 import 'package:app_avaliacao_ifma/LoginAluno/login_page_aluno.dart';
-import 'package:app_avaliacao_ifma/homeAdimin/perfil_adimim.dart';
 import 'package:flutter/material.dart';
 
 class DrawerAdimim extends StatelessWidget {

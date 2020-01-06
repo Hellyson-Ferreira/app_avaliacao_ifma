@@ -51,6 +51,7 @@ Python
           borderRadius: BorderRadius.circular(24),
         ),
         onPressed: () {
+          Navigator.pop(context);
           Navigator.of(context).pushNamed(HomeAluno.tag,);
         },
         padding: EdgeInsets.all(12),

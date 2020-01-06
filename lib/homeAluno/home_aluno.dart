@@ -1,4 +1,6 @@
+import 'package:app_avaliacao_ifma/LoginAluno/login_page_aluno.dart';
 import 'package:app_avaliacao_ifma/homeAluno/drawerAluno.dart';
+import 'package:app_avaliacao_ifma/homeAluno/perguntas/pergunta1.dart';
 import 'package:flutter/material.dart';
 
 class HomeAluno extends StatefulWidget {
@@ -10,8 +12,8 @@ class HomeAluno extends StatefulWidget {
 
 class _HomeAlunoState extends State<HomeAluno> {
   bool _pinned = true;
-  bool _snap = false;
-  bool _floating = false;
+  bool _snap = true;
+  bool _floating = true;
   int _selectedIndex = 0;
   static const double IconSize = 200; 
   static List<Widget> _widgetOptions = <Widget>[
@@ -25,10 +27,16 @@ class _HomeAlunoState extends State<HomeAluno> {
       _selectedIndex = index;
     });
   }
+   Future<bool> _onBackPressed() {
+    Navigator.of(context).pushNamed(LoginPageAluno.tag,);
+    return null;
+  }
 
   @override
   Widget build(BuildContext context) {
-   return Scaffold(
+   return WillPopScope(
+      onWillPop: _onBackPressed,
+      child: Scaffold(
       body: CustomScrollView(
         slivers: <Widget>[
           SliverAppBar(
@@ -40,7 +48,7 @@ class _HomeAlunoState extends State<HomeAluno> {
               title: Text("Home Aluno"),
               background: Image.asset(
                 'assets/IFMA.jpg',
-                fit: BoxFit.fill,
+                fit: BoxFit.fill
               ),
             ),
           ),
@@ -53,7 +61,6 @@ class _HomeAlunoState extends State<HomeAluno> {
         ],
       ),
       drawer: DrawerAluno(),
-      // bottomNavigationBar: this._getBottomAppBar(),
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
@@ -74,16 +81,75 @@ class _HomeAlunoState extends State<HomeAluno> {
         showUnselectedLabels: false,
         onTap: _onItemTapped,
       ),
-    );
+    ),
+   );
   }
 }
 
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Icon(
-      Icons.home, size: 150
+    return ListView(
+       //padding: EdgeInsets.all(10),
+       children: <Widget>[
+          Card(
+          color: Colors.white,
+          child: Column(
+            children: <Widget>[
+              //SizedBox(height: 60,),
+              SizedBox(
+                height: 100.0,
+                child: Stack(
+                  children: <Widget>[
+                    Positioned.fill(
+                      child: Image.asset(
+                        'assets/img.jpg',
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                    Positioned(
+                      bottom:16.0,
+                      left: 16.0,
+                      right: 16.0,
+                      child: FittedBox(
+                        fit: BoxFit.scaleDown,
+                        alignment: Alignment.centerLeft,
+                        child: Text(
+                          'Avaliação de Professores',
+                          style: Theme.of(context)
+                              .textTheme
+                              .headline
+                              .copyWith(color: Colors.white),
+                        ),
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              ButtonBar(
+                alignment: MainAxisAlignment.end,
+                children: <Widget>[
+                  FlatButton(
+                    child: Text('Lembrete'),
+                    onPressed: () {
+                      
+                    },
+                  ),
+                  FlatButton(
+                    child: Text('Iniciar'),
+                    onPressed: () {
+                      //Navigator.pop(context);
+                      Navigator.of(context).pushNamed(Pergunta1.tag);
+                    },
+                  ),
+                ],
+              ),
+            ],
+          ),
+        ),
+      ],
     );
+  
   }
 }
 

@@ -85,15 +85,6 @@ class _LoginPageAlunoState extends State<LoginPageAluno> {
       ),
       onPressed: () {},
     );
-    final telaAdimim = FlatButton(
-      child: Text(
-        'Entrar como Administrador',
-        style: TextStyle(color: Colors.black54),
-      ),
-      onPressed: () {
-        Navigator.of(context).pushNamed(LoginPageAdim.tag);
-      },
-    );
 
     //Gerador de elementos da tela
     return WillPopScope(
@@ -112,11 +103,17 @@ class _LoginPageAlunoState extends State<LoginPageAluno> {
               password,
               SizedBox(height: 24.0),
               loginButton,
-              telaAdimim,
+              //telaAdimim,
               forgotLabel
             ],
           ),
         ),
+        floatingActionButton: FloatingActionButton(
+              onPressed: () {
+                Navigator.of(context).pushNamed(LoginPageAdim.tag);
+              },
+              child: Icon(Icons.person),
+),
       ),
     );
   }
