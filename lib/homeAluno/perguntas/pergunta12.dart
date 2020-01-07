@@ -30,6 +30,7 @@ class _Pergunta12State extends State<Pergunta12> {
               },
             ),
         ],
+        centerTitle: true,
         title: Text(
           'Pergunta 12',
           

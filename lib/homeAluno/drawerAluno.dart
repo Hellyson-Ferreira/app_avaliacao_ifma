@@ -10,7 +10,16 @@ class DrawerAluno extends StatelessWidget {
           Container(
             width: double.infinity,
             padding: EdgeInsets.all(20),
-            color:Theme.of(context).primaryColor,
+            //color:Theme.of(context).primaryColor,
+            decoration: BoxDecoration(
+              color: Colors.green,
+              
+              borderRadius:  BorderRadius.only(
+                  bottomRight: Radius.circular(60),
+                  // bottomLeft: Radius.circular(40),
+                  // topRight: Radius.circular(40),
+              )
+            ),
             child: Center(
               child: Column(
                 children: <Widget>[
@@ -24,15 +33,15 @@ class DrawerAluno extends StatelessWidget {
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
                       image: DecorationImage(
-                        image: AssetImage('assets/hellyson.jpg'),
-                        // image: AssetImage('assets/felipe.jpg'),
+                        // image: AssetImage('assets/hellyson.jpg'),
+                        image: AssetImage('assets/felipe.jpg'),
                         fit: BoxFit.fill
                       )
                     ),
                   ),
                 Text(
-                  'Hellyson Ferreira',
-                  // 'Felipe Torres',
+                  // 'Hellyson Ferreira',
+                  'Felipe Torres',
                    style: TextStyle(
                      fontSize: 22,
                      color: Colors.white
@@ -40,8 +49,8 @@ class DrawerAluno extends StatelessWidget {
                 ),
                 ),
                 Text(
-                  '20181IC.CAX0007',
-                  // '20181IC.CAX0005',
+                  // '20181IC.CAX0007',
+                  '20181IC.CAX0005',
                    style: TextStyle(
                      color: Colors.white
 

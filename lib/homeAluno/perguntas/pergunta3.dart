@@ -30,17 +30,27 @@ class _Pergunta3State extends State<Pergunta3> {
               },
             ),
         ],
+        elevation: 0,
+        centerTitle: true,
         title: Text(
-          'Pergunta 3',
+          'Pergunta 03',
           
         ),
       ),
       body:Center(
           // color: Colors.greenAccent,
+          
           child: Column(
             children: <Widget>[
               Container(
-                width: double.infinity,
+                decoration: BoxDecoration(
+                  color: Colors.green,
+                  borderRadius: BorderRadius.only(
+                    bottomRight: Radius.circular(30),
+                    bottomLeft: Radius.circular(30)
+                  )
+                ),
+                width: MediaQuery.of(context).size.width,
                 // color: Colors.black,
                 child: ListTile(
                   title: Center(
