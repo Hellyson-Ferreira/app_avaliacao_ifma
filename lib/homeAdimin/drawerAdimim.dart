@@ -1,4 +1,5 @@
 import 'package:app_avaliacao_ifma/LoginAluno/login_page_aluno.dart';
+import 'package:app_avaliacao_ifma/homeAdimin/turmas.dart';
 import 'package:flutter/material.dart';
 
 class DrawerAdimim extends StatelessWidget {
@@ -57,7 +58,7 @@ class DrawerAdimim extends StatelessWidget {
             ),
             ),
             onTap: (){
-               //Navigator.of(context).pushNamed(HomeAluno.tag,);
+               Navigator.of(context).pushNamed(Turmas.tag);
             }
           ),
           ListTile(

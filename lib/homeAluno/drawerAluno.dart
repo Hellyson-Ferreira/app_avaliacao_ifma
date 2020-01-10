@@ -59,21 +59,21 @@ class DrawerAluno extends StatelessWidget {
               ),
             ),
           ),
-          ListTile(
-            leading: Icon(Icons.settings),
-            title: Text(
-              'Configurações',
-              style: TextStyle(
-                fontSize: 18,
+          // ListTile(
+          //   leading: Icon(Icons.settings),
+          //   title: Text(
+          //     'Configurações',
+          //     style: TextStyle(
+          //       fontSize: 18,
 
-            ),
-            ),
-            onTap: (){
-               //Navigator.of(context).pushNamed(HomeAluno.tag,);
-            }
+          //   ),
+          //   ),
+          //   onTap: (){
+          //      //Navigator.of(context).pushNamed(HomeAluno.tag,);
+          //   }
             
 
-          ),
+          // ),
           ListTile(
             leading: Icon(Icons.help),
             title: Text(

@@ -1,7 +1,8 @@
 import 'package:app_avaliacao_ifma/LoginAdimim/login_page_adimim.dart';
 import 'package:app_avaliacao_ifma/LoginAluno/login_page_aluno.dart';
+import 'package:app_avaliacao_ifma/homeAdimin/grafico.dart';
 import 'package:app_avaliacao_ifma/homeAdimin/home_adimim.dart';
-import 'package:app_avaliacao_ifma/homeAdimin/perfil_adimim.dart';
+import 'package:app_avaliacao_ifma/homeAdimin/turmas.dart';
 import 'package:app_avaliacao_ifma/homeAluno/home_aluno.dart';
 import 'package:app_avaliacao_ifma/homeAluno/perguntas/pergunta1.dart';
 import 'package:app_avaliacao_ifma/homeAluno/perguntas/pergunta10.dart';
@@ -31,7 +32,6 @@ class MyApp extends StatelessWidget {
     LoginPageAdim.tag: (context) => LoginPageAdim(),
     HomeAluno.tag: (context) => HomeAluno(),
     HomeAdimim.tag: (context) => HomeAdimim(),
-    PerfilAdimim.tag: (context) => PerfilAdimim(),
     Pergunta1.tag: (context) => Pergunta1(),
     Pergunta2.tag: (context) => Pergunta2(),
     Pergunta3.tag: (context) => Pergunta3(),
@@ -46,6 +46,8 @@ class MyApp extends StatelessWidget {
     Pergunta12.tag: (context) => Pergunta12(),
     Pergunta13.tag: (context) => Pergunta13(),
     Pergunta14.tag: (context) => Pergunta14(),
+    Turmas.tag: (context) => Turmas(),
+    PieChartExample.tag: (context) => PieChartExample(),
 
 };
 

@@ -57,7 +57,8 @@ class _Pergunta1State extends State<Pergunta1> {
                   child: Text(
                   'O programa da disciplina foi apresentado pelo(a) professor(a) (objetivos, conteúdo a ser desenvolvido e bibliografia).',
                   style: TextStyle(
-                    fontSize: 20
+                    fontSize: 20,
+                    color: Colors.white
                   ),
                   ),
               )

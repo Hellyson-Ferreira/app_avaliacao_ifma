@@ -23,8 +23,9 @@ class _LoginPageAlunoState extends State<LoginPageAluno> {
       tag: 'hero',
       child: CircleAvatar(
         backgroundColor: Colors.transparent,
-        radius: 48.0,
+        radius: 60.0,
         child: Image.asset('assets/imgs/img'+ j.toString()+'.png'),
+        // child: Image.asset("assets/users.json"),
       ),
     );
 
@@ -83,14 +84,15 @@ class _LoginPageAlunoState extends State<LoginPageAluno> {
         'Não consigo entrar',
         style: TextStyle(color: Colors.black54),
       ),
-      onPressed: () {},
+      onPressed: () {
+        
+      },
     );
 
     //Gerador de elementos da tela
     return WillPopScope(
       onWillPop: _onBackPressed,
-      child:Scaffold(
-        backgroundColor: Colors.white,
+      child:Scaffold(       
         body: Center(
           child: ListView(
             shrinkWrap: true,

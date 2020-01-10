@@ -11,9 +11,6 @@ class HomeAluno extends StatefulWidget {
 }
 
 class _HomeAlunoState extends State<HomeAluno> {
-  bool _pinned = true;
-  bool _snap = true;
-  bool _floating = true;
   int _selectedIndex = 0;
   static const double IconSize = 200; 
   static List<Widget> _widgetOptions = <Widget>[
@@ -37,13 +34,14 @@ class _HomeAlunoState extends State<HomeAluno> {
    return WillPopScope(
       onWillPop: _onBackPressed,
       child: Scaffold(
+        
       body: CustomScrollView(
         slivers: <Widget>[
           SliverAppBar(
-            pinned: this._pinned,
-            snap: this._snap,
-            floating: this._floating,
-            expandedHeight: 160.0,
+            pinned: true,
+            snap: false,
+            floating: false,
+            expandedHeight: 146.0,
             flexibleSpace: FlexibleSpaceBar(
               title: Text("Home Aluno"),
               background: Image.asset(
@@ -89,46 +87,103 @@ class _HomeAlunoState extends State<HomeAluno> {
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return ListView(
+
+    return 
+    // SingleChildScrollView(
+    
+    // child: 
+    Column(
        //padding: EdgeInsets.all(10),
        children: <Widget>[
-          Card(
+         
+        //   Card(
+        //   color: Colors.white,
+        //   child: Column(
+        //     children: <Widget>[
+        //       //SizedBox(height: 60,),
+        //       SizedBox(
+        //         height: 100.0,
+        //         child: Stack(
+        //           children: <Widget>[
+        //             Positioned.fill(
+        //               child: Image.asset(
+        //                 'assets/img.jpg',
+        //                 fit: BoxFit.cover,
+        //               ),
+        //             ),
+        //             Positioned(
+        //               bottom:16.0,
+        //               left: 16.0,
+        //               right: 16.0,
+        //               child: FittedBox(
+        //                 fit: BoxFit.scaleDown,
+        //                 alignment: Alignment.centerLeft,
+        //                 child: Text(
+        //                   'Avaliação de Professores',
+        //                   style: Theme.of(context)
+        //                       .textTheme
+        //                       .headline
+        //                       .copyWith(color: Colors.white),
+        //                 ),
+        //               ),
+        //             )
+        //           ],
+        //         ),
+        //       ),
+        //       ButtonBar(
+        //         alignment: MainAxisAlignment.end,
+        //         children: <Widget>[
+        //           FlatButton(
+        //             child: Text('Lembrete'),
+        //             onPressed: () {
+                      
+        //             },
+        //           ),
+        //           FlatButton(
+        //             child: Text('Iniciar'),
+        //             onPressed: () {
+        //               //Navigator.pop(context);
+        //               Navigator.of(context).pushNamed(Pergunta1.tag);
+        //             },
+        //           ),
+        //         ],
+        //       ),
+        //     ],
+        //   ),
+        // ),
+         Card(
+          //  elevation: 0,
           color: Colors.white,
           child: Column(
             children: <Widget>[
               //SizedBox(height: 60,),
-              SizedBox(
-                height: 100.0,
-                child: Stack(
-                  children: <Widget>[
-                    Positioned.fill(
-                      child: Image.asset(
-                        'assets/img.jpg',
-                        fit: BoxFit.cover,
-                      ),
-                    ),
-                    Positioned(
-                      bottom:16.0,
-                      left: 16.0,
-                      right: 16.0,
-                      child: FittedBox(
-                        fit: BoxFit.scaleDown,
-                        alignment: Alignment.centerLeft,
-                        child: Text(
-                          'Avaliação de Professores',
-                          style: Theme.of(context)
-                              .textTheme
-                              .headline
-                              .copyWith(color: Colors.white),
-                        ),
-                      ),
-                    )
-                  ],
+              Container(
+                height: 200,
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    image: AssetImage('assets/users.gif')
+                  )
                 ),
+
               ),
+              Text(
+                    'Avaliação de Professores',
+                    style: Theme.of(context)
+                        .textTheme
+                        .headline
+                        .copyWith(color: Colors.black),
+                        ),
               ButtonBar(
                 alignment: MainAxisAlignment.end,
                 children: <Widget>[
+                  // Text(
+                  //         'Avaliação de Professores',
+                  //         style: Theme.of(context)
+                  //             .textTheme
+                  //             .headline
+                  //             .copyWith(color: Colors.black),
+                  //       ),
+
                   FlatButton(
                     child: Text('Lembrete'),
                     onPressed: () {
@@ -147,9 +202,10 @@ class HomePage extends StatelessWidget {
             ],
           ),
         ),
+        
       ],
+    // ),
     );
-  
   }
 }
 
