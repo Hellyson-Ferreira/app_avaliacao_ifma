@@ -49,7 +49,6 @@ class _Pergunta14State extends State<Pergunta14> {
                   color: Colors.green,
                   borderRadius: BorderRadius.only(
                     bottomLeft: Radius.circular(30),
-                    bottomRight: Radius.circular(30)
                   )
                 ),
                 child: ListTile(
