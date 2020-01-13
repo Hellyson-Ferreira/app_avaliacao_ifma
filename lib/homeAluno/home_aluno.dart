@@ -13,6 +13,9 @@ class HomeAluno extends StatefulWidget {
 class _HomeAlunoState extends State<HomeAluno> {
   int _selectedIndex = 0;
   static const double IconSize = 200; 
+  String a = 'assets/IFMA.jpg';
+  String title = 'assss';
+  double ex = 146.0;
   static List<Widget> _widgetOptions = <Widget>[
     
     HomePage(),
@@ -21,6 +24,14 @@ class _HomeAlunoState extends State<HomeAluno> {
   ];
 
   void _onItemTapped(int index) {
+    if(index==1){
+      a = 'assets/felipe.jpg';
+      ex = 0;
+    }
+    else{
+      a = 'assets/IFMA.jpg';
+      ex = 146.0;
+    }
     setState(() {
       _selectedIndex = index;
     });
@@ -36,18 +47,17 @@ class _HomeAlunoState extends State<HomeAluno> {
    return WillPopScope(
       onWillPop: _onBackPressed,
       child: Scaffold(
-        
       body: CustomScrollView(
         slivers: <Widget>[
           SliverAppBar(
             pinned: true,
-            snap: false,
-            floating: false,
-            expandedHeight: 146.0,
+            // snap: true,
+            floating: true,
+            expandedHeight: ex,
             flexibleSpace: FlexibleSpaceBar(
-              title: Text("Home Aluno"),
+              title: Text("$a"),
               background: Image.asset(
-                'assets/IFMA.jpg',
+                a,
                 fit: BoxFit.fill
               ),
             ),
