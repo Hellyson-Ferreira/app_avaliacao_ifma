@@ -1,12 +1,12 @@
-
 import 'package:app_avaliacao_ifma/homeAluno/home_aluno.dart';
 import 'package:flutter/material.dart';
 
 class Pergunta14 extends StatefulWidget {
-  static String tag = 'pergunta14';
+  static String tag = 'Pergunta 14: ';
   @override
   _Pergunta14State createState() => _Pergunta14State();
 }
+
 
 class _Pergunta14State extends State<Pergunta14> {
   @override
@@ -16,13 +16,14 @@ class _Pergunta14State extends State<Pergunta14> {
         elevation: 0,
         
         leading: IconButton(
-            tooltip: 'voltar',
+            tooltip: 'Voltar',
             icon: const Icon(Icons.arrow_back),
             onPressed: () {
               //_nextPage(-1);
               Navigator.pop(context);
             },
           ),
+
         actions: <Widget>[
           IconButton(
               icon: const Icon(Icons.check),
@@ -34,7 +35,7 @@ class _Pergunta14State extends State<Pergunta14> {
         ],
         centerTitle: true,
         title: Text(
-          'Pergunta 14',
+          'Pergunta 14: ',
           
         ),
       ),
@@ -42,9 +43,9 @@ class _Pergunta14State extends State<Pergunta14> {
           // color: Colors.greenAccent,
           child: Column(
             children: <Widget>[
+              
               Container(
                 width: double.infinity,
-                // color: Colors.black,
                 decoration: BoxDecoration(
                   color: Colors.green,
                   borderRadius: BorderRadius.only(
@@ -52,13 +53,11 @@ class _Pergunta14State extends State<Pergunta14> {
                     bottomRight: Radius.circular(30)
                   )
                 ),
+                
                 child: ListTile(
                   title: Center(
                   child: Text(
-                  '''Como discente, eu me comprometi com as atividades propostas pelo(a) professor(a) que
-acabei de avaliar (fui assíduo nas aulas, respeitei os horários de aula chegando e saindo nos
-horários previstos, dediquei-me aos exercícios, trabalhos, provas e debates propostos pelo(a)
-professor(a) em aula).''',
+                  '''Como discente, eu me comprometi com as atividades propostas pelo(a) professor(a) que acabei de avaliar (fui assíduo nas aulas, respeitei os horários de aula chegando e saindo nos horários previstos, dediquei-me aos exercícios, trabalhos, provas e debates propostos pelo(a) professor(a) em aula).''',
                   style: TextStyle(
                     fontSize: 20,
                     color: Colors.white
@@ -68,6 +67,7 @@ professor(a) em aula).''',
               )
                 )
               ),
+              
               Expanded(
               child: Professores()
             ),
@@ -82,8 +82,6 @@ professor(a) em aula).''',
 //             label: Text("Próximo"),
 // ),
     );
-     
- 
   }
 }
 class Professores extends StatelessWidget {
@@ -97,27 +95,32 @@ class Professores extends StatelessWidget {
           itemBuilder: (context) => [
                 PopupMenuItem(
                   value: 1,
-                  child: Text("😤 - Discordo totalmente"),
+                  child: Text("😤 - Discordo totalmente."),
                 ),
+                
                 PopupMenuItem(
                   value: 2,
-                  child: Text("😠 - Discordo em parte"),
+                  child: Text("😠 - Discordo em parte."),
                 ),
+                
                 PopupMenuItem(
                   value: 2,
-                  child: Text(" 😐 - Não concordo nem discordo"),
+                  child: Text(" 😐 - Não concordo nem discordo."),
                 ),
+                
                 PopupMenuItem(
                   value: 2,
-                  child: Text(" 🙂 -Concordo em parte"),
+                  child: Text(" 🙂 -Concordo em parte."),
                 ),
+                
                 PopupMenuItem(
                   value: 2,
-                  child: Text("😀 -Concordo totalmente"),
+                  child: Text("😀 -Concordo totalmente."),
                 ),
+                
                 PopupMenuItem(
                   value: 2,
-                  child: Text("😑 - Não sei responder"),
+                  child: Text("😑 - Não sei responder."),
                 ),
               ],
         );

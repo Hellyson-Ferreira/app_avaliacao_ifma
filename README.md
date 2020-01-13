@@ -4,7 +4,7 @@ A new Flutter project.
 
 ## Getting Started
 ## Hellyson
-## Felipe
+## Felipe Anderson
 
 This project is a starting point for a Flutter application.
 

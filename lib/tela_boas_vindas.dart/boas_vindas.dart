@@ -9,40 +9,22 @@ class BoasVindasAluno extends StatelessWidget {
     final welcome = Padding(
       padding: EdgeInsets.all(8.0),
       child: Text(
-        'Bem Vindo ao App de  Avaliação docente',
+        'Olá, bem vindo ao app da Avaliação Doscente do IFMA Caxias.',
         style: TextStyle(
           fontSize: 28.0, 
           color: Colors.white),
       ),
     );
 
+
     final lorem = Padding(
       padding: EdgeInsets.all(8.0),
       child: Text(
-        '''Beautiful is better than ugly.
-Explicit is better than implicit.
-Simple is better than complex.
-Complex is better than complicated.
-Flat is better than nested.
-Sparse is better than dense.
-Readability counts.
-Special cases aren't special enough to break the rules.
-Although practicality beats purity.
-Errors should never pass silently.
-Unless explicitly silenced.
-In the face of ambiguity, refuse the temptation to guess.
-There should be one-- and preferably only one --obvious way to do it.
-Although that way may not be obvious at first unless you're Dutch.
-Now is better than never.
-Although never is often better than *right* now.
-If the implementation is hard to explain, it's a bad idea.
-If the implementation is easy to explain, it may be a good idea.
-Namespaces are one honking great idea -- let's do more of those!
-Python
-''',
+        '''Quem ler é GAY''',
         style: TextStyle(fontSize: 16.0, color: Colors.white),
       ),
     );
+
 
     final iniciarButton = Padding(
       padding: EdgeInsets.symmetric(vertical: 16.0),
@@ -60,6 +42,7 @@ Python
         child: Text('Continuar', style: TextStyle(color: Colors.black)),
       ),
     );
+
     final body = Container(
       width: MediaQuery.of(context).size.width,
       padding: EdgeInsets.all(28.0),
