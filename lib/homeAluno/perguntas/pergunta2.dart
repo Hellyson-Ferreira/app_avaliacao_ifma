@@ -46,8 +46,8 @@ class _Pergunta2State extends State<Pergunta2> {
                   decoration: BoxDecoration(
                   color: Colors.green,
                   borderRadius: BorderRadius.only(
-                    bottomRight: Radius.circular(30),
-                    bottomLeft: Radius.circular(30)
+                    bottomRight: Radius.circular(0),
+                    bottomLeft: Radius.circular(0)
                   )
                 ),
                 child: ListTile(

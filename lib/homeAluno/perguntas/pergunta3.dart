@@ -16,10 +16,10 @@ class _Pergunta3State extends State<Pergunta3> {
             tooltip: 'voltar',
             icon: const Icon(Icons.arrow_back),
             onPressed: () {
-              //_nextPage(-1);
               Navigator.pop(context);
             },
           ),
+        
         actions: <Widget>[
           IconButton(
               icon: const Icon(Icons.arrow_forward),
@@ -29,25 +29,24 @@ class _Pergunta3State extends State<Pergunta3> {
               },
             ),
         ],
-        elevation: 0,
         centerTitle: true,
-        title: Text(
-          'Pergunta 03',
-          
-        ),
+        title: Text('Pergunta 03')
       ),
       body:Center(
-          // color: Colors.greenAccent,
-          
           child: Column(
             children: <Widget>[
+              SizedBox(height: 5, width: 0),
+              
               Container(
                 decoration: BoxDecoration(
                   color: Colors.green,
-                  borderRadius: BorderRadius.only(
-                    bottomRight: Radius.circular(30),
-                    bottomLeft: Radius.circular(30)
-                  )
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(30)
+                  ),
+                  // borderRadius: BorderRadius.only(
+                  //   bottomRight: Radius.circular(30),
+                  //   bottomLeft: Radius.circular(30)
+                  // )
                 ),
                 width: MediaQuery.of(context).size.width,
                 // color: Colors.black,
