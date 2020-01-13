@@ -43,8 +43,7 @@ class _Pergunta2State extends State<Pergunta2> {
             children: <Widget>[
               Container(
                 width: MediaQuery.of(context).size.width,
-                // color: Colors.black,
-                decoration: BoxDecoration(
+                  decoration: BoxDecoration(
                   color: Colors.green,
                   borderRadius: BorderRadius.only(
                     bottomRight: Radius.circular(30),
@@ -54,9 +53,10 @@ class _Pergunta2State extends State<Pergunta2> {
                 child: ListTile(
                   title: Center(
                   child: Text(
-                  'O programa da disciplina foi apresentado pelo(a) professor(a) (objetivos, conteúdo a ser desenvolvido e bibliografia).',
+                  'O(a) professor(a) cumpriu o programa da disciplina apresentado durante o período letivo.',
                   style: TextStyle(
-                    fontSize: 20
+                    fontSize: 20,
+                    color: Colors.white
                   ),
                   ),
               )

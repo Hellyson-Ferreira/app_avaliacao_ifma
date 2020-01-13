@@ -13,6 +13,7 @@ class _Pergunta4State extends State<Pergunta4> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        elevation: 0,
         leading: IconButton(
             tooltip: 'voltar',
             icon: const Icon(Icons.arrow_back),
@@ -42,13 +43,22 @@ class _Pergunta4State extends State<Pergunta4> {
             children: <Widget>[
               Container(
                 width: double.infinity,
-                // color: Colors.black,
+                decoration: BoxDecoration(
+                  color: Colors.green,
+                  borderRadius: BorderRadius.only(
+                    bottomLeft: Radius.circular(30),
+                    bottomRight: Radius.circular(30)
+                  )
+                ),
                 child: ListTile(
                   title: Center(
                   child: Text(
-                  'O programa da disciplina foi apresentado pelo(a) professor(a) (objetivos, conteúdo a ser desenvolvido e bibliografia).',
+                  'O(a) professor(a) estabelece relações entre os conteúdos da sua disciplina com os conteúdos das demais disciplinas, contribuindo com a formação profissional.',
+                  
                   style: TextStyle(
-                    fontSize: 20
+                    fontSize: 20,
+                    color: Colors.white,
+
                   ),
                   ),
               )

@@ -1,4 +1,3 @@
-
 import 'package:app_avaliacao_ifma/homeAluno/perguntas/pergunta4.dart';
 import 'package:flutter/material.dart';
 
@@ -55,9 +54,12 @@ class _Pergunta3State extends State<Pergunta3> {
                 child: ListTile(
                   title: Center(
                   child: Text(
-                  'O programa da disciplina foi apresentado pelo(a) professor(a) (objetivos, conteúdo a ser desenvolvido e bibliografia).',
+                  'O(a) professor(a) demonstra domínio sobre o conteúdo apresentado, tratando-o com clareza e objetividade.',
+                  
                   style: TextStyle(
-                    fontSize: 20
+                    fontSize: 20,
+                    color: Colors.white,
+
                   ),
                   ),
               )

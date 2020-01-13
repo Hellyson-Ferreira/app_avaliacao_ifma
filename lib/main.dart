@@ -1,6 +1,5 @@
 import 'package:app_avaliacao_ifma/LoginAdimim/login_page_adimim.dart';
 import 'package:app_avaliacao_ifma/LoginAluno/login_page_aluno.dart';
-import 'package:app_avaliacao_ifma/homeAdimin/grafico.dart';
 import 'package:app_avaliacao_ifma/homeAdimin/home_adimim.dart';
 import 'package:app_avaliacao_ifma/homeAdimin/turmas.dart';
 import 'package:app_avaliacao_ifma/homeAluno/home_aluno.dart';
@@ -47,7 +46,6 @@ class MyApp extends StatelessWidget {
     Pergunta13.tag: (context) => Pergunta13(),
     Pergunta14.tag: (context) => Pergunta14(),
     Turmas.tag: (context) => Turmas(),
-    PieChartExample.tag: (context) => PieChartExample(),
 
 };
 

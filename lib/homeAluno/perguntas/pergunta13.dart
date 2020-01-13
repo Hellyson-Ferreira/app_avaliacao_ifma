@@ -46,9 +46,10 @@ class _Pergunta13State extends State<Pergunta13> {
                 child: ListTile(
                   title: Center(
                   child: Text(
-                  'O programa da disciplina foi apresentado pelo(a) professor(a) (objetivos, conteúdo a ser desenvolvido e bibliografia).',
+                  'O(a) professor(a) apresenta uma postura de respeito mútuo, preservando a imagem da Instituição, dos colegas, e dos acadêmicos.',
                   style: TextStyle(
-                    fontSize: 20
+                    fontSize: 20,
+                    color: Colors.white,
                   ),
                   ),
               )

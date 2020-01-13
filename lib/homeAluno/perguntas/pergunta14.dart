@@ -46,9 +46,14 @@ class _Pergunta14State extends State<Pergunta14> {
                 child: ListTile(
                   title: Center(
                   child: Text(
-                  'O programa da disciplina foi apresentado pelo(a) professor(a) (objetivos, conteúdo a ser desenvolvido e bibliografia).',
+                  '''Como discente, eu me comprometi com as atividades propostas pelo(a) professor(a) que
+acabei de avaliar (fui assíduo nas aulas, respeitei os horários de aula chegando e saindo nos
+horários previstos, dediquei-me aos exercícios, trabalhos, provas e debates propostos pelo(a)
+professor(a) em aula).''',
                   style: TextStyle(
-                    fontSize: 20
+                    fontSize: 20,
+                    color: Colors.white
+
                   ),
                   ),
               )
