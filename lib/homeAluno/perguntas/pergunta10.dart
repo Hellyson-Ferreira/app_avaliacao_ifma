@@ -15,10 +15,9 @@ class _Pergunta10State extends State<Pergunta10> {
       appBar: AppBar(
         elevation: 0,
         leading: IconButton(
-            tooltip: 'voltar',
+            tooltip: 'Voltar',
             icon: const Icon(Icons.arrow_back),
             onPressed: () {
-              //_nextPage(-1);
               Navigator.pop(context);
             },
           ),
@@ -34,23 +33,14 @@ class _Pergunta10State extends State<Pergunta10> {
         centerTitle: true,
         title: Text(
           'Pergunta 10',
-          
         ),
       ),
       body:Center(
-          // color: Colors.greenAccent,
           child: Column(
             children: <Widget>[
               Container(
                 width: double.infinity,
-                // color: Colors.black,
-                decoration: BoxDecoration(
-                  color: Colors.green,
-                  borderRadius: BorderRadius.only(
-                    bottomLeft: Radius.circular(30),
-                    bottomRight: Radius.circular(30)
-                  )
-                ),
+                color: Colors.green,
                 child: ListTile(
                   title: Center(
                   child: Text(
@@ -71,14 +61,7 @@ class _Pergunta10State extends State<Pergunta10> {
           ),
           // width: 1000,
         ),
-//         floatingActionButton: FloatingActionButton.extended(
-//             onPressed: () {},
-//             icon: Icon(Icons.navigate_next),
-//             label: Text("Próximo"),
-// ),
-    );
-     
- 
+    );     
   }
 }
 class Professores extends StatelessWidget {
@@ -87,32 +70,33 @@ class Professores extends StatelessWidget {
     final numItems = 16;
     final _biggerFont = const TextStyle(fontSize: 18.0);
 
+
     Widget _simplePopup() => PopupMenuButton<int>(
       icon: Icon(Icons.insert_emoticon),
           itemBuilder: (context) => [
                 PopupMenuItem(
                   value: 1,
-                  child: Text("😤 - Discordo totalmente"),
+                  child: Text("😤 - Discordo totalmente."),
                 ),
                 PopupMenuItem(
                   value: 2,
-                  child: Text("😠 - Discordo em parte"),
+                  child: Text("😠 - Discordo em parte."),
                 ),
                 PopupMenuItem(
-                  value: 2,
-                  child: Text(" 😐 - Não concordo nem discordo"),
+                  value: 3,
+                  child: Text(" 😐 - Não concordo nem discordo."),
                 ),
                 PopupMenuItem(
-                  value: 2,
-                  child: Text(" 🙂 -Concordo em parte"),
+                  value: 4,
+                  child: Text(" 🙂 - Concordo em parte."),
                 ),
                 PopupMenuItem(
-                  value: 2,
-                  child: Text("😀 -Concordo totalmente"),
+                  value: 5,
+                  child: Text("😀 - Concordo totalmente."),
                 ),
                 PopupMenuItem(
-                  value: 2,
-                  child: Text("😑 - Não sei responder"),
+                  value: 6,
+                  child: Text("😑 - Não sei responder."),
                 ),
               ],
         );

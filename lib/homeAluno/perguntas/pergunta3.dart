@@ -12,6 +12,7 @@ class _Pergunta3State extends State<Pergunta3> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        elevation: 0,
         leading: IconButton(
             tooltip: 'voltar',
             icon: const Icon(Icons.arrow_back),
@@ -34,20 +35,9 @@ class _Pergunta3State extends State<Pergunta3> {
       ),
       body:Center(
           child: Column(
-            children: <Widget>[
-              SizedBox(height: 5, width: 0),
-              
+            children: <Widget>[              
               Container(
-                decoration: BoxDecoration(
-                  color: Colors.green,
-                  borderRadius: BorderRadius.all(
-                    Radius.circular(30)
-                  ),
-                  // borderRadius: BorderRadius.only(
-                  //   bottomRight: Radius.circular(30),
-                  //   bottomLeft: Radius.circular(30)
-                  // )
-                ),
+                color: Colors.green,
                 width: MediaQuery.of(context).size.width,
                 // color: Colors.black,
                 child: ListTile(

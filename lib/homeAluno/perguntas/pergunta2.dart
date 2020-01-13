@@ -34,7 +34,6 @@ class _Pergunta2State extends State<Pergunta2> {
         centerTitle: true,
         title: Text(
           'Pergunta 02',
-          
         ),
       ),
       body:Center(
@@ -43,13 +42,7 @@ class _Pergunta2State extends State<Pergunta2> {
             children: <Widget>[
               Container(
                 width: MediaQuery.of(context).size.width,
-                  decoration: BoxDecoration(
-                  color: Colors.green,
-                  borderRadius: BorderRadius.only(
-                    bottomRight: Radius.circular(0),
-                    bottomLeft: Radius.circular(0)
-                  )
-                ),
+                color: Colors.green,
                 child: ListTile(
                   title: Center(
                   child: Text(

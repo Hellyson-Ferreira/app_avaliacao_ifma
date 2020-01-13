@@ -13,7 +13,7 @@ class _Pergunta1State extends State<Pergunta1> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        elevation: 0,
+        elevation: 0, 
         centerTitle: true,
         leading: IconButton(
             tooltip: 'voltar',
@@ -33,25 +33,18 @@ class _Pergunta1State extends State<Pergunta1> {
               },
             ),
         ],
+      
         title: Text(
           'Pergunta 01',
-          
         ),
       ),
+      
       body:Center(
-          // color: Colors.greenAccent,
           child: Column(
             children: <Widget>[
               Container(
                 width: MediaQuery.of(context).size.width,
-                // color: Colors.green,
-                decoration: BoxDecoration(
-                  color: Colors.green,
-                  borderRadius: BorderRadius.only(
-                    bottomRight: Radius.circular(30),
-                    bottomLeft: Radius.circular(30)
-                  )
-                ),
+                color: Colors.green,
                 child: ListTile(
                   title: Center(
                   child: Text(

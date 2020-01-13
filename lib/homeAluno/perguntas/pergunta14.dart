@@ -19,7 +19,6 @@ class _Pergunta14State extends State<Pergunta14> {
             tooltip: 'Voltar',
             icon: const Icon(Icons.arrow_back),
             onPressed: () {
-              //_nextPage(-1);
               Navigator.pop(context);
             },
           ),
@@ -36,24 +35,15 @@ class _Pergunta14State extends State<Pergunta14> {
         centerTitle: true,
         title: Text(
           'Pergunta 14: ',
-          
         ),
       ),
       body:Center(
-          // color: Colors.greenAccent,
           child: Column(
             children: <Widget>[
               
               Container(
                 width: double.infinity,
-                decoration: BoxDecoration(
-                  color: Colors.green,
-                  borderRadius: BorderRadius.only(
-                    bottomLeft: Radius.circular(30),
-                    bottomRight: Radius.circular(30)
-                  )
-                ),
-                
+                color: Colors.green,
                 child: ListTile(
                   title: Center(
                   child: Text(
@@ -74,13 +64,7 @@ class _Pergunta14State extends State<Pergunta14> {
             ],
             
           ),
-          // width: 1000,
         ),
-//         floatingActionButton: FloatingActionButton.extended(
-//             onPressed: () {},
-//             icon: Icon(Icons.navigate_next),
-//             label: Text("Próximo"),
-// ),
     );
   }
 }
@@ -97,29 +81,24 @@ class Professores extends StatelessWidget {
                   value: 1,
                   child: Text("😤 - Discordo totalmente."),
                 ),
-                
                 PopupMenuItem(
                   value: 2,
                   child: Text("😠 - Discordo em parte."),
                 ),
-                
                 PopupMenuItem(
-                  value: 2,
+                  value: 3,
                   child: Text(" 😐 - Não concordo nem discordo."),
                 ),
-                
                 PopupMenuItem(
-                  value: 2,
-                  child: Text(" 🙂 -Concordo em parte."),
+                  value: 4,
+                  child: Text(" 🙂 - Concordo em parte."),
                 ),
-                
                 PopupMenuItem(
-                  value: 2,
-                  child: Text("😀 -Concordo totalmente."),
+                  value: 5,
+                  child: Text("😀 - Concordo totalmente."),
                 ),
-                
                 PopupMenuItem(
-                  value: 2,
+                  value: 6,
                   child: Text("😑 - Não sei responder."),
                 ),
               ],
@@ -147,8 +126,7 @@ class Professores extends StatelessWidget {
         }
         final index = i ~/ 2 + 1;
         return _buildRow(index);
-      },
-    
+      },   
     );
   }
 }
