@@ -17,26 +17,9 @@ class _LoadingPageState extends State<LoadingPage> {
     children: <Widget>[
       SplashScreen(
         seconds: 4,
-        // title:new Text('Avaliação de professores',
-        // style: new TextStyle(
-          // fontWeight: FontWeight.bold,
-          // fontSize: 20.0
-        // ),),
-        // styleTextUnderTheLoader: new TextStyle(),
-        // photoSize: 0,
-        gradientBackground: LinearGradient(
-          begin: Alignment.topRight,
-          end: Alignment.bottomLeft,
-          colors: [
-            Colors.white,
-            Colors.white24,
-            
-            // Colors.lightGreen,
-            //Colors.lightGreenAccent
-          ],
-        ),
+        backgroundColor: Colors.white,
         navigateAfterSeconds: LoginPageAluno(),
-        loaderColor: Colors.blueGrey,
+        loaderColor: Colors.green,
       ),
     
       Container(

@@ -48,11 +48,13 @@ class _LoginPageAlunoState extends State<LoginPageAluno> {
     );
     //Disign Box senha
     final password = TextFormField(
+      
       controller: _senha,
       autofocus: false,
       obscureText: true,
       keyboardType: TextInputType.visiblePassword,
       decoration: InputDecoration(
+        //filled: true,
         hintText: 'Senha do Suap',
         contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
         border: OutlineInputBorder(borderRadius: BorderRadius.circular(32.0)),
