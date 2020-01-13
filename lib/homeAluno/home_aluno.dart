@@ -14,9 +14,10 @@ class _HomeAlunoState extends State<HomeAluno> {
   int _selectedIndex = 0;
   static const double IconSize = 200; 
   static List<Widget> _widgetOptions = <Widget>[
+    
     HomePage(),
-    BusinessPage(),
-    SchoolPage(),
+    InfoPage(),
+
   ];
 
   void _onItemTapped(int index) {
@@ -24,6 +25,7 @@ class _HomeAlunoState extends State<HomeAluno> {
       _selectedIndex = index;
     });
   }
+
    Future<bool> _onBackPressed() {
     Navigator.of(context).pushNamed(LoginPageAluno.tag,);
     return null;
@@ -65,10 +67,7 @@ class _HomeAlunoState extends State<HomeAluno> {
             icon: Icon(Icons.home),
             title: Text('Home'),
           ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.event),
-            title: Text('calendario'),
-          ),
+      
           BottomNavigationBarItem(
             icon: Icon(Icons.info),
             title: Text('Sobre'),
@@ -88,77 +87,15 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    return 
-    // SingleChildScrollView(
-    
-    // child: 
-    Column(
-       //padding: EdgeInsets.all(10),
+    return Column(
        children: <Widget>[
-         
-        //   Card(
-        //   color: Colors.white,
-        //   child: Column(
-        //     children: <Widget>[
-        //       //SizedBox(height: 60,),
-        //       SizedBox(
-        //         height: 100.0,
-        //         child: Stack(
-        //           children: <Widget>[
-        //             Positioned.fill(
-        //               child: Image.asset(
-        //                 'assets/img.jpg',
-        //                 fit: BoxFit.cover,
-        //               ),
-        //             ),
-        //             Positioned(
-        //               bottom:16.0,
-        //               left: 16.0,
-        //               right: 16.0,
-        //               child: FittedBox(
-        //                 fit: BoxFit.scaleDown,
-        //                 alignment: Alignment.centerLeft,
-        //                 child: Text(
-        //                   'Avaliação de Professores',
-        //                   style: Theme.of(context)
-        //                       .textTheme
-        //                       .headline
-        //                       .copyWith(color: Colors.white),
-        //                 ),
-        //               ),
-        //             )
-        //           ],
-        //         ),
-        //       ),
-        //       ButtonBar(
-        //         alignment: MainAxisAlignment.end,
-        //         children: <Widget>[
-        //           FlatButton(
-        //             child: Text('Lembrete'),
-        //             onPressed: () {
-                      
-        //             },
-        //           ),
-        //           FlatButton(
-        //             child: Text('Iniciar'),
-        //             onPressed: () {
-        //               //Navigator.pop(context);
-        //               Navigator.of(context).pushNamed(Pergunta1.tag);
-        //             },
-        //           ),
-        //         ],
-        //       ),
-        //     ],
-        //   ),
-        // ),
          Card(
-          //  elevation: 0,
           color: Colors.white,
           child: Column(
             children: <Widget>[
-              //SizedBox(height: 60,),
               Container(
                 height: 200,
+                
                 decoration: BoxDecoration(
                   image: DecorationImage(
                     image: AssetImage('assets/users.gif')
@@ -176,14 +113,7 @@ class HomePage extends StatelessWidget {
               ButtonBar(
                 alignment: MainAxisAlignment.end,
                 children: <Widget>[
-                  // Text(
-                  //         'Avaliação de Professores',
-                  //         style: Theme.of(context)
-                  //             .textTheme
-                  //             .headline
-                  //             .copyWith(color: Colors.black),
-                  //       ),
-
+                
                   FlatButton(
                     child: Text('Lembrete'),
                     onPressed: () {
@@ -209,16 +139,8 @@ class HomePage extends StatelessWidget {
   }
 }
 
-class BusinessPage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Icon(
-      Icons.event, size: 150
-    );
-  }
-}
 
-class SchoolPage extends StatelessWidget {
+class InfoPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Icon(
