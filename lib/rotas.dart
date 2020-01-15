@@ -17,6 +17,8 @@ import 'package:app_avaliacao_ifma/homeAluno/perguntas/pergunta6.dart';
 import 'package:app_avaliacao_ifma/homeAluno/perguntas/pergunta7.dart';
 import 'package:app_avaliacao_ifma/homeAluno/perguntas/pergunta8.dart';
 import 'package:app_avaliacao_ifma/homeAluno/perguntas/pergunta9.dart';
+import 'package:app_avaliacao_ifma/homeAluno/sites/Ifma.dart';
+import 'package:app_avaliacao_ifma/homeAluno/sites/Suap.dart';
 import 'package:app_avaliacao_ifma/tela_de_carregamento/carregamnto.dart';
 import 'package:app_avaliacao_ifma/tela_boas_vindas.dart/boas_vindas.dart';
 import 'package:flutter/material.dart';
@@ -44,5 +46,7 @@ class Routes{
     Pergunta13.tag: (context) => Pergunta13(),
     Pergunta14.tag: (context) => Pergunta14(),
     Turmas.tag: (context) => Turmas(),
+    Suap.tag: (context) => Suap(),
+    IFMA.tag: (context) => IFMA(),
   };
 }

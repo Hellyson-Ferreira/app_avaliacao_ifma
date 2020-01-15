@@ -13,8 +13,8 @@ class HomeAluno extends StatefulWidget {
 class _HomeAlunoState extends State<HomeAluno> {
   int _selectedIndex = 0;
   static const double IconSize = 200; 
-  String a = 'assets/IFMA.jpg';
-  String title = 'assss';
+  String image = 'assets/IFMA.jpg';
+  String title = 'Avaliação Docente';
   double ex = 146.0;
   static List<Widget> _widgetOptions = <Widget>[
     
@@ -25,11 +25,9 @@ class _HomeAlunoState extends State<HomeAluno> {
 
   void _onItemTapped(int index) {
     if(index==1){
-      a = 'assets/felipe.jpg';
       ex = 0;
     }
     else{
-      a = 'assets/IFMA.jpg';
       ex = 146.0;
     }
     setState(() {
@@ -55,9 +53,9 @@ class _HomeAlunoState extends State<HomeAluno> {
             floating: true,
             expandedHeight: ex,
             flexibleSpace: FlexibleSpaceBar(
-              title: Text("$a"),
+              title: Text("$title"),
               background: Image.asset(
-                a,
+                image,
                 fit: BoxFit.fill
               ),
             ),
@@ -132,6 +130,7 @@ class HomePage extends StatelessWidget {
                   ),
                   FlatButton(
                     child: Text('Iniciar'),
+                    // onPressed: null,
                     onPressed: () {
                       //Navigator.pop(context);
                       Navigator.of(context).pushNamed(Pergunta1.tag);
