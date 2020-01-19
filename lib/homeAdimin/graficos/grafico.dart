@@ -12,7 +12,8 @@ class _GraficosState extends State<Graficos> {
   @override
   Widget build(BuildContext context) {
     Map<String, double> dataMap = new Map();
-    dataMap.putIfAbsent("Respondidos", () => 25);
+    double a = 25;
+    dataMap.putIfAbsent("Respondidos", () => a);
     dataMap.putIfAbsent("Pendentes", () => 15);
 
     return Scaffold(
@@ -51,7 +52,7 @@ class _GraficosState extends State<Graficos> {
                 chartLegendSpacing: 32.0,
                 showChartValuesInPercentage: true,
                 showChartValues: true,
-                chartType: ChartType.ring,
+                // chartType: ChartType.ring,
       ),
               decoration: BoxDecoration(
                   color:Colors.grey[300],

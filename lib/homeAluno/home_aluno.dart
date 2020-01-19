@@ -103,7 +103,6 @@ class HomePage extends StatelessWidget {
             children: <Widget>[
               Container(
                 height: 200,
-                
                 decoration: BoxDecoration(
                   image: DecorationImage(
                     image: AssetImage('assets/users.gif')

@@ -82,9 +82,52 @@ class _HomeAdimimState extends State<HomeAdimim> {
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Icon(
-      Icons.home,
-      size: 150
+    return Column(
+      children: <Widget>[
+         Card(
+          color: Colors.white,
+          child: Column(
+            children: <Widget>[
+              Container(
+                height: 200,
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    image: AssetImage('assets/users.gif')
+                  )
+                ),
+
+              ),
+              Text(
+                    'Avaliação de Professores',
+                    style: Theme.of(context)
+                        .textTheme
+                        .headline
+                        .copyWith(color: Colors.black),
+                        ),
+              ButtonBar(
+                alignment: MainAxisAlignment.end,
+                children: <Widget>[
+                
+                  FlatButton(
+                    child: Text('Tornar indisponivel'),
+                    onPressed: () {
+                      
+                    },
+                  ),
+                  FlatButton(
+                    child: Text('Tornar diponivel'),
+                    // onPressed: null,
+                    onPressed: () {
+                      //Navigator.pop(context);
+                    },
+                  ),
+                ],
+              ),
+            ],
+          ),
+        ),
+      ],
+
     );
   }
 }
