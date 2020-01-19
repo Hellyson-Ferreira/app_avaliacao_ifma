@@ -1,5 +1,6 @@
 import 'package:app_avaliacao_ifma/LoginAdimim/login_page_adimim.dart';
 import 'package:app_avaliacao_ifma/LoginAluno/login_page_aluno.dart';
+import 'package:app_avaliacao_ifma/homeAdimin/graficos/grafico.dart';
 import 'package:app_avaliacao_ifma/homeAdimin/home_adimim.dart';
 import 'package:app_avaliacao_ifma/homeAdimin/turmas.dart';
 import 'package:app_avaliacao_ifma/homeAluno/home_aluno.dart';
@@ -48,5 +49,6 @@ class Routes{
     Turmas.tag: (context) => Turmas(),
     Suap.tag: (context) => Suap(),
     IFMA.tag: (context) => IFMA(),
+    Graficos.tag: (context) => Graficos(),
   };
 }

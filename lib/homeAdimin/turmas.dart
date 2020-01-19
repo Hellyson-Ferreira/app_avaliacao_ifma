@@ -1,4 +1,5 @@
 import 'dart:math';
+import 'package:app_avaliacao_ifma/homeAdimin/graficos/grafico.dart';
 import 'package:flutter/material.dart';
 
 class Turmas extends StatefulWidget {
@@ -49,7 +50,7 @@ class _ListaTurmasState extends State<ListaTurmas> {
         ),
         trailing: null,
         onTap: (){
-            //Navigator.of(context).pushNamed(PieChartExample.tag);
+            Navigator.of(context).pushNamed(Graficos.tag);
         },
       );
     }

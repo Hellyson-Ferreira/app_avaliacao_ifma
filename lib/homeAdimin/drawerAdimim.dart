@@ -75,21 +75,6 @@ class DrawerAdimim extends StatelessWidget {
             }
           ),
           ListTile(
-            leading: Icon(Icons.settings),
-            title: Text(
-              'Configurações',
-              style: TextStyle(
-                fontSize: 18,
-
-            ),
-            ),
-            onTap: (){
-               //Navigator.of(context).pushNamed(HomeAluno.tag,);
-            }
-            
-
-          ),
-          ListTile(
             leading: Icon(Icons.help),
             title: Text(
               'Ajuda',
