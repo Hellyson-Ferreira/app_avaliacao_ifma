@@ -20,7 +20,7 @@ class BoasVindasAluno extends StatelessWidget {
     final lorem = Padding(
       padding: EdgeInsets.all(8.0),
       child: Text(
-        '''Alguma coisa ''',
+        '''Esse aplicativo vai lhe ajudar a avaliar seus professoras de forma anonima, e os dados obtidos com essas avaliacao serao usados para mostra ao profeessor como vai seu desenpenho av=fim de ele melhorar cada vez mais''',
         style: TextStyle(fontSize: 16.0, color: Colors.white),
       ),
     );

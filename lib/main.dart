@@ -22,7 +22,6 @@ class _MyAppState extends State<MyApp> {
         fontFamily: 'Nunito',
       ), 
       home:LoadingPage(),
-      // home: LoginPageAluno(), 
       routes: routes.routes,
     );
   }

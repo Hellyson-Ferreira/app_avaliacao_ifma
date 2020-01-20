@@ -17,7 +17,6 @@ class _GraficosState extends State<Graficos> {
     dataMap.putIfAbsent("Pendentes", () => 15);
 
     return Scaffold(
-      
       appBar: AppBar(
         elevation: 0,
         
