@@ -59,6 +59,7 @@ class _LoginPageAdimimState extends State<LoginPageAdim> {
         onPressed: () {   
            Navigator.of(context).pushNamed(HomeAdimim.tag);
         },
+        elevation: 12,
         padding: EdgeInsets.all(12),
         color: Colors.green,
         child: Text('Entrar', style: TextStyle(color: Colors.white)),

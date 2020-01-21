@@ -7,9 +7,11 @@ class DrawerAluno extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
+      elevation: 38,
       child:Column(
         children: <Widget>[
           Container(
+
             width: double.infinity,
             padding: EdgeInsets.all(20),
             //color:Theme.of(context).primaryColor,

@@ -25,6 +25,8 @@ import 'package:app_avaliacao_ifma/tela_de_carregamento/carregamnto.dart';
 import 'package:app_avaliacao_ifma/tela_boas_vindas.dart/boas_vindas.dart';
 import 'package:flutter/material.dart';
 
+import 'Não concigo entrar/erroAoEntrar.dart';
+
 class Routes{
   var routes = <String,WidgetBuilder>{
     LoadingPage.tag: (context) => LoadingPage(),
@@ -52,5 +54,6 @@ class Routes{
     IFMA.tag: (context) => IFMA(),
     Graficos.tag: (context) => Graficos(),
     Downloads.tag: (context) => Downloads(),
+    ResetPasswordPage.tag: (context) => ResetPasswordPage(),
   };
 }

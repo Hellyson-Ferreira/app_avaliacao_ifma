@@ -95,54 +95,58 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    return Column(
-       children: <Widget>[
-         Card(
-          color: Colors.white,
-          child: Column(
-            children: <Widget>[
-              Container(
-                height: 200,
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                    image: AssetImage('assets/users.gif')
-                  )
-                ),
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Column(
+         children: <Widget>[
+           Card(
+            elevation: 24,
+            color: Colors.white,
+            child: Column(
+              children: <Widget>[
+                Container(
+                  height: 200,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: AssetImage('assets/users.gif')
+                    )
+                  ),
 
-              ),
-              Text(
-                    'Avaliação de Professores',
-                    style: Theme.of(context)
-                        .textTheme
-                        .headline
-                        .copyWith(color: Colors.black),
-                        ),
-              ButtonBar(
-                alignment: MainAxisAlignment.end,
-                children: <Widget>[
-                
-                  FlatButton(
-                    child: Text('Lembrete'),
-                    onPressed: () {
-                      
-                    },
-                  ),
-                  FlatButton(
-                    child: Text('Iniciar'),
-                    // onPressed: null,
-                    onPressed: () {
-                      //Navigator.pop(context);
-                      Navigator.of(context).pushNamed(Pergunta1.tag);
-                    },
-                  ),
-                ],
-              ),
-            ],
+                ),
+                Text(
+                      'Avaliação de Professores',
+                      style: Theme.of(context)
+                          .textTheme
+                          .headline
+                          .copyWith(color: Colors.black),
+                          ),
+                ButtonBar(
+                  alignment: MainAxisAlignment.end,
+                  children: <Widget>[
+                  
+                    FlatButton(
+                      child: Text('Lembrete'),
+                      onPressed: () {
+                        
+                      },
+                    ),
+                    FlatButton(
+                      child: Text('Iniciar'),
+                      // onPressed: null,
+                      onPressed: () {
+                        //Navigator.pop(context);
+                        Navigator.of(context).pushNamed(Pergunta1.tag);
+                      },
+                    ),
+                  ],
+                ),
+              ],
+            ),
           ),
-        ),
-        
-      ],
-    // ),
+          
+        ],
+      // ),
+      ),
     );
   }
 }

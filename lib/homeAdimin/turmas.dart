@@ -29,7 +29,7 @@ class ListaTurmas extends StatefulWidget {
 class _ListaTurmasState extends State<ListaTurmas> {
   Random random = new Random();
 
-  List colors = [Colors.purple, Colors.green, Colors.yellow,Colors.blue,Colors.brown];
+  List colors = [Colors.purple, Colors.green, Colors.red,Colors.blue,Colors.brown];
 
   @override
   Widget build(BuildContext context) {

@@ -13,7 +13,7 @@ dependencies:
   cupertino_icons: ^0.1.2
   charts_flutter: ^0.8.1
   webview_flutter: ^0.1.1
-  url_launcher: ^4.0.2
+  url_launcher: ^5.4.1
   pie_chart: ^3.1.1
 
   

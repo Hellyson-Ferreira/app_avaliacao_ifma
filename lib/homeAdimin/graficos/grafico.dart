@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:pie_chart/pie_chart.dart';
 
@@ -8,13 +10,17 @@ class Graficos extends StatefulWidget {
 }
 
 class _GraficosState extends State<Graficos> {
-  
+   Random random = new Random();
+   
+
   @override
   Widget build(BuildContext context) {
+    var a =  random.nextInt(50);
+    var b =  random.nextInt(50);
+
     Map<String, double> dataMap = new Map();
-    double a = 25;
-    dataMap.putIfAbsent("Respondidos", () => a);
-    dataMap.putIfAbsent("Pendentes", () => 15);
+    dataMap.putIfAbsent("Respondidos", () => a.truncateToDouble());
+    dataMap.putIfAbsent("Pendentes", () => b.truncateToDouble());
 
     return Scaffold(
       appBar: AppBar(
@@ -31,7 +37,7 @@ class _GraficosState extends State<Graficos> {
               color: Colors.green,
               child: Center(
                 child: Text(
-                  'Grafico da turma NomeTurma',
+                  'Grafico da turma',
                   style: TextStyle(
                     fontSize: 30,
                     color: Colors.white
@@ -54,7 +60,7 @@ class _GraficosState extends State<Graficos> {
                 // chartType: ChartType.ring,
       ),
               decoration: BoxDecoration(
-                  color:Colors.grey[300],
+                  color:Colors.white,
                   borderRadius: BorderRadius.all(Radius.circular(50)),
                   boxShadow: [
                     BoxShadow(
@@ -63,7 +69,7 @@ class _GraficosState extends State<Graficos> {
                         blurRadius: 15.0,
                         spreadRadius: 1.0),
                     BoxShadow(
-                        color:Colors.white,
+                        color:Colors.grey,
                         offset: Offset(-4.0, -4.0),
                         blurRadius: 15.0,
                         spreadRadius: 1.0),
