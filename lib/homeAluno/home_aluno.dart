@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'package:app_avaliacao_ifma/LoginAluno/login_page_aluno.dart';
+import 'package:app_avaliacao_ifma/homeAdimin/AlertDialogs.dart';
 import 'package:app_avaliacao_ifma/homeAluno/drawerAluno.dart';
-import 'package:app_avaliacao_ifma/homeAluno/perguntas/pergunta1.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 
@@ -163,8 +163,7 @@ class _HomePageState extends State<HomePage> {
                       child: Text('Iniciar'),
                       // onPressed: null,
                       onPressed: () {
-                        //Navigator.pop(context);
-                        Navigator.of(context).pushNamed(Pergunta1.tag);
+                        showAlertDialog4(context);
                       },
                     ),
                   ],

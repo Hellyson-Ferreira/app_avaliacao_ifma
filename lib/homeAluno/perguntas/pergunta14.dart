@@ -1,4 +1,4 @@
-import 'package:app_avaliacao_ifma/homeAluno/home_aluno.dart';
+import 'package:app_avaliacao_ifma/homeAdimin/AlertDialogs.dart';
 import 'package:flutter/material.dart';
 
 class Pergunta14 extends StatefulWidget {
@@ -28,7 +28,8 @@ class _Pergunta14State extends State<Pergunta14> {
               icon: const Icon(Icons.check),
               tooltip: 'Salvar',
               onPressed: () {
-                 Navigator.of(context).pushNamed(HomeAluno.tag,);
+                showAlertDialog5(context);
+                 
               },
             ),
         ],
