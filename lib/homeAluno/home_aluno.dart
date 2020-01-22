@@ -1,7 +1,10 @@
+import 'dart:async';
 import 'package:app_avaliacao_ifma/LoginAluno/login_page_aluno.dart';
 import 'package:app_avaliacao_ifma/homeAluno/drawerAluno.dart';
 import 'package:app_avaliacao_ifma/homeAluno/perguntas/pergunta1.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+
 
 class HomeAluno extends StatefulWidget {
   static String tag = 'home-page-aluno';
@@ -91,7 +94,32 @@ class _HomeAlunoState extends State<HomeAluno> {
   }
 }
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
+  @override
+  _HomePageState createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin;
+  @override
+  void initState() {
+    super.initState();
+    flutterLocalNotificationsPlugin =  FlutterLocalNotificationsPlugin();
+    var android = AndroidInitializationSettings('@mipmap/ic_launcher');
+    var iOS =  IOSInitializationSettings();
+    var initSetttings =  InitializationSettings(android, iOS);
+    flutterLocalNotificationsPlugin.initialize(initSetttings,onSelectNotification: onSelectNotification);
+  }
+  Future onSelectNotification(String payload) async {
+    debugPrint("payload : $payload");
+    showDialog(
+      context: context,
+      builder: (_) =>  AlertDialog(
+        title:  Text('Aviso'),
+        content:  Text('$payload'),
+      ),
+    );
+  }
   @override
   Widget build(BuildContext context) {
 
@@ -127,6 +155,7 @@ class HomePage extends StatelessWidget {
                     FlatButton(
                       child: Text('Lembrete'),
                       onPressed: () {
+                        showNotification();
                         
                       },
                     ),
@@ -148,6 +177,17 @@ class HomePage extends StatelessWidget {
       // ),
       ),
     );
+  }
+   showNotification() async {
+    var android = new AndroidNotificationDetails(
+        'channel id', 'channel NAME', 'CHANNEL DESCRIPTION',
+        priority: Priority.High,importance: Importance.Max
+    );
+    var iOS = new IOSNotificationDetails();
+    var platform = new NotificationDetails(android, iOS);
+    await flutterLocalNotificationsPlugin.show(
+        0, 'Lembrete', 'Você ainda não vez a avaliação de professores', platform,
+        payload: 'Você ainda não vez a avaliação de professores.');
   }
 }
 

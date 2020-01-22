@@ -9,7 +9,7 @@ class BoasVindasAluno extends StatelessWidget {
     final welcome = Padding(
       padding: EdgeInsets.all(8.0),
       child: Text(
-        'Olá, bem vindo ao Adpp da Avaliação Docente do IFMA Caxias.',
+        'Olá, bem vindo ao App da Avaliação Docente do IFMA Caxias.',
         style: TextStyle(
           fontSize: 28.0, 
           color: Colors.white),
@@ -20,7 +20,7 @@ class BoasVindasAluno extends StatelessWidget {
     final lorem = Padding(
       padding: EdgeInsets.all(8.0),
       child: Text(
-        '''Esse aplicativo vai lhe ajudar a avaliar seus professores de forma anonima, e os dados obtidos com essas avaliação serao usados para mostra ao professor como vai seu desempenho afim de ele melhore cada vez mais''',
+        '''Este aplicativo irá ajudar-lhe a avaliar seus professores de forma anônima, e os dados obtidos com essas avaliações serão utilizados para mostrar ao professor como anda seu desempenho, afim de que ele melhore cada vez mais''',
         style: TextStyle(fontSize: 16.0, color: Colors.white),
       ),
     );
@@ -45,6 +45,7 @@ class BoasVindasAluno extends StatelessWidget {
     );
 
     final body = Container(
+      alignment: Alignment.bottomRight,
       width: MediaQuery.of(context).size.width,
       padding: EdgeInsets.all(28.0),
       color: Colors.green,

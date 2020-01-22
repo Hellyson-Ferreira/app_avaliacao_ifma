@@ -8,7 +8,7 @@ import 'package:flutter/services.dart';
 class LoginPageAluno extends StatefulWidget {
   static String tag = 'login-page';
   @override
-  _LoginPageAlunoState createState() => new _LoginPageAlunoState();
+  _LoginPageAlunoState createState() => _LoginPageAlunoState();
 }
 
 class _LoginPageAlunoState extends State<LoginPageAluno> {
@@ -16,7 +16,7 @@ class _LoginPageAlunoState extends State<LoginPageAluno> {
   Widget build(BuildContext context) {
 
     //Sorteios de Imagens aleatorias
-    Random random = new Random();
+    var random = Random();
     var j = random.nextInt(40) + 1;   
 
     //Gerador de imagens

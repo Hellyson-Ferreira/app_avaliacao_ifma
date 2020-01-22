@@ -59,14 +59,8 @@ class _Pergunta3State extends State<Pergunta3> {
             ),
             ],
             
-          ),
-          // width: 1000,
+          ), 
         ),
-//         floatingActionButton: FloatingActionButton.extended(
-//             onPressed: () {},
-//             icon: Icon(Icons.navigate_next),
-//             label: Text("Próximo"),
-// ),
     );
      
  

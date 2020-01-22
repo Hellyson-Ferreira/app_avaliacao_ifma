@@ -10,7 +10,7 @@ class Graficos extends StatefulWidget {
 }
 
 class _GraficosState extends State<Graficos> {
-   Random random = new Random();
+   var random = Random();
    
 
   @override
@@ -18,7 +18,7 @@ class _GraficosState extends State<Graficos> {
     var a =  random.nextInt(50);
     var b =  random.nextInt(50);
 
-    Map<String, double> dataMap = new Map();
+    Map<String, double> dataMap = Map();
     dataMap.putIfAbsent("Respondidos", () => a.truncateToDouble());
     dataMap.putIfAbsent("Pendentes", () => b.truncateToDouble());
 

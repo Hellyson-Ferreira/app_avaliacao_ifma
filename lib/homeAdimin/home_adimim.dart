@@ -111,13 +111,20 @@ class HomePage extends StatelessWidget {
                   children: <Widget>[
                   
                     FlatButton(
-                      child: Text('Tornar indisponivel'),
+                      child: Text('Tornar disponivel'),
                       onPressed: () {
                         
                       },
                     ),
                     FlatButton(
-                      child: Text('Tornar diponivel'),
+                      child: Text('Tornar indiponivel'),
+                      // onPressed: null,
+                      onPressed: () {
+                        //Navigator.pop(context);
+                      },
+                    ),
+                    FlatButton(
+                      child: Text('Notificar alunos'),
                       // onPressed: null,
                       onPressed: () {
                         //Navigator.pop(context);
