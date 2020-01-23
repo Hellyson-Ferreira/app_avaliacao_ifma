@@ -29,7 +29,6 @@ flutter:
   uses-material-design: true
   assets:
     - assets/logo.png
-    - assets/logo3.png
     - assets/IFMA.jpg
     - assets/img.jpg
     - assets/filho.jpg
@@ -80,7 +79,7 @@ flutter:
     - assets/imgs/img39.png
     - assets/imgs/img40.png
 
-    - assets/adimim.png
+
 
 
 

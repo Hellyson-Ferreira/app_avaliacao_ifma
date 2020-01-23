@@ -24,7 +24,7 @@ class _LoadingPageState extends State<LoadingPage> {
       Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("assets/logo3.png"),
+            image: AssetImage("assets/logo.png"),
             fit: BoxFit.none,
           ),
         ),

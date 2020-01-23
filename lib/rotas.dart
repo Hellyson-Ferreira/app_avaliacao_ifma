@@ -1,5 +1,6 @@
 import 'package:app_avaliacao_ifma/LoginAdimim/login_page_adimim.dart';
 import 'package:app_avaliacao_ifma/LoginAluno/login_page_aluno.dart';
+import 'package:app_avaliacao_ifma/N%C3%A3o%20consigo%20entrar/erroAoEntrar.dart';
 import 'package:app_avaliacao_ifma/homeAdimin/downloads.dart';
 import 'package:app_avaliacao_ifma/homeAdimin/graficos/grafico.dart';
 import 'package:app_avaliacao_ifma/homeAdimin/home_adimim.dart';
@@ -25,7 +26,6 @@ import 'package:app_avaliacao_ifma/tela_de_carregamento/carregamnto.dart';
 import 'package:app_avaliacao_ifma/tela_boas_vindas.dart/boas_vindas.dart';
 import 'package:flutter/material.dart';
 
-import 'Não concigo entrar/erroAoEntrar.dart';
 
 class Routes{
   var routes = <String,WidgetBuilder>{

@@ -14,16 +14,7 @@ class DrawerAluno extends StatelessWidget {
 
             width: double.infinity,
             padding: EdgeInsets.all(20),
-            //color:Theme.of(context).primaryColor,
-            decoration: BoxDecoration(
-              color: Colors.green,
-              
-              borderRadius:  BorderRadius.only(
-                  bottomRight: Radius.circular(60),
-                  // bottomLeft: Radius.circular(40),
-                  // topRight: Radius.circular(40),
-              )
-            ),
+            color:Theme.of(context).primaryColor,
             child: Center(
               child: Column(
                 children: <Widget>[
