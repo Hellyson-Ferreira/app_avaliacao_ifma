@@ -18,7 +18,7 @@ class _HomeAlunoState extends State<HomeAluno> {
   static const double IconSize = 200; 
   String image = 'assets/IFMA.jpg';
   String title = 'Avaliação Docente';
-  double ex = 146.0;
+  double ex = 160.0;
   static List<Widget> _widgetOptions = <Widget>[
     
     HomePage(),
@@ -31,7 +31,7 @@ class _HomeAlunoState extends State<HomeAluno> {
       ex = 0;
     }
     else{
-      ex = 146.0;
+      ex = 160;
     }
     setState(() {
       _selectedIndex = index;
@@ -125,12 +125,12 @@ class _HomePageState extends State<HomePage> {
 
     return Padding(
       padding: const EdgeInsets.all(8.0),
-      child: Column(
+      child: Wrap(
          children: <Widget>[
            Card(
             elevation: 24,
             color: Colors.white,
-            child: Column(
+            child: Wrap(
               children: <Widget>[
                 Container(
                   height: 200,

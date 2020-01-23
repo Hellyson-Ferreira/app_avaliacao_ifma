@@ -28,7 +28,7 @@ class _GraficosState extends State<Graficos> {
         
       ),
       body: Center(
-        child: Column(
+        child:Wrap(
           children: <Widget>[
             Container(
               alignment: Alignment.topCenter,
