@@ -105,7 +105,7 @@ class _HomePageState extends State<HomePage> {
   void initState() {
     super.initState();
     flutterLocalNotificationsPlugin =  FlutterLocalNotificationsPlugin();
-    var android = AndroidInitializationSettings('@mipmap/ic_launcher');
+    var android = AndroidInitializationSettings('@drawable/icon');
     var iOS =  IOSInitializationSettings();
     var initSetttings =  InitializationSettings(android, iOS);
     flutterLocalNotificationsPlugin.initialize(initSetttings,onSelectNotification: onSelectNotification);

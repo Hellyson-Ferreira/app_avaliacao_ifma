@@ -85,7 +85,6 @@ class HomePage extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Wrap(
-
         children: <Widget>[
            Card(
              elevation: 24,

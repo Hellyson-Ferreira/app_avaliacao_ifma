@@ -38,7 +38,6 @@ class BoasVindasAluno extends StatelessWidget {
         },
         padding: EdgeInsets.all(12),
         //color: Colors.lightBlueAccent,
-        elevation: 12,
         color: Colors.white,
         child: Text('Continuar', style: TextStyle(color: Colors.black)),
       ),

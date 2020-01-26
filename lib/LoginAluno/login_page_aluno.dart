@@ -76,7 +76,7 @@ class _LoginPageAlunoState extends State<LoginPageAluno> {
           //}
           Navigator.of(context).pushNamed(BoasVindasAluno.tag);           
         },
-        elevation: 12,
+        // elevation: 12,
         padding: EdgeInsets.all(12),
         color: Colors.green,
         child: Text('Entrar', style: TextStyle(color: Colors.white)),
@@ -116,7 +116,6 @@ class _LoginPageAlunoState extends State<LoginPageAluno> {
           ),
         ),
         floatingActionButton: FloatingActionButton(
-          elevation: 12,
               onPressed: () {
                 Navigator.of(context).pushNamed(LoginPageAdim.tag);
               },
