@@ -17,7 +17,7 @@ class _HomeAdimimState extends State<HomeAdimim> {
   static const double IconSize = 200; 
   static List<Widget> _widgetOptions = <Widget>[
     HomePage(),
-    BusinessPage(),
+    Pies(),
     SchoolPage(),
   ];
 
@@ -146,12 +146,43 @@ class HomePage extends StatelessWidget {
   }
 }
 
-class BusinessPage extends StatelessWidget {
+class Pies extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Icon(
-      Icons.cloud_download,
-      size: 150
+    return Center(
+      child: Column(
+        // direction: Axis.vertical,
+        children: <Widget>[
+          Icon(
+            Icons.file_download,
+            size: 200,
+          ),
+          Wrap(
+            spacing: 10.0,
+            runSpacing: 4.0,
+            children: <Widget>[
+              RaisedButton(
+                child: Text('Gerar graficos',style: TextStyle(color: Colors.white),),
+                onPressed: (){},
+                color: Colors.green,
+
+              ),
+          RaisedButton(
+            child: Text('Fazer Download',style: TextStyle(color: Colors.white),),
+            onPressed: (){},
+            color: Colors.green,
+
+          ),
+          RaisedButton(
+            child: Text('Enviar para Drive',style: TextStyle(color: Colors.white),),
+            onPressed: (){},
+            color: Colors.green,
+
+          ),
+            ],
+          ),
+        ],
+      ),
     );
   }
 }

@@ -27,6 +27,7 @@ showAlertDialog1(BuildContext context)
     },
   );
 }
+
 showAlertDialog2(BuildContext context) 
 { 
     // configura o button
@@ -52,6 +53,7 @@ showAlertDialog2(BuildContext context)
     },
   );
 }
+
 showAlertDialog3(BuildContext context) 
 { 
     // configura o button
@@ -77,6 +79,7 @@ showAlertDialog3(BuildContext context)
     },
   );
 }
+
 showAlertDialog4(BuildContext context) 
 { 
     // configura o button
