@@ -1,6 +1,7 @@
 import 'package:app_avaliacao_ifma/LoginAluno/login_page_aluno.dart';
 import 'package:app_avaliacao_ifma/homeAluno/sites/Ifma.dart';
 import 'package:app_avaliacao_ifma/homeAluno/sites/Suap.dart';
+import 'package:app_avaliacao_ifma/homeAluno/sites/infor.dart';
 import 'package:flutter/material.dart';
 
 class DrawerAluno extends StatelessWidget {
@@ -103,14 +104,14 @@ class DrawerAluno extends StatelessWidget {
           ListTile(
             leading: Icon(Icons.help),
             title: Text(
-              'Ajuda',
+              'Sobre',
               style: TextStyle(
                 fontSize: 18,
 
             ),
             ),
             onTap: (){
-               //Navigator.of(context).pushNamed(HomeAluno.tag,);
+               Navigator.of(context).pushNamed(InforPage.tag,);
             }
             
 

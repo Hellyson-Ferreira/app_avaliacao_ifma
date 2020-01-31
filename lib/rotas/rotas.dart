@@ -1,3 +1,5 @@
+import 'dart:js';
+
 import 'package:app_avaliacao_ifma/LoginAdimim/login_page_adimim.dart';
 import 'package:app_avaliacao_ifma/LoginAluno/login_page_aluno.dart';
 import 'package:app_avaliacao_ifma/N%C3%A3o%20consigo%20entrar/erroAoEntrar.dart';
@@ -22,6 +24,7 @@ import 'package:app_avaliacao_ifma/homeAluno/perguntas/pergunta8.dart';
 import 'package:app_avaliacao_ifma/homeAluno/perguntas/pergunta9.dart';
 import 'package:app_avaliacao_ifma/homeAluno/sites/Ifma.dart';
 import 'package:app_avaliacao_ifma/homeAluno/sites/Suap.dart';
+import 'package:app_avaliacao_ifma/homeAluno/sites/infor.dart';
 import 'package:app_avaliacao_ifma/tela_de_carregamento/carregamnto.dart';
 import 'package:app_avaliacao_ifma/tela_boas_vindas.dart/boas_vindas.dart';
 import 'package:flutter/material.dart';
@@ -55,5 +58,7 @@ class Routes{
     Graficos.tag: (context) => Graficos(),
     Downloads.tag: (context) => Downloads(),
     ResetPasswordPage.tag: (context) => ResetPasswordPage(),
+    InforPage.tag: (context) => InforPage(),
+     
   };
 }
