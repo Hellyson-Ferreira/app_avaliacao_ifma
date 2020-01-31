@@ -49,7 +49,7 @@ class _ResetPasswordPageState extends State<ResetPasswordPage> {
                       SizedBox(
                         width: 200,
                         height: 200,
-                        child: Image.asset("assets/logo3.png"),
+                        child: Image.asset("assets/logo.png"),
                       ),
                       SizedBox(
                         height: 20,

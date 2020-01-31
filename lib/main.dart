@@ -1,4 +1,4 @@
-import 'package:app_avaliacao_ifma/rotas.dart';
+import 'package:app_avaliacao_ifma/rotas/rotas.dart';
 import 'package:app_avaliacao_ifma/tela_de_carregamento/carregamnto.dart';
 import 'package:flutter/material.dart';
 

@@ -105,7 +105,7 @@ class _HomePageState extends State<HomePage> {
   void initState() {
     super.initState();
     flutterLocalNotificationsPlugin =  FlutterLocalNotificationsPlugin();
-    var android = AndroidInitializationSettings('@mipmap/ic_launcher');
+    var android = AndroidInitializationSettings('@drawable/icon');
     var iOS =  IOSInitializationSettings();
     var initSetttings =  InitializationSettings(android, iOS);
     flutterLocalNotificationsPlugin.initialize(initSetttings,onSelectNotification: onSelectNotification);
@@ -142,16 +142,16 @@ class _HomePageState extends State<HomePage> {
 
                 ),
                 Text(
-                      'Avaliação de Professores',
+                      '  Avaliação de Professores',
                       style: Theme.of(context)
                           .textTheme
                           .headline
                           .copyWith(color: Colors.black),
                           ),
                 ButtonBar(
+                  
                   alignment: MainAxisAlignment.end,
                   children: <Widget>[
-                  
                     FlatButton(
                       child: Text('Lembrete'),
                       onPressed: () {

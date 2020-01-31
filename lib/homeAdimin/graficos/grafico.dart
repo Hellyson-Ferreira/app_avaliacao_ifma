@@ -27,54 +27,57 @@ class _GraficosState extends State<Graficos> {
         elevation: 0,
         
       ),
-      body: Center(
-        child:Wrap(
-          children: <Widget>[
-            Container(
-              alignment: Alignment.topCenter,
-              height: 100,
-              width: double.infinity,
-              color: Colors.green,
-              child: Center(
-                child: Text(
-                  'Grafico da turma',
-                  style: TextStyle(
-                    fontSize: 30,
-                    color: Colors.white
-                  ),
+      body: Wrap(
+        children: <Widget>[
+          Container(
+            alignment: Alignment.topCenter,
+            height: 100,
+            width: double.infinity,
+            color: Colors.green,
+            child: Center(
+              child: Text(
+                'Grafico da turma',
+                style: TextStyle(
+                  fontSize: 30,
+                  color: Colors.white
                 ),
               ),
+            ),
 
-            ),
-            SizedBox(height: 40,),
-            Container(
-              height: 360,
-              width: 360,
-              child: PieChart(
-                dataMap: dataMap,
-                colorList: [Colors.green,Colors.red],
-                animationDuration: Duration(milliseconds: 800),
-                chartLegendSpacing: 32.0,
-                showChartValuesInPercentage: true,
-                showChartValues: true,
-                // chartType: ChartType.ring,
+          ),
+          Padding(
+            padding: const EdgeInsets.only(top: 20),
+            child: Center(
+              child: Container(
+                height: 360,
+                width: 360,
+                child: PieChart(
+                  dataMap: dataMap,
+                  colorList: [Colors.green,Colors.red],
+                  animationDuration: Duration(milliseconds: 800),
+                  chartLegendSpacing: 32.0,
+                  showChartValuesInPercentage: true,
+                  showChartValues: true,
+                  // chartType: ChartType.ring,
       ),
-              decoration: BoxDecoration(
-                  color:Colors.white,
-                  borderRadius: BorderRadius.all(Radius.circular(50)),
-                  boxShadow: [
-                    BoxShadow(
-                        color: Colors.grey[500],
-                        offset: Offset(4.0, 4.0),
-                        blurRadius: 15.0,
-                        spreadRadius: 1.0),
-                    BoxShadow(
-                        color:Colors.grey,
-                        offset: Offset(-4.0, -4.0),
-                        blurRadius: 15.0,
-                        spreadRadius: 1.0),
-                  ]),
+                decoration: BoxDecoration(
+                    color:Colors.white,
+                    borderRadius: BorderRadius.all(Radius.circular(50)),
+                    boxShadow: [
+                      BoxShadow(
+                          color: Colors.grey[500],
+                          offset: Offset(4.0, 4.0),
+                          blurRadius: 15.0,
+                          spreadRadius: 1.0),
+                      BoxShadow(
+                          color:Colors.grey,
+                          offset: Offset(-4.0, -4.0),
+                          blurRadius: 15.0,
+                          spreadRadius: 1.0),
+                    ]),
+              ),
             ),
+          ),
       //       Text(
       //         'Titulo do grafico',
       //         style: TextStyle(
@@ -89,8 +92,7 @@ class _GraficosState extends State<Graficos> {
       //           showChartValuesInPercentage: true,
       //           showChartValues: true,
       // )
-          ],
-        ),
+        ],
       ),
     );
   }
