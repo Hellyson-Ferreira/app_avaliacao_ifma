@@ -20,7 +20,7 @@ class BoasVindasAluno extends StatelessWidget {
     final lorem = Padding(
       padding: EdgeInsets.all(8.0),
       child: Text(
-        '''Este programa tem como objetivo a aplicação de instrumento que visa identificar a percepção do estudante em relação à atuação dos professores nas atividades desenvolvidas no curso, com vistas ao aperfeiçoamento e acompanhamento da qualidade de ensino oferecido na UFSM. Os resultados desta avaliação serão utilizados no planejamento e na implementação de ações que busquem a melhoria da prática pedagógica na Instituição.''',
+        "Este programa tem como objetivo a aplicação de instrumento que visa identificar a percepção do estudante em relação à atuação dos professores nas atividades desenvolvidas no curso, com vistas ao aperfeiçoamento e acompanhamento da qualidade de ensino oferecido na UFSM. Os resultados desta avaliação serão utilizados no planejamento e na implementação de ações que busquem a melhoria da prática pedagógica na Instituição.",
         style: TextStyle(fontSize: 16.0, color: Colors.white),
       ),
     );

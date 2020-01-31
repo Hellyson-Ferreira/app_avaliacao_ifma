@@ -37,14 +37,14 @@ class _InforPageState extends State<InforPage> {
              Padding(
                padding: EdgeInsets.all(8.0),
               child: Text(
-                'TExto de bem vindo',
+                'AVALIAÇÃO DOCENTE',
                 style: TextStyle(fontSize: 28.0, color: Colors.black),
               ),
              ),
              Padding(
                padding: EdgeInsets.all(8.0),
               child: Text(
-                'Imagem de Hellyson e Felipe.',
+                'Aplicativo criado por Felipe Anderson e Hellyson Gabriel, com o intento de facilitar a avaliação docente aplicada no IFMA Campus Caxias. Tendo como finalidade identificar a percepção dos estudantes da instituição em relação à atuação dos professores nas atividades desenvolvidas no curso, visando o aperfeiçoamento da qualidade de ensino oferecido no Instituto Federal do Maranhão – Campus Caxias. ',
                 style: TextStyle(fontSize: 16.0, color: Colors.black),
       ),
              )
