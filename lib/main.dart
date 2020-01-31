@@ -10,7 +10,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  Routes routes = new Routes();
+  var routes = Routes();
 
   @override
   Widget build(BuildContext context) {

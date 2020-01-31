@@ -65,8 +65,8 @@ class _HomeAdimimState extends State<HomeAdimim> {
             title: Text('Gráficos'),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.info),
-            title: Text('Sobre'),
+            icon: Icon(Icons.help),
+            title: Text('Ajuda'),
           ),
         ],
         currentIndex: _selectedIndex,
@@ -82,66 +82,116 @@ class _HomeAdimimState extends State<HomeAdimim> {
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: Wrap(
-        children: <Widget>[
-           Card(
-             elevation: 24,
-            color: Colors.white,
-            child: Column(
-              children: <Widget>[
-                Container(
-                  height: 200,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage('assets/users.gif')
-                    )
+    return Wrap(
+      children: <Widget>[
+         Card(
+           elevation: 24,
+          color: Colors.white,
+          child: Column(
+            children: <Widget>[
+              Container(
+                height: 200,
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    image: AssetImage('assets/users.gif')
+                  )
+                ),
+
+              ),
+              Text(
+                    'Avaliação de Professores',
+                    style: Theme.of(context)
+                        .textTheme
+                        .headline
+                        .copyWith(color: Colors.black),
+                        ),
+              ButtonBar(
+                alignment: MainAxisAlignment.end,
+                children: <Widget>[
+                
+                  FlatButton(
+                    child: Text('Tornar disponivel'),
+                    onPressed: () {
+                      showAlertDialog1(context);
+                      
+                    },
                   ),
-
-                ),
-                Text(
-                      'Avaliação de Professores',
-                      style: Theme.of(context)
-                          .textTheme
-                          .headline
-                          .copyWith(color: Colors.black),
-                          ),
-                ButtonBar(
-                  alignment: MainAxisAlignment.end,
-                  children: <Widget>[
-                  
-                    FlatButton(
-                      child: Text('Tornar disponivel'),
-                      onPressed: () {
-                        showAlertDialog1(context);
-                        
-                      },
-                    ),
-                    FlatButton(
-                      child: Text('Tornar indiponivel'),
-                      // onPressed: null,
-                      onPressed: () {
-                        showAlertDialog2(context);
-                        //Navigator.pop(context);
-                      },
-                    ),
-                    FlatButton(
-                      child: Text('Notificar alunos'),
-                      // onPressed: null,
-                      onPressed: () {
-                        showAlertDialog3(context);
-                        //Navigator.pop(context);
-                      },
-                    ),
-                  ],
-                ),
-              ],
-            ),
+                  FlatButton(
+                    child: Text('Tornar indiponivel'),
+                    // onPressed: null,
+                    onPressed: () {
+                      showAlertDialog2(context);
+                      //Navigator.pop(context);
+                    },
+                  ),
+                  FlatButton(
+                    child: Text('Notificar alunos'),
+                    // onPressed: null,
+                    onPressed: () {
+                      showAlertDialog3(context);
+                      //Navigator.pop(context);
+                    },
+                  ),
+                ],
+              ),
+            ],
           ),
-        ],
+        ),
+       Card(
+           elevation: 24,
+          color: Colors.white,
+          child: Column(
+            children: <Widget>[
+              Container(
+                height: 200,
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    image: AssetImage('assets/users.gif')
+                  )
+                ),
 
-      ),
+              ),
+              Text(
+                    'Avaliação de Professores',
+                    style: Theme.of(context)
+                        .textTheme
+                        .headline
+                        .copyWith(color: Colors.black),
+                        ),
+              ButtonBar(
+                alignment: MainAxisAlignment.end,
+                children: <Widget>[
+                
+                  FlatButton(
+                    child: Text('Tornar disponivel'),
+                    onPressed: () {
+                      showAlertDialog1(context);
+                      
+                    },
+                  ),
+                  FlatButton(
+                    child: Text('Tornar indiponivel'),
+                    // onPressed: null,
+                    onPressed: () {
+                      showAlertDialog2(context);
+                      //Navigator.pop(context);
+                    },
+                  ),
+                  FlatButton(
+                    child: Text('Notificar alunos'),
+                    // onPressed: null,
+                    onPressed: () {
+                      showAlertDialog3(context);
+                      //Navigator.pop(context);
+                    },
+                  ),
+                ],
+              ),
+            ],
+          ),
+        ),
+      ],
+
     );
   }
 }
