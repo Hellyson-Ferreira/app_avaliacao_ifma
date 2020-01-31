@@ -142,16 +142,16 @@ class _HomePageState extends State<HomePage> {
 
                 ),
                 Text(
-                      'Avaliação de Professores',
+                      '  Avaliação de Professores',
                       style: Theme.of(context)
                           .textTheme
                           .headline
                           .copyWith(color: Colors.black),
                           ),
                 ButtonBar(
+                  
                   alignment: MainAxisAlignment.end,
                   children: <Widget>[
-                  
                     FlatButton(
                       child: Text('Lembrete'),
                       onPressed: () {
