@@ -185,8 +185,8 @@ class _HomePageState extends State<HomePage> {
     var iOS = new IOSNotificationDetails();
     var platform = new NotificationDetails(android, iOS);
     await flutterLocalNotificationsPlugin.show(
-        0, 'Lembrete', 'Você ainda não vez a avaliação de professores', platform,
-        payload: 'Você ainda não vez a avaliação de professores.');
+        0, 'Lembrete', 'Você ainda não fez a avaliação de professores', platform,
+        payload: 'Você ainda não fez a avaliação de professores.');
   }
 }
 
