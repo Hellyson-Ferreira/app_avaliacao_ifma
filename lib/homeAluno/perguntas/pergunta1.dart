@@ -1,4 +1,3 @@
-
 import 'package:app_avaliacao_ifma/homeAluno/perguntas/pergunta2.dart';
 import 'package:flutter/material.dart';
 
@@ -19,7 +18,6 @@ class _Pergunta1State extends State<Pergunta1> {
             tooltip: 'voltar',
             icon: const Icon(Icons.arrow_back),
             onPressed: () {
-              //_nextPage(-1);
               Navigator.pop(context);
             },
           ),
