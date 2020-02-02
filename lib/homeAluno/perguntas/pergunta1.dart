@@ -15,7 +15,7 @@ class _Pergunta1State extends State<Pergunta1> {
         elevation: 0, 
         centerTitle: true,
         leading: IconButton(
-            tooltip: 'voltar',
+            tooltip: 'Voltar',
             icon: const Icon(Icons.arrow_back),
             onPressed: () {
               Navigator.pop(context);
@@ -42,7 +42,7 @@ class _Pergunta1State extends State<Pergunta1> {
             children: <Widget>[
               Container(
                 width: MediaQuery.of(context).size.width,
-                color: Colors.green,
+                color: Colors.green[400],
                 child: ListTile(
                   title: Center(
                   child: Text(
@@ -64,7 +64,7 @@ class _Pergunta1State extends State<Pergunta1> {
         ),
     );
      
- 
+
   }
 }
 class Professores extends StatelessWidget {

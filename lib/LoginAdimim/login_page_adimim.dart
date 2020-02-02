@@ -30,7 +30,7 @@ class _LoginPageAdimimState extends State<LoginPageAdim> {
       keyboardType: TextInputType.visiblePassword,
       autofocus: false,
       decoration: InputDecoration(
-        hintText: 'Código',
+        hintText: 'Usuário',
         contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
         border: OutlineInputBorder(borderRadius: BorderRadius.circular(32.0)),
       ), 
@@ -42,6 +42,7 @@ class _LoginPageAdimimState extends State<LoginPageAdim> {
       obscureText: true,
       keyboardType: TextInputType.visiblePassword,
       autofocus: false,
+      
       decoration: InputDecoration(
         hintText: 'Senha',
         contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),

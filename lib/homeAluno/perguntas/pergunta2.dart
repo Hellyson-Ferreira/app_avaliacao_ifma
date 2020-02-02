@@ -15,7 +15,7 @@ class _Pergunta2State extends State<Pergunta2> {
       appBar: AppBar(
         elevation: 0,
         leading: IconButton(
-            tooltip: 'voltar',
+            tooltip: 'Voltar',
             icon: const Icon(Icons.arrow_back),
             onPressed: () {
               //_nextPage(-1);
@@ -42,7 +42,7 @@ class _Pergunta2State extends State<Pergunta2> {
             children: <Widget>[
               Container(
                 width: MediaQuery.of(context).size.width,
-                color: Colors.green,
+                color: Colors.green[400],
                 child: ListTile(
                   title: Center(
                   child: Text(

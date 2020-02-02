@@ -16,7 +16,6 @@ class BoasVindasAluno extends StatelessWidget {
       ),
     );
 
-
     final lorem = Padding(
       padding: EdgeInsets.all(8.0),
       child: Text(
@@ -24,7 +23,6 @@ class BoasVindasAluno extends StatelessWidget {
         style: TextStyle(fontSize: 16.0, color: Colors.white),
       ),
     );
-
 
     final iniciarButton = Padding(
       padding: EdgeInsets.symmetric(vertical: 16.0),
@@ -47,7 +45,7 @@ class BoasVindasAluno extends StatelessWidget {
       alignment: Alignment.bottomRight,
       width: MediaQuery.of(context).size.width,
       padding: EdgeInsets.all(28.0),
-      color: Colors.green,
+      color: Colors.green[400],
       child: ListView(
         children: <Widget>[
           welcome,

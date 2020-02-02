@@ -76,7 +76,7 @@ class _HomeAlunoState extends State<HomeAluno> {
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
-            title: Text('Home'),
+            title: Text('Início'),
           ),
       
           BottomNavigationBarItem(
@@ -84,8 +84,9 @@ class _HomeAlunoState extends State<HomeAluno> {
             title: Text('Sobre'),
           ),
         ],
+
         currentIndex: _selectedIndex,
-        selectedItemColor: Colors.green,
+        selectedItemColor: Colors.green[400],
         showUnselectedLabels: false,
         onTap: _onItemTapped,
       ),
@@ -185,8 +186,8 @@ class _HomePageState extends State<HomePage> {
     var iOS = new IOSNotificationDetails();
     var platform = new NotificationDetails(android, iOS);
     await flutterLocalNotificationsPlugin.show(
-        0, 'Lembrete', 'Você ainda não fez a avaliação de professores', platform,
-        payload: 'Você ainda não fez a avaliação de professores.');
+        0, 'Lembrete', 'Você ainda não avaliou os professores.', platform,
+        payload: 'Você ainda não avaliou os professores.');
   }
 }
 

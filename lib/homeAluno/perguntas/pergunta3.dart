@@ -14,7 +14,7 @@ class _Pergunta3State extends State<Pergunta3> {
       appBar: AppBar(
         elevation: 0,
         leading: IconButton(
-            tooltip: 'voltar',
+            tooltip: 'Voltar',
             icon: const Icon(Icons.arrow_back),
             onPressed: () {
               Navigator.pop(context);
@@ -37,7 +37,7 @@ class _Pergunta3State extends State<Pergunta3> {
           child: Column(
             children: <Widget>[              
               Container(
-                color: Colors.green,
+                color: Colors.green[400],
                 width: MediaQuery.of(context).size.width,
                 // color: Colors.black,
                 child: ListTile(

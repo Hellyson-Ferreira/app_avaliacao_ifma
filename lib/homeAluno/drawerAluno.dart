@@ -41,15 +41,14 @@ class DrawerAluno extends StatelessWidget {
                    style: TextStyle(
                      fontSize: 22,
                      color: Colors.white
+                ),
+                ),
 
-                ),
-                ),
                 Text(
                   // '20181IC.CAX0007',
                   '20181IC.CAX0005',
                    style: TextStyle(
                      color: Colors.white
-
                 ),)
                 ],
               ),
@@ -77,63 +76,54 @@ class DrawerAluno extends StatelessWidget {
               'Portal IFMA',
               style: TextStyle(
                 fontSize: 18,
-
             ),
             ),
             onTap: (){
                Navigator.of(context).pushNamed(IFMA.tag,);
             }
-            
-
           ),
+
           ListTile(
             leading: Icon(Icons.first_page),
             title: Text(
               'Suap',
               style: TextStyle(
                 fontSize: 18,
-
             ),
             ),
             onTap: (){
                Navigator.of(context).pushNamed(Suap.tag,);
             }
-            
-
           ),
+
           ListTile(
             leading: Icon(Icons.help),
             title: Text(
               'Sobre',
               style: TextStyle(
                 fontSize: 18,
-
             ),
             ),
             onTap: (){
                Navigator.of(context).pushNamed(InforPage.tag,);
             }
-            
-
           ),
         
           new Divider(
-            color: Colors.grey,
+            color: Colors.grey[300],
           ),
+
             ListTile(
             leading: Icon(Icons.exit_to_app),
             title: Text(
               'Sair',
               style: TextStyle(
                 fontSize: 18,
-
             ),
             ),
             onTap: (){
               Navigator.popAndPushNamed(context, LoginPageAluno.tag);
             }
-            
-
           )
         ],
       )

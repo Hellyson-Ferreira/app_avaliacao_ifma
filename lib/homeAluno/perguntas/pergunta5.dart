@@ -15,7 +15,7 @@ class _Pergunta5State extends State<Pergunta5> {
       appBar: AppBar(
         elevation: 0,
         leading: IconButton(
-            tooltip: 'voltar',
+            tooltip: 'Voltar',
             icon: const Icon(Icons.arrow_back),
             onPressed: () {
               //_nextPage(-1);
@@ -44,7 +44,7 @@ class _Pergunta5State extends State<Pergunta5> {
               Container(
                 width: double.infinity,
                 
-                color: Colors.green,
+                color: Colors.green[400],
                 
                 child: ListTile(
                   title: Center(

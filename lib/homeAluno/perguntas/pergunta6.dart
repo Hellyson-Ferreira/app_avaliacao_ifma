@@ -15,7 +15,7 @@ class _Pergunta6State extends State<Pergunta6> {
       appBar: AppBar(
         elevation: 0,
         leading: IconButton(
-            tooltip: 'voltar',
+            tooltip: 'Voltar',
             icon: const Icon(Icons.arrow_back),
             onPressed: () {
               Navigator.pop(context);
@@ -41,7 +41,7 @@ class _Pergunta6State extends State<Pergunta6> {
             children: <Widget>[
               Container(
                 width: double.infinity,
-                color: Colors.green,
+                color: Colors.green[400],
                 child: ListTile(
                   title: Center(
                   child: Text(
