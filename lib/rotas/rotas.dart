@@ -62,8 +62,8 @@ class Routes{
     Pergunta14.tag: (context) => Pergunta14(),
     
     Turmas.tag: (context) => Turmas(),
-    Suap.tag: (context) => Suap(),
-    IFMA.tag: (context) => IFMA(),
+    Suap.tag: (context) => Suap(''),
+    IFMA.tag: (context) => IFMA(''),
     
     Graficos.tag: (context) => Graficos(),
     Downloads.tag: (context) => Downloads(),
