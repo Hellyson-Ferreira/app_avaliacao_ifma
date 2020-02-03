@@ -1,16 +1,25 @@
-import 'package:flutter/material.dart';
-
-class InforPage extends StatefulWidget {
-static String tag = 'infor_page';
-
-  @override
-  
-  _InforPageState createState() => _InforPageState();
-}
-
-class _InforPageState extends State<InforPage> {
- @override
+@override
   Widget build(BuildContext context) {
+    final suap = Padding(
+      padding: EdgeInsets.symmetric(vertical: 20.0),
+      child: RaisedButton(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(24),
+        ),
+        onPressed: () {
+          Navigator.of(context).pushNamed(Suap.tag,);       
+        },
+        padding: EdgeInsets.only(
+          left: 102,
+          right: 102,
+          top: 12,
+          bottom: 12
+        ),
+        elevation: 12,
+        color: Colors.green,
+        child: Text('Ir para o Suap', style: TextStyle(color: Colors.white)),
+      ),
+    );
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.green,
@@ -36,7 +45,7 @@ class _InforPageState extends State<InforPage> {
                         height: 20,
                       ),
                       Text(
-                        "Avaliação Docente",
+                        "Não consegue entrar?",
                         style: TextStyle(
                           fontSize: 32,
                           fontWeight: FontWeight.w500,
@@ -46,13 +55,15 @@ class _InforPageState extends State<InforPage> {
                         height: 10,
                       ),
                       Text(
-                        "   Aplicativo criado por Felipe Anderson e Hellyson Gabriel, com o intento de facilitar a avaliação docente aplicada no IFMA Campus Caxias. Tendo como finalidade identificar a percepção dos estudantes da instituição em relação à atuação dos professores nas atividades desenvolvidas no curso, visando o aperfeiçoamento da qualidade de ensino oferecido no Instituto Federal do Maranhão – Campus Caxias.",
+                        "Por favor, vá até o Suap e atualize suas informções ou dirija-se ao setor de TI do campus.",
                         style: TextStyle(
-                          fontSize: 18,
+                          fontSize: 16,
                           fontWeight: FontWeight.w400,
                         ),
-                        textAlign: TextAlign.justify,
-                      ),                      
+                        textAlign: TextAlign.center,
+                      ),
+                      suap
+                      
                     ],
                   ),
                 ),
@@ -64,4 +75,6 @@ class _InforPageState extends State<InforPage> {
       ),
     );
   }
-}
+
+   
+  AVALIAÇÃO DOCENTE
