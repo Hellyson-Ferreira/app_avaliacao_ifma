@@ -19,7 +19,7 @@ class _IFMAState extends State<IFMA> {
       body: Center(
         child: WebView(
         initialUrl: 'https://caxias.ifma.edu.br/',
-        javaScriptMode: JavaScriptMode.unrestricted ,
+        javascriptMode: JavascriptMode.unrestricted ,
       ),
       ),
     );

@@ -19,7 +19,7 @@ class _SuapState extends State<Suap> {
       body: Center(
         child: WebView(
         initialUrl: 'https://suap.ifma.edu.br/',
-        javaScriptMode: JavaScriptMode.unrestricted ,
+        javascriptMode: JavascriptMode.unrestricted,
       ),
       ),
     );
