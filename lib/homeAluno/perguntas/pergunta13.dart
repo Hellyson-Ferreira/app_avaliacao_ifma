@@ -39,7 +39,7 @@ class _Pergunta13State extends State<Pergunta13> {
           child: Column(
             children: <Widget>[
               Container(
-                color: Colors.green[400],
+                color: Colors.green,
                 width: double.infinity,
                 child: ListTile(
                   title: Center(

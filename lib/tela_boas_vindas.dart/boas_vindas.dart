@@ -45,7 +45,7 @@ class BoasVindasAluno extends StatelessWidget {
       alignment: Alignment.bottomRight,
       width: MediaQuery.of(context).size.width,
       padding: EdgeInsets.all(28.0),
-      color: Colors.green[400],
+      color: Colors.green[500],
       child: ListView(
         children: <Widget>[
           welcome,

@@ -42,7 +42,7 @@ class _Pergunta2State extends State<Pergunta2> {
             children: <Widget>[
               Container(
                 width: MediaQuery.of(context).size.width,
-                color: Colors.green[400],
+                color: Colors.green[500],
                 child: ListTile(
                   title: Center(
                   child: Text(

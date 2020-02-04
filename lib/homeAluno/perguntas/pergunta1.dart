@@ -14,6 +14,7 @@ class _Pergunta1State extends State<Pergunta1> {
       appBar: AppBar(
         elevation: 0, 
         centerTitle: true,
+
         leading: IconButton(
             tooltip: 'Voltar',
             icon: const Icon(Icons.arrow_back),
@@ -21,6 +22,7 @@ class _Pergunta1State extends State<Pergunta1> {
               Navigator.pop(context);
             },
           ),
+
         actions: <Widget>[
           IconButton(
               icon: const Icon(Icons.arrow_forward),
@@ -42,7 +44,7 @@ class _Pergunta1State extends State<Pergunta1> {
             children: <Widget>[
               Container(
                 width: MediaQuery.of(context).size.width,
-                color: Colors.green[400],
+                color: Colors.green,
                 child: ListTile(
                   title: Center(
                   child: Text(
@@ -58,13 +60,10 @@ class _Pergunta1State extends State<Pergunta1> {
               Expanded(
               child: Professores()
             ),
-            ],
-            
+            ],  
           ),
         ),
     );
-     
-
   }
 }
 class Professores extends StatelessWidget {

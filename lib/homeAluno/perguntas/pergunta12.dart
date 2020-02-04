@@ -40,7 +40,7 @@ class _Pergunta12State extends State<Pergunta12> {
             children: <Widget>[
               Container(
                 width: double.infinity,
-                color: Colors.green[400],
+                color: Colors.green,
                 child: ListTile(
                   title: Center(
                   child: Text(
