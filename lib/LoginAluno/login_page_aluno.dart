@@ -17,7 +17,8 @@ class _LoginPageAlunoState extends State<LoginPageAluno> {
 
     //Sorteios de Imagens aleatorias
     var random = Random();
-    var j = random.nextInt(40) + 1;
+    var j = random.nextInt(36) + 1;
+    
     //Gerador de imagens
     final logo = Hero(
       tag: 'hero',

@@ -84,20 +84,16 @@ class Professores extends StatelessWidget {
                   child: Text("😠 - Discordo em parte"),
                 ),
                 PopupMenuItem(
-                  value: 2,
+                  value: 3,
                   child: Text(" 😐 - Não concordo nem discordo"),
                 ),
                 PopupMenuItem(
-                  value: 2,
+                  value: 4,
                   child: Text(" 🙂 -Concordo em parte"),
                 ),
                 PopupMenuItem(
-                  value: 2,
-                  child: Text("😀 -Concordo totalmente"),
-                ),
-                PopupMenuItem(
-                  value: 2,
-                  child: Text("😑 - Não sei responder"),
+                  value: 5,
+                  child: Text("😀 - Concordo totalmente"),
                 ),
               ],
         );
