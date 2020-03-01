@@ -65,9 +65,9 @@ class DrawerAdimim extends StatelessWidget {
             }
           ),
           ListTile(
-            leading: Icon(Icons.file_download),
+            leading: Icon(Icons.format_align_left),
             title: Text(
-              'Downloads',
+              'Editar Perguntas',
               style: TextStyle(
                 fontSize: 18,
 

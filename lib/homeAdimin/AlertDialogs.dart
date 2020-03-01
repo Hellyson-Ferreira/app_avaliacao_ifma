@@ -1,5 +1,5 @@
 import 'package:app_avaliacao_ifma/homeAluno/home_aluno.dart';
-import 'package:app_avaliacao_ifma/homeAluno/perguntas/pergunta1.dart';
+import 'package:app_avaliacao_ifma/homeAluno/perguntas/perguntas.dart';
 import 'package:flutter/material.dart';
 
 showAlertDialog1(BuildContext context) 
@@ -87,7 +87,7 @@ showAlertDialog4(BuildContext context)
     child: Text("OK"),
     onPressed: () { 
       Navigator.pop(context);
-      Navigator.of(context).pushNamed(Pergunta1.tag);
+      Navigator.of(context).pushNamed(Perguntas.tag);
     },
   );
   // configura o  AlertDialog

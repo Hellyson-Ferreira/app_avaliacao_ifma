@@ -1,53 +1,68 @@
-
-import 'package:app_avaliacao_ifma/homeAluno/perguntas/pergunta13.dart';
+import 'package:app_avaliacao_ifma/homeAdimin/AlertDialogs.dart';
+import 'package:app_avaliacao_ifma/homeAluno/perguntas/list_perguntas.dart';
 import 'package:flutter/material.dart';
 
-class Pergunta12 extends StatefulWidget {
-  static String tag = 'pergunta12';
+class Perguntas extends StatefulWidget {
+  static String tag = 'pergunta1';
   @override
-  _Pergunta12State createState() => _Pergunta12State();
+  _PerguntasState createState() => _PerguntasState();
 }
 
-class _Pergunta12State extends State<Pergunta12> {
+class _PerguntasState extends State<Perguntas> {
+  int i = 0;
+  int id = 1;
+  
+  void _incrementCounter() {
+    setState(() {
+      id++;
+      i++;
+    });
+  }
+  void _dincrementCounter() {
+    setState(() {
+      id--;
+      i--;
+    });
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        elevation: 0,
+        elevation: 0, 
+        centerTitle: true,
+
         leading: IconButton(
-            tooltip: 'Voltar',
+            tooltip: 'Anterior',
             icon: const Icon(Icons.arrow_back),
-            onPressed: () {
-              Navigator.pop(context);
-            },
+            onPressed: ()=> i== 0 ? Navigator.pop(context) : _dincrementCounter()
           ),
+
         actions: <Widget>[
           IconButton(
               icon: const Icon(Icons.arrow_forward),
-              tooltip: 'Pergunta 13',
-              onPressed: () {
-                Navigator.of(context).pushNamed(Pergunta13.tag,);
-              },
+              tooltip:'Próxima',
+              onPressed: () => i <13 ?  _incrementCounter(): showAlertDialog5(context)
             ),
         ],
-        centerTitle: true,
+      
         title: Text(
-          'Pergunta 12',
+          'Pergunta $id',
         ),
       ),
+      
       body:Center(
           child: Column(
             children: <Widget>[
               Container(
-                width: double.infinity,
+                width: MediaQuery.of(context).size.width,
                 color: Colors.green,
                 child: ListTile(
                   title: Center(
                   child: Text(
-                  'O(a) professor(a) ouve opiniões e sugestões referentes às suas aulas, mostrando-se aberto(a) ao diálogo.',
+                  perguntas[i],
                   style: TextStyle(
                     fontSize: 20,
-                    color: Colors.white,
+                    color: Colors.white
                   ),
                   ),
               )
@@ -56,8 +71,7 @@ class _Pergunta12State extends State<Pergunta12> {
               Expanded(
               child: Professores()
             ),
-            ],
-            
+            ],  
           ),
         ),
     );
@@ -74,27 +88,23 @@ class Professores extends StatelessWidget {
           itemBuilder: (context) => [
                 PopupMenuItem(
                   value: 1,
-                  child: Text("😤 - Discordo totalmente."),
+                  child: Text("😤 - Discordo totalmente"),
                 ),
                 PopupMenuItem(
                   value: 2,
-                  child: Text("😠 - Discordo em parte."),
+                  child: Text("😠 - Discordo em parte"),
                 ),
                 PopupMenuItem(
                   value: 3,
-                  child: Text(" 😐 - Não concordo nem discordo."),
+                  child: Text(" 😐 - Não concordo nem discordo"),
                 ),
                 PopupMenuItem(
                   value: 4,
-                  child: Text(" 🙂 - Concordo em parte."),
+                  child: Text(" 🙂 -Concordo em parte"),
                 ),
                 PopupMenuItem(
                   value: 5,
-                  child: Text("😀 - Concordo totalmente."),
-                ),
-                PopupMenuItem(
-                  value: 6,
-                  child: Text("😑 - Não sei responder."),
+                  child: Text("😀 - Concordo totalmente"),
                 ),
               ],
         );
