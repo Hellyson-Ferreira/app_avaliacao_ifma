@@ -184,7 +184,7 @@ class Pies extends StatelessWidget {
                 FlatButton(
                   child: Text('Gerar Gráficos'),
                   onPressed: () {
-                    showAlertDialog1(context);
+                    // showAlertDialog1(context);
                     
                   },
                 ),
@@ -192,7 +192,7 @@ class Pies extends StatelessWidget {
                   child: Text('Fazer Download'),
                   // onPressed: null,
                   onPressed: () {
-                    showAlertDialog2(context);
+                    // showAlertDialog2(context);
                     //Navigator.pop(context);
                   },
                 ),
@@ -200,7 +200,7 @@ class Pies extends StatelessWidget {
                   child: Text('Enviar para o Drive'),
                   // onPressed: null,
                   onPressed: () {
-                    showAlertDialog3(context);
+                    // showAlertDialog3(context);
                     //Navigator.pop(context);
                   },
                 ),

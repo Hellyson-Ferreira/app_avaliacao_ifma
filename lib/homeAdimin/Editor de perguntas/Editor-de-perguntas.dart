@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-
-
 import 'models/bancoBD.dart';
 import 'models/item.dart';
 
 class EditorPerguntas extends StatefulWidget {
+  static  String tag = 'Editor-perguntas';
   @override
   _EditorPerguntasState createState() => _EditorPerguntasState();
 }
@@ -96,8 +95,8 @@ class _EditorPerguntasState extends State<EditorPerguntas> {
             children: <Widget>[
               Dismissible(
                 child: ListTile(
-                  title: Text('${datas.title}'),
-                  subtitle: Text('${datas.id}'),
+                  title: Text('${data.indexOf(datas)+1} - ${datas.title}'),
+                  // subtitle: Text('${datas.id}'),
                 ),
                 key: Key(datas.toString()),
                 direction: DismissDirection.endToStart,
@@ -127,7 +126,7 @@ class _EditorPerguntasState extends State<EditorPerguntas> {
           showAlertDialog(context);
         },
         child: Icon(Icons.add),
-        backgroundColor: Colors.pink,
+        // backgroundColor: Colors.pink,
       ),
     );
   }

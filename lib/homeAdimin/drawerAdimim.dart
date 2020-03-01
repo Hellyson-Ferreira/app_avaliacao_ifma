@@ -5,6 +5,8 @@ import 'package:app_avaliacao_ifma/homeAluno/sites/Ifma.dart';
 import 'package:app_avaliacao_ifma/homeAluno/sites/Suap.dart';
 import 'package:flutter/material.dart';
 
+import 'Editor de perguntas/Editor-de-perguntas.dart';
+
 class DrawerAdimim extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -74,7 +76,7 @@ class DrawerAdimim extends StatelessWidget {
             ),
             ),
             onTap: (){
-               Navigator.of(context).pushNamed(Downloads.tag,);
+               Navigator.of(context).pushNamed(EditorPerguntas.tag,);
             }
           ),
            ListTile(
