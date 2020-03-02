@@ -165,7 +165,7 @@ class _HomePageState extends State<HomePage> {
                       child: Text('Iniciar'),
                       // onPressed: null,
                       onPressed: () {
-                        showAlertDialog2ALuno(context);
+                        showAlertDialog1ALuno(context);
                       },
                     ),
                   ],

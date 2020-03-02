@@ -1,6 +1,6 @@
 import 'package:app_avaliacao_ifma/homeAdimin/PageshomeAdim/Editor%20de%20perguntas/Editor-de-perguntas.dart';
-import 'package:app_avaliacao_ifma/homeAdimin/PageshomeAdimi/grafico.dart';
-import 'package:app_avaliacao_ifma/homeAdimin/PageshomeAdimi/turmas.dart';
+import 'package:app_avaliacao_ifma/homeAdimin/PageshomeAdim/grafico.dart';
+import 'package:app_avaliacao_ifma/homeAdimin/PageshomeAdim/turmas.dart';
 import 'package:app_avaliacao_ifma/homeAluno/perguntas/perguntas.dart';
 import 'package:flutter/material.dart';
 import 'package:app_avaliacao_ifma/homeAluno/home_aluno.dart';

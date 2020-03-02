@@ -1,4 +1,3 @@
-import 'package:app_avaliacao_ifma/homeAdimin/components/AlertDialogs.dart';
 import 'package:app_avaliacao_ifma/homeAluno/components/AlertDialogs.dart';
 import 'package:app_avaliacao_ifma/homeAluno/perguntas/list_perguntas.dart';
 import 'package:flutter/material.dart';
