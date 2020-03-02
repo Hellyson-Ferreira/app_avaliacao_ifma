@@ -1,9 +1,10 @@
 import 'dart:async';
 import 'package:app_avaliacao_ifma/LoginAluno/login_page_aluno.dart';
-import 'package:app_avaliacao_ifma/homeAdimin/AlertDialogs.dart';
-import 'package:app_avaliacao_ifma/homeAluno/drawerAluno.dart';
+import 'package:app_avaliacao_ifma/homeAluno/components/AlertDialogs.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+
+import 'components/drawerAluno.dart';
 
 
 class HomeAluno extends StatefulWidget {
@@ -164,7 +165,7 @@ class _HomePageState extends State<HomePage> {
                       child: Text('Iniciar'),
                       // onPressed: null,
                       onPressed: () {
-                        showAlertDialog4(context);
+                        showAlertDialog2ALuno(context);
                       },
                     ),
                   ],

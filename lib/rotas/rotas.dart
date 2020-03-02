@@ -1,13 +1,13 @@
-import 'package:app_avaliacao_ifma/homeAdimin/Editor%20de%20perguntas/Editor-de-perguntas.dart';
+import 'package:app_avaliacao_ifma/homeAdimin/PageshomeAdim/Editor%20de%20perguntas/Editor-de-perguntas.dart';
+import 'package:app_avaliacao_ifma/homeAdimin/PageshomeAdimi/grafico.dart';
+import 'package:app_avaliacao_ifma/homeAdimin/PageshomeAdimi/turmas.dart';
 import 'package:app_avaliacao_ifma/homeAluno/perguntas/perguntas.dart';
 import 'package:flutter/material.dart';
-import 'package:app_avaliacao_ifma/homeAdimin/turmas.dart';
 import 'package:app_avaliacao_ifma/homeAluno/home_aluno.dart';
 import 'package:app_avaliacao_ifma/homeAluno/sites/Ifma.dart';
 import 'package:app_avaliacao_ifma/homeAluno/sites/Suap.dart';
 import 'package:app_avaliacao_ifma/homeAluno/sites/infor.dart';
 import 'package:app_avaliacao_ifma/homeAdimin/home_adimim.dart';
-import 'package:app_avaliacao_ifma/homeAdimin/graficos/grafico.dart';
 
 import 'package:app_avaliacao_ifma/LoginAluno/login_page_aluno.dart';
 import 'package:app_avaliacao_ifma/LoginAdimim/login_page_adimim.dart';

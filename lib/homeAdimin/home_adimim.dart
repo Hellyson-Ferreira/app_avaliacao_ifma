@@ -1,6 +1,7 @@
-import 'package:app_avaliacao_ifma/homeAdimin/AlertDialogs.dart';
-import 'package:app_avaliacao_ifma/homeAdimin/drawerAdimim.dart';
 import 'package:flutter/material.dart';
+
+import 'components/AlertDialogs.dart';
+import 'components/drawerAdimim.dart';
 
 class HomeAdimim extends StatefulWidget {
   static String tag = 'home-page-adimim';
@@ -118,7 +119,7 @@ class HomePage extends StatelessWidget {
                   FlatButton(
                     child: Text('Tornar disponivel'),
                     onPressed: () {
-                      showAlertDialog1(context);
+                      showAlertDialog1Adm(context);
                       
                     },
                   ),
@@ -126,7 +127,7 @@ class HomePage extends StatelessWidget {
                     child: Text('Tornar indiponivel'),
                     // onPressed: null,
                     onPressed: () {
-                      showAlertDialog2(context);
+                      showAlertDialog2Adm(context);
                       //Navigator.pop(context);
                     },
                   ),
@@ -134,7 +135,7 @@ class HomePage extends StatelessWidget {
                     child: Text('Notificar alunos'),
                     // onPressed: null,
                     onPressed: () {
-                      showAlertDialog3(context);
+                      showAlertDialog3Adm(context);
                       //Navigator.pop(context);
                     },
                   ),

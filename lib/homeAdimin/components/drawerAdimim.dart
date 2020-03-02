@@ -1,11 +1,12 @@
 import 'package:app_avaliacao_ifma/LoginAluno/login_page_aluno.dart';
-import 'package:app_avaliacao_ifma/homeAdimin/downloads.dart';
-import 'package:app_avaliacao_ifma/homeAdimin/turmas.dart';
+import 'package:app_avaliacao_ifma/homeAdimin/PageshomeAdim/Editor%20de%20perguntas/Editor-de-perguntas.dart';
+import 'package:app_avaliacao_ifma/homeAdimin/PageshomeAdim/turmas.dart';
+
 import 'package:app_avaliacao_ifma/homeAluno/sites/Ifma.dart';
 import 'package:app_avaliacao_ifma/homeAluno/sites/Suap.dart';
 import 'package:flutter/material.dart';
 
-import 'Editor de perguntas/Editor-de-perguntas.dart';
+
 
 class DrawerAdimim extends StatelessWidget {
   @override

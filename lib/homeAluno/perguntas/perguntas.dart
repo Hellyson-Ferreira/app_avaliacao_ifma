@@ -1,4 +1,5 @@
-import 'package:app_avaliacao_ifma/homeAdimin/AlertDialogs.dart';
+import 'package:app_avaliacao_ifma/homeAdimin/components/AlertDialogs.dart';
+import 'package:app_avaliacao_ifma/homeAluno/components/AlertDialogs.dart';
 import 'package:app_avaliacao_ifma/homeAluno/perguntas/list_perguntas.dart';
 import 'package:flutter/material.dart';
 
@@ -41,7 +42,7 @@ class _PerguntasState extends State<Perguntas> {
           IconButton(
               icon: const Icon(Icons.arrow_forward),
               tooltip:'Próxima',
-              onPressed: () => i <13 ?  _incrementCounter(): showAlertDialog5(context)
+              onPressed: () => i <13 ?  _incrementCounter(): showAlertDialog2ALuno(context)
             ),
         ],
       

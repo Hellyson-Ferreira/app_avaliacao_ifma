@@ -1,6 +1,6 @@
 import 'dart:math';
-import 'package:app_avaliacao_ifma/homeAdimin/graficos/grafico.dart';
 import 'package:flutter/material.dart';
+import 'grafico.dart';
 
 class Turmas extends StatefulWidget {
   static String tag = 'turmas';
