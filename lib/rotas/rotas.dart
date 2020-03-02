@@ -16,7 +16,7 @@ import 'package:app_avaliacao_ifma/tela_de_carregamento/carregamnto.dart';
 import 'package:app_avaliacao_ifma/tela_boas_vindas.dart/boas_vindas.dart';
 import 'package:app_avaliacao_ifma/N%C3%A3o%20consigo%20entrar/erroAoEntrar.dart';
 
-// asd;lkj
+
 
 class Routes{
   var routes = <String,WidgetBuilder>{
