@@ -75,7 +75,6 @@ class _LoginPageAlunoState extends State<LoginPageAluno> {
         },
         // elevation: 12,
         padding: EdgeInsets.all(12),
-        color: Colors.green,
         child: Text('Entrar', style: TextStyle(color: Colors.white)),
       ),
     );

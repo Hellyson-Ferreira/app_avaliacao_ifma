@@ -10,41 +10,31 @@ class Graficos extends StatefulWidget {
 }
 
 class _GraficosState extends State<Graficos> {
-   var random = Random();
-   
+  var random = Random();
 
   @override
   Widget build(BuildContext context) {
-    var a =  random.nextInt(50);
-    var b =  random.nextInt(50);
+    var a = random.nextInt(50);
+    var b = random.nextInt(50);
 
     Map<String, double> dataMap = Map();
     dataMap.putIfAbsent("Respondidos", () => a.truncateToDouble());
     dataMap.putIfAbsent("Pendentes", () => b.truncateToDouble());
 
     return Scaffold(
-      appBar: AppBar(
-        elevation: 0,
-        
-      ),
+      appBar: PreferredSize(
+        child: AppBar(
+          title: Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Text(
+                  '''Grafico da turma''',
+                  style: TextStyle(fontSize: 30, color: Colors.white),
+                ),
+          ),
+        ), 
+        preferredSize: Size.fromHeight(150.0)),
       body: Wrap(
         children: <Widget>[
-          Container(
-            alignment: Alignment.topCenter,
-            height: 100,
-            width: double.infinity,
-            color: Colors.green,
-            child: Center(
-              child: Text(
-                'Grafico da turma',
-                style: TextStyle(
-                  fontSize: 30,
-                  color: Colors.white
-                ),
-              ),
-            ),
-
-          ),
           Padding(
             padding: const EdgeInsets.only(top: 20),
             child: Center(
@@ -53,15 +43,15 @@ class _GraficosState extends State<Graficos> {
                 width: 360,
                 child: PieChart(
                   dataMap: dataMap,
-                  colorList: [Colors.green,Colors.red],
+                  colorList: [Colors.green, Colors.red],
                   animationDuration: Duration(milliseconds: 800),
                   chartLegendSpacing: 32.0,
                   showChartValuesInPercentage: true,
                   showChartValues: true,
                   // chartType: ChartType.ring,
-      ),
+                ),
                 decoration: BoxDecoration(
-                    color:Colors.white,
+                    color: Colors.white,
                     borderRadius: BorderRadius.all(Radius.circular(50)),
                     boxShadow: [
                       BoxShadow(
@@ -70,7 +60,7 @@ class _GraficosState extends State<Graficos> {
                           blurRadius: 15.0,
                           spreadRadius: 1.0),
                       BoxShadow(
-                          color:Colors.grey,
+                          color: Colors.grey,
                           offset: Offset(-4.0, -4.0),
                           blurRadius: 15.0,
                           spreadRadius: 1.0),
@@ -78,20 +68,20 @@ class _GraficosState extends State<Graficos> {
               ),
             ),
           ),
-      //       Text(
-      //         'Titulo do grafico',
-      //         style: TextStyle(
-      //           fontSize: 30
-      //         ),
-      //         ),
-      //       PieChart(
-      //           dataMap: dataMap,
-      //           colorList: [Colors.green,Colors.red],
-      //           animationDuration: Duration(milliseconds: 800),
-      //           chartLegendSpacing: 32.0,
-      //           showChartValuesInPercentage: true,
-      //           showChartValues: true,
-      // )
+          //       Text(
+          //         'Titulo do grafico',
+          //         style: TextStyle(
+          //           fontSize: 30
+          //         ),
+          //         ),
+          //       PieChart(
+          //           dataMap: dataMap,
+          //           colorList: [Colors.green,Colors.red],
+          //           animationDuration: Duration(milliseconds: 800),
+          //           chartLegendSpacing: 32.0,
+          //           showChartValuesInPercentage: true,
+          //           showChartValues: true,
+          // )
         ],
       ),
     );

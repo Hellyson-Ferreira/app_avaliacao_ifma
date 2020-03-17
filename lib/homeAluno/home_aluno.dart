@@ -87,7 +87,7 @@ class _HomeAlunoState extends State<HomeAluno> {
         ],
 
         currentIndex: _selectedIndex,
-        selectedItemColor: Colors.green[500],
+        
         showUnselectedLabels: false,
         onTap: _onItemTapped,
       ),

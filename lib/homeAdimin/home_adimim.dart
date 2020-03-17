@@ -77,7 +77,6 @@ class _HomeAdimimState extends State<HomeAdimim> {
           ),
         ],
         currentIndex: _selectedIndex,
-        selectedItemColor: Colors.green,
         showUnselectedLabels: false,
         onTap: _onItemTapped,
       ),

@@ -17,9 +17,13 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp( 
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.green,
+        primaryColor: Colors.green,
         fontFamily: 'Nunito',
+        buttonColor: Colors.green,
+        // brightness: Brightness.dark
+
       ), 
+      
       home:LoadingPage(),
       routes: routes.routes,
     );

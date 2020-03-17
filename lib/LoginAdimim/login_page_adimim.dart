@@ -62,7 +62,6 @@ class _LoginPageAdimimState extends State<LoginPageAdim> {
         },
         elevation: 12,
         padding: EdgeInsets.all(12),
-        color: Colors.green,
         child: Text('Entrar', style: TextStyle(color: Colors.white)),
       ),
     );

@@ -23,7 +23,6 @@ class _ResetPasswordPageState extends State<ResetPasswordPage> {
         },
         padding: EdgeInsets.all(12),
         elevation: 12,
-        color: Colors.green,
         child: Text('Ir para o Suap', style: TextStyle(color: Colors.white)),
       ),
     );
