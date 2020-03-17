@@ -17,6 +17,7 @@ class _LoginPageAlunoState extends State<LoginPageAluno> {
     //Sorteios de Imagens aleatorias
     var random = Random();
     var j = random.nextInt(36) + 1;
+    var _obscureText = true;
 
     //Gerador de imagens
     final logo = Hero(
@@ -38,8 +39,8 @@ class _LoginPageAlunoState extends State<LoginPageAluno> {
       controller: _matric,
       keyboardType: TextInputType.visiblePassword,
       autofocus: false,
-      //initialValue: '20181IC.CAX0007',
       decoration: InputDecoration(
+        prefixIcon: Icon(Icons.person),
         hintText: 'Matrícula',
         contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
         border: OutlineInputBorder(borderRadius: BorderRadius.circular(32.0)),
@@ -49,10 +50,10 @@ class _LoginPageAlunoState extends State<LoginPageAluno> {
     final password = TextFormField(
       controller: _senha,
       autofocus: false,
-      obscureText: true,
+      obscureText: _obscureText,
       keyboardType: TextInputType.visiblePassword,
       decoration: InputDecoration(
-        //filled: true,
+        prefixIcon: Icon(Icons.vpn_key),
         hintText: 'Senha do Suap',
         contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
         border: OutlineInputBorder(borderRadius: BorderRadius.circular(32.0)),
