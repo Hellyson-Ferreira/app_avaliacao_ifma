@@ -83,8 +83,12 @@ class _EditorPerguntasState extends State<EditorPerguntas> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        //Tirar Text
-        title: Text('Editor de perguntas')
+        title: Text('Editor de perguntas'),
+        actions: <Widget>[
+          IconButton(icon: Icon(Icons.add), onPressed: () => showAlertDialog(context), tooltip: 'Adicionar',),
+          IconButton(icon: Icon(Icons.send), onPressed: (){},tooltip: 'Enviar para o servidor',),
+          
+        ],
       ),
       body: ListView.builder(
         itemCount: data.length,
@@ -121,13 +125,10 @@ class _EditorPerguntasState extends State<EditorPerguntas> {
           );
         },
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          showAlertDialog(context);
-        },
-        child: Icon(Icons.add),
-        // backgroundColor: Colors.pink,
-      ),
+      // floatingActionButton: FloatingActionButton(
+        // onPressed: () => showAlertDialog(context),
+        // child: Icon(Icons.add),      
+      // ),
     );
   }
 }
