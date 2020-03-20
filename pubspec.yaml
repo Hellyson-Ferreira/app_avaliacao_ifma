@@ -77,13 +77,16 @@ flutter:
     - assets/imgs/img34.png
     - assets/imgs/img35.png
     - assets/imgs/img36.png
-
-
-
-
-
-
-    
+    - assets/imgs/img37.png
+    - assets/imgs/img38.png
+    - assets/imgs/img39.png
+    - assets/imgs/img40.png
+    - assets/imgs/img41.png
+    - assets/imgs/img42.png
+    - assets/imgs/img43.png
+    - assets/imgs/img44.png
+    - assets/imgs/img45.png
+    - assets/imgs/img46.png
     
   fonts:
       - family: Nunito
