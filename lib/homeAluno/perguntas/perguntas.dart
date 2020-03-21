@@ -140,12 +140,12 @@ class Professores extends StatelessWidget {
 
   _card(int index) {
     final card = Container(
-      height: 124,
+      height: 140,
       margin: EdgeInsets.only(left: 46.0),
       decoration: BoxDecoration(
           shape: BoxShape.rectangle,
           //color: Color(0xFF3333366),
-          color: Colors.green[500],
+          color: Colors.green,
           borderRadius: BorderRadius.circular(8.0),
           boxShadow: <BoxShadow>[
             BoxShadow(
@@ -156,23 +156,20 @@ class Professores extends StatelessWidget {
       child: Container(
         margin: const EdgeInsets.only(top: 16.0, left: 72.0),
         constraints: BoxConstraints.expand(),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+        child: Wrap(
+          //crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Text(
-              'Professor ${index + 1}',
-              style: TextStyle(fontSize: 20, color: Colors.white),
+              professores[index],
+              style: TextStyle(fontSize: 19, color: Colors.white),
             ),
-            Text(
-                'professor${index + 1}@ifma.edu.br',
-              style: TextStyle(fontSize: 15, color: Colors.white),
+
+            Container(
+              color: const Color(0xFF00C6FF),
+              width: 100.0,
+              height: 1.0,
+              margin: const EdgeInsets.symmetric(vertical: 8.0)
             ),
-            // Container(
-            //   color: const Color(0xFF00C6FF),
-            //   width: 24.0,
-            //   height: 1.0,
-            //   margin: const EdgeInsets.symmetric(vertical: 8.0)
-            // ),
             Container(
               // color: Colors.amber,
               width: 450,
