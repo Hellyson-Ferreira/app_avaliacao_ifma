@@ -16,8 +16,11 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp( 
       debugShowCheckedModeBanner: false,
+    
+      
       theme: ThemeData(
         primaryColor: Colors.green,
+        primarySwatch: Colors.green,
         fontFamily: 'Nunito',
         buttonColor: Colors.green,
         // brightness: Brightness.dark

@@ -11,128 +11,208 @@ class Perguntas extends StatefulWidget {
 class _PerguntasState extends State<Perguntas> {
   int i = 0;
   int id = 1;
-  
+
   void _incrementCounter() {
     setState(() {
       id++;
       i++;
     });
   }
+
   void _dincrementCounter() {
     setState(() {
       id--;
       i--;
     });
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        elevation: 0, 
+        elevation: 0,
         centerTitle: true,
-
         leading: IconButton(
             tooltip: 'Anterior',
             icon: const Icon(Icons.arrow_back),
-            onPressed: ()=> i== 0 ? Navigator.pop(context) : _dincrementCounter()
-          ),
-
+            onPressed: () =>
+                i == 0 ? Navigator.pop(context) : _dincrementCounter()),
         actions: <Widget>[
           IconButton(
               icon: const Icon(Icons.arrow_forward),
-              tooltip:'Próxima',
-              onPressed: () => i <13 ?  _incrementCounter(): showAlertDialog2ALuno(context)
-            ),
+              tooltip: 'Próxima',
+              onPressed: () => i < 13
+                  ? _incrementCounter()
+                  : showAlertDialog2ALuno(context)),
         ],
-      
         title: Text(
           'Pergunta $id',
         ),
       ),
-      
-      body:Center(
-          child: Column(
-            children: <Widget>[
-              Container(
+      body: Center(
+        child: Column(
+          children: <Widget>[
+            Container(
                 width: MediaQuery.of(context).size.width,
                 color: Colors.green,
                 child: ListTile(
-                  title: Center(
+                    title: Center(
                   child: Text(
-                  perguntas[i],
-                  style: TextStyle(
-                    fontSize: 20,
-                    color: Colors.white
+                    perguntas[i],
+                    style: TextStyle(fontSize: 20, color: Colors.white),
                   ),
-                  ),
-              )
-                )
-              ),
-              Expanded(
-              child: Professores()
-            ),
-            ],  
-          ),
+                ))),
+            Expanded(child: Professores()),
+          ],
         ),
+      ),
     );
   }
 }
+
 class Professores extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final numItems = 16;
-    final _biggerFont = const TextStyle(fontSize: 18.0);
-
-    Widget _simplePopup() => PopupMenuButton<int>(
-      icon: Icon(Icons.insert_emoticon),
-          itemBuilder: (context) => [
-                PopupMenuItem(
-                  value: 1,
-                  child: Text("😤 - Discordo totalmente"),
-                ),
-                PopupMenuItem(
-                  value: 2,
-                  child: Text("😠 - Discordo em parte"),
-                ),
-                PopupMenuItem(
-                  value: 3,
-                  child: Text(" 😐 - Não concordo nem discordo"),
-                ),
-                PopupMenuItem(
-                  value: 4,
-                  child: Text(" 🙂 -Concordo em parte"),
-                ),
-                PopupMenuItem(
-                  value: 5,
-                  child: Text("😀 - Concordo totalmente"),
-                ),
-              ],
-        );
-
-    Widget _buildRow(int idx) {
-      return ListTile(
-        leading: CircleAvatar(
-          child: Text('$idx'),
-        ),
-        title: Text(
-          'Professor $idx',
-          style: _biggerFont,
-        ),
-        trailing: _simplePopup()
-      );
+    return ListView.builder(
+      itemCount: 33,
+      itemBuilder: (context, i) {
+        return _card(i);
+      },
+    );
+  }
+  _getValue(value){
+    switch (value){
+      case 1:
+        return Text('😤');
+        break;
+      case 2:
+        return Text('😠');
+        break;
+      case 3:
+        return Text('😐');
+        break;
+      case 4:
+        return Text('🙂');
+        break;
+      case 5:
+        return Text('😀');
+        break; 
+      
+      default:
+        return null;
     }
 
-    return ListView.builder(
-      itemCount: numItems * 2,
-      padding: const EdgeInsets.all(16.0),
-      itemBuilder: (BuildContext context, int i) {
-        if (i.isOdd) {
-          return Divider();
-        }
-        final index = i ~/ 2 + 1;
-        return _buildRow(index);
-      },
-    
+  }
+
+  _simplePopup() => PopupMenuButton<int>(
+        icon: Icon(
+          Icons.insert_emoticon,
+          size: 29,
+          color: Colors.white,
+        ),
+        itemBuilder: (context) => [
+          PopupMenuItem(
+            value: 1,
+            child: Text("😤 - Discordo totalmente"),
+          ),
+          PopupMenuItem(
+            value: 2,
+            child: Text("😠 - Discordo em parte"),
+          ),
+          PopupMenuItem(
+            value: 3,
+            child: Text("😐 - Não concordo nem discordo"),
+          ),
+          PopupMenuItem(
+            value: 4,
+            child: Text("🙂 -Concordo em parte"),
+          ),
+          PopupMenuItem(
+            value: 5,
+            child: Text("😀 - Concordo totalmente"),
+          ),
+        ],
+        onSelected: (value){
+          _getValue(value);
+        },
+        initialValue: 0,
+      );
+
+  _card(int index) {
+    final card = Container(
+      height: 124,
+      margin: EdgeInsets.only(left: 46.0),
+      decoration: BoxDecoration(
+          shape: BoxShape.rectangle,
+          //color: Color(0xFF3333366),
+          color: Colors.green[500],
+          borderRadius: BorderRadius.circular(8.0),
+          boxShadow: <BoxShadow>[
+            BoxShadow(
+                color: Colors.black12,
+                offset: Offset(0.0, 10.0),
+                blurRadius: 10.0)
+          ]),
+      child: Container(
+        margin: const EdgeInsets.only(top: 16.0, left: 72.0),
+        constraints: BoxConstraints.expand(),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Text(
+              'Professor ${index + 1}',
+              style: TextStyle(fontSize: 20, color: Colors.white),
+            ),
+            Text(
+                'professor${index + 1}@ifma.edu.br',
+              style: TextStyle(fontSize: 15, color: Colors.white),
+            ),
+            // Container(
+            //   color: const Color(0xFF00C6FF),
+            //   width: 24.0,
+            //   height: 1.0,
+            //   margin: const EdgeInsets.symmetric(vertical: 8.0)
+            // ),
+            Container(
+              // color: Colors.amber,
+              width: 450,
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                textDirection: TextDirection.rtl,
+                children: <Widget>[
+                  Container(
+                    child: _simplePopup() 
+                  )
+                ],
+              ),
+            )
+          ],
+        ),
+      ),
+    );
+
+    final image = Container(
+      margin: EdgeInsets.symmetric(vertical: 16.0),
+      alignment: FractionalOffset.centerLeft,
+      width: 100,
+      height: 100,
+      decoration: BoxDecoration(
+        shape: BoxShape.circle,
+        image: DecorationImage(
+          image: AssetImage('assets/professores/img${index + 1}.jpg'),
+          // fit: BoxFit.fill
+        ),
+      ),
+    );
+    return Column(
+      children: <Widget>[
+        Container(
+          margin: EdgeInsets.symmetric(vertical: 16.0, horizontal: 22),
+          child: Stack(
+            children: <Widget>[card, image],
+          ),
+        ),
+      ],
     );
   }
 }

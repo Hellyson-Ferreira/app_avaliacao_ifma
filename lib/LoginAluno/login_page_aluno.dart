@@ -16,7 +16,7 @@ class _LoginPageAlunoState extends State<LoginPageAluno> {
   Widget build(BuildContext context) {
     //Sorteios de Imagens aleatorias
     var random = Random();
-    var j = random.nextInt(36) + 1;
+    var j = random.nextInt(46) + 1;
     var _obscureText = true;
 
     //Gerador de imagens
