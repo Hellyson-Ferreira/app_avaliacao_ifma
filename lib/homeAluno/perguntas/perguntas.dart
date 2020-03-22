@@ -70,7 +70,12 @@ class _PerguntasState extends State<Perguntas> {
   }
 }
 
-class Professores extends StatelessWidget {
+class Professores extends StatefulWidget {
+  @override
+  _ProfessoresState createState() => _ProfessoresState();
+}
+
+class _ProfessoresState extends State<Professores> {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
@@ -80,31 +85,9 @@ class Professores extends StatelessWidget {
       },
     );
   }
-  _getValue(value){
-    switch (value){
-      case 1:
-        return Text('😤');
-        break;
-      case 2:
-        return Text('😠');
-        break;
-      case 3:
-        return Text('😐');
-        break;
-      case 4:
-        return Text('🙂');
-        break;
-      case 5:
-        return Text('😀');
-        break; 
-      
-      default:
-        return null;
-    }
 
-  }
-
-  _simplePopup() => PopupMenuButton<int>(
+  
+_simplePopup() => PopupMenuButton<int>(
         icon: Icon(
           Icons.insert_emoticon,
           size: 29,
@@ -132,15 +115,16 @@ class Professores extends StatelessWidget {
             child: Text("😀 - Concordo totalmente"),
           ),
         ],
-        onSelected: (value){
-          _getValue(value);
+        onSelected: (value) {
+          return value;
         },
         initialValue: 0,
       );
 
-  _card(int index) {
+  _card(index) {
+    double t = professores[index].length.toDouble();
     final card = Container(
-      height: 140,
+      height: t<=30?130:130+t/2,
       margin: EdgeInsets.only(left: 46.0),
       decoration: BoxDecoration(
           shape: BoxShape.rectangle,
@@ -149,38 +133,33 @@ class Professores extends StatelessWidget {
           borderRadius: BorderRadius.circular(8.0),
           boxShadow: <BoxShadow>[
             BoxShadow(
-                color: Colors.black12,
+                color: Colors.black26,
                 offset: Offset(0.0, 10.0),
                 blurRadius: 10.0)
           ]),
       child: Container(
-        margin: const EdgeInsets.only(top: 16.0, left: 72.0),
+        margin: const EdgeInsets.only(top: 15.0, left: 49.0),
         constraints: BoxConstraints.expand(),
-        child: Wrap(
-          //crossAxisAlignment: CrossAxisAlignment.start,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Text(
               professores[index],
               style: TextStyle(fontSize: 19, color: Colors.white),
             ),
-
             Container(
               color: const Color(0xFF00C6FF),
-              width: 100.0,
+              width: 50,
               height: 1.0,
-              margin: const EdgeInsets.symmetric(vertical: 8.0)
-            ),
+              margin: const EdgeInsets.symmetric(vertical: 8.0)),
             Container(
               // color: Colors.amber,
               width: 450,
+              height: 30,
               child: Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.end,
                 textDirection: TextDirection.rtl,
-                children: <Widget>[
-                  Container(
-                    child: _simplePopup() 
-                  )
-                ],
+                children: <Widget>[Container(child: _simplePopup())],
               ),
             )
           ],
@@ -204,7 +183,7 @@ class Professores extends StatelessWidget {
     return Column(
       children: <Widget>[
         Container(
-          margin: EdgeInsets.symmetric(vertical: 16.0, horizontal: 22),
+          margin: EdgeInsets.symmetric(vertical: 16.0, horizontal: 20),
           child: Stack(
             children: <Widget>[card, image],
           ),
