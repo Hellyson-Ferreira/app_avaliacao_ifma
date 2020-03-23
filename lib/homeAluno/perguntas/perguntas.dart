@@ -149,12 +149,11 @@ _simplePopup() => PopupMenuButton<int>(
             ),
             Container(
               color: const Color(0xFF00C6FF),
-              width: 50,
+              width: 100,
               height: 1.0,
               margin: const EdgeInsets.symmetric(vertical: 8.0)),
             Container(
-              // color: Colors.amber,
-              width: 450,
+              //color: Colors.amber,
               height: 30,
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.end,
