@@ -3,7 +3,6 @@ import 'package:app_avaliacao_ifma/homeAluno/perguntas/list_perguntas.dart';
 import 'package:flutter/material.dart';
 
 class Perguntas extends StatefulWidget {
-  static String tag = 'pergunta1';
   @override
   _PerguntasState createState() => _PerguntasState();
 }

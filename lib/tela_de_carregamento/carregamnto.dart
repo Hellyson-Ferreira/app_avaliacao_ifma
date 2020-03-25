@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:splashscreen/splashscreen.dart';
 
 class LoadingPage extends StatefulWidget {
-  static String tag = 'loading-page';
   @override
   _LoadingPageState createState() => _LoadingPageState();
 }

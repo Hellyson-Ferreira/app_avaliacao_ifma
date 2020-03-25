@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:pie_chart/pie_chart.dart';
 
 class Graficos extends StatefulWidget {
-  static String tag = 'graficos';
   @override
   _GraficosState createState() => _GraficosState();
 }

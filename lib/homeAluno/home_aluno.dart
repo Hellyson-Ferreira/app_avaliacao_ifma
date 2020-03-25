@@ -6,8 +6,6 @@ import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'components/drawerAluno.dart';
 
 class HomeAluno extends StatefulWidget {
-  static String tag = 'home-page-aluno';
-
   @override
   _HomeAlunoState createState() => _HomeAlunoState();
 }
@@ -35,9 +33,7 @@ class _HomeAlunoState extends State<HomeAluno> {
   }
 
   Future<bool> _onBackPressed() {
-    Navigator.of(context).pushNamed(
-      LoginPageAluno.tag,
-    );
+    Navigator.push(context, MaterialPageRoute(builder: (context) => LoginPageAluno()));
     return null;
   }
 
@@ -58,7 +54,6 @@ class _HomeAlunoState extends State<HomeAluno> {
                 background: Image.asset(image, fit: BoxFit.fill),
               ),
             ),
-            // If the main content is a list, use SliverList instead.
             SliverFillRemaining(
               child: Center(
                 child: _widgetOptions.elementAt(_selectedIndex),

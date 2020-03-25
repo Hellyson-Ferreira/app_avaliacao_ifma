@@ -2,8 +2,6 @@ import 'package:app_avaliacao_ifma/homeAluno/home_aluno.dart';
 import 'package:flutter/material.dart';
 
 class BoasVindasAluno extends StatelessWidget {
-  static String tag = 'boas_vindas_aluno';
-
   @override
   Widget build(BuildContext context) {
     final welcome = Padding(
@@ -32,7 +30,7 @@ class BoasVindasAluno extends StatelessWidget {
         ),
         onPressed: () {
           Navigator.pop(context);
-          Navigator.of(context).pushNamed(HomeAluno.tag,);
+          Navigator.push(context, MaterialPageRoute(builder: (context) => HomeAluno()));
         },
         padding: EdgeInsets.all(12),
         //color: Colors.lightBlueAccent,

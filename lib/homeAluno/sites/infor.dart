@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 class InforPage extends StatefulWidget {
-static String tag = 'infor_page';
   @override
   
   _InforPageState createState() => _InforPageState();

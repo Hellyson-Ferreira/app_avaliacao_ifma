@@ -10,7 +10,7 @@ showAlertDialog1ALuno(BuildContext context)
     child: Text("OK"),
     onPressed: () { 
       Navigator.pop(context);
-      Navigator.of(context).pushNamed(Perguntas.tag);
+      Navigator.push(context, MaterialPageRoute(builder: (context) => Perguntas()));
     },
   );
   // configura o  AlertDialog
@@ -39,7 +39,7 @@ showAlertDialog2ALuno(BuildContext context) {
   Widget continuaButton = FlatButton(
     child: Text("Enviar"),
     onPressed:  () {
-      Navigator.of(context).pushNamed(HomeAluno.tag,);
+      Navigator.push(context, MaterialPageRoute(builder: (context) => HomeAluno()));
 
     },
   );

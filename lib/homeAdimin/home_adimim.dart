@@ -4,7 +4,6 @@ import 'components/AlertDialogs.dart';
 import 'components/drawerAdimim.dart';
 
 class HomeAdimim extends StatefulWidget {
-  static String tag = 'home-page-adimim';
 
   @override
   _HomeAdimimState createState() => _HomeAdimimState();

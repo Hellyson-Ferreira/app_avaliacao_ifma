@@ -6,7 +6,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 class LoginPageAluno extends StatefulWidget {
-  static String tag = 'login-page';
   @override
   _LoginPageAlunoState createState() => _LoginPageAlunoState();
 }
@@ -67,11 +66,7 @@ class _LoginPageAlunoState extends State<LoginPageAluno> {
           borderRadius: BorderRadius.circular(24),
         ),
         onPressed: () {
-          //Validacao n = new Validacao();
-          ///if(n.validarLogiin(_matric.text, _senha.text)){
-          //Navigator.of(context).pushNamed(HomePage.tag);
-          //}
-          Navigator.of(context).pushNamed(BoasVindasAluno.tag);
+          Navigator.push(context, MaterialPageRoute(builder: (context) => BoasVindasAluno()));
         },
         // elevation: 12,
         padding: EdgeInsets.all(12),
@@ -84,9 +79,8 @@ class _LoginPageAlunoState extends State<LoginPageAluno> {
         'Não consigo entrar',
         style: TextStyle(color: Colors.black54),
       ),
-      onPressed: () {
-        Navigator.of(context).pushNamed(ResetPasswordPage.tag);
-      },
+      onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => ResetPasswordPage())),
+      
     );
 
     //Gerador de elementos da tela
@@ -105,16 +99,13 @@ class _LoginPageAlunoState extends State<LoginPageAluno> {
               password,
               SizedBox(height: 24.0),
               loginButton,
-              //telaAdimim,
               forgotLabel
             ],
           ),
         ),
         floatingActionButton: FloatingActionButton(
           backgroundColor: Colors.green,
-          onPressed: () {
-            Navigator.of(context).pushNamed(LoginPageAdim.tag);
-          },
+          onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => LoginPageAdim())),
           child: Icon(Icons.person),
         ),
       ),

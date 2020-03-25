@@ -3,7 +3,6 @@ import 'models/bancoBD.dart';
 import 'models/item.dart';
 
 class EditorPerguntas extends StatefulWidget {
-  static String tag = 'Editor-perguntas';
   @override
   _EditorPerguntasState createState() => _EditorPerguntasState();
 }

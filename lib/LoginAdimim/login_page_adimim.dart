@@ -2,7 +2,6 @@ import 'package:app_avaliacao_ifma/homeAdimin/home_adimim.dart';
 import 'package:flutter/material.dart';
 
 class LoginPageAdim extends StatefulWidget {
-  static String tag = 'login-page-adimim';
   @override
   _LoginPageAdimimState createState() => new _LoginPageAdimimState();
 }
@@ -58,7 +57,7 @@ class _LoginPageAdimimState extends State<LoginPageAdim> {
           borderRadius: BorderRadius.circular(24),
         ),
         onPressed: () {   
-           Navigator.of(context).pushNamed(HomeAdimim.tag);
+            Navigator.push(context, MaterialPageRoute(builder: (context) => HomeAdimim()));
         },
         elevation: 12,
         padding: EdgeInsets.all(12),

@@ -2,7 +2,6 @@ import 'package:app_avaliacao_ifma/homeAluno/sites/Suap.dart';
 import 'package:flutter/material.dart';
 
 class ResetPasswordPage extends StatefulWidget {
-  static String tag = 'Errologin';
   @override
   _ResetPasswordPageState createState() => _ResetPasswordPageState();
 }
@@ -16,11 +15,7 @@ class _ResetPasswordPageState extends State<ResetPasswordPage> {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(24),
         ),
-        onPressed: () {
-          Navigator.of(context).pushNamed(
-            Suap.tag,
-          );
-        },
+        onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => Suap())),
         padding: EdgeInsets.all(12),
         elevation: 12,
         child: Text('Ir para o Suap', style: TextStyle(color: Colors.white)),
