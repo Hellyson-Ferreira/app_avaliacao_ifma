@@ -3,7 +3,7 @@ import 'models/bancoBD.dart';
 import 'models/item.dart';
 
 class EditorPerguntas extends StatefulWidget {
-  static  String tag = 'Editor-perguntas';
+  static String tag = 'Editor-perguntas';
   @override
   _EditorPerguntasState createState() => _EditorPerguntasState();
 }
@@ -48,46 +48,55 @@ class _EditorPerguntasState extends State<EditorPerguntas> {
     await banco.deleteItem('$id');
     await load();
   }
- showAlertDialog(BuildContext context){
+
+  showAlertDialog(BuildContext context) {
     AlertDialog alerta = AlertDialog(
-            title: Text('Nova pergunta'),
-            content: TextField(
-                controller: newTaskCtrl,
-                autofocus: true,
-            ),
-            actions: <Widget>[
-                FlatButton(
-                    child: Text('Cancelar'),
-                    onPressed: () {
-                        Navigator.of(context).pop();
-                    },
-                ),
-                FlatButton(
-                    child: Text('Adicionar'),
-                    onPressed: () {
-                        add(newTaskCtrl.value.text);
-                        newTaskCtrl.clear();
-                        Navigator.of(context).pop();
-                    },
-                ),
-            ],
-        );
+      title: Text('Nova pergunta'),
+      content: TextField(
+        controller: newTaskCtrl,
+        autofocus: true,
+      ),
+      actions: <Widget>[
+        FlatButton(
+          child: Text('Cancelar'),
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
+        ),
+        FlatButton(
+          child: Text('Adicionar'),
+          onPressed: () {
+            add(newTaskCtrl.value.text);
+            newTaskCtrl.clear();
+            Navigator.of(context).pop();
+          },
+        ),
+      ],
+    );
     showDialog(
       context: context,
       builder: (BuildContext context) {
         return alerta;
       },
-  );
- }
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text('Editor de perguntas'),
         actions: <Widget>[
-          IconButton(icon: Icon(Icons.add), onPressed: () => showAlertDialog(context), tooltip: 'Adicionar',),
-          IconButton(icon: Icon(Icons.send), onPressed: (){},tooltip: 'Enviar para o servidor',),
-          
+          IconButton(
+            icon: Icon(Icons.add),
+            onPressed: () => showAlertDialog(context),
+            tooltip: 'Adicionar',
+          ),
+          IconButton(
+            icon: Icon(Icons.send),
+            onPressed: () {},
+            tooltip: 'Enviar para o servidor',
+          ),
         ],
       ),
       body: ListView.builder(
@@ -99,7 +108,7 @@ class _EditorPerguntasState extends State<EditorPerguntas> {
             children: <Widget>[
               Dismissible(
                 child: ListTile(
-                  title: Text('${data.indexOf(datas)+1} - ${datas.title}'),
+                  title: Text('${data.indexOf(datas) + 1} - ${datas.title}'),
                   // subtitle: Text('${datas.id}'),
                 ),
                 key: Key(datas.toString()),
@@ -113,7 +122,7 @@ class _EditorPerguntasState extends State<EditorPerguntas> {
                   color: Colors.red.withOpacity(0.4),
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: Icon(Icons.close),
+                    child: Icon(Icons.delete),
                   ),
                   alignment: Alignment.centerRight,
                 ),
@@ -125,10 +134,6 @@ class _EditorPerguntasState extends State<EditorPerguntas> {
           );
         },
       ),
-      // floatingActionButton: FloatingActionButton(
-        // onPressed: () => showAlertDialog(context),
-        // child: Icon(Icons.add),      
-      // ),
     );
   }
 }
