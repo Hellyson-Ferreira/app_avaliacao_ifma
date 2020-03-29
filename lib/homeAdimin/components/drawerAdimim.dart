@@ -53,6 +53,7 @@ class DrawerAdimim extends StatelessWidget {
                 ),
               ),
               onTap: () {
+                Navigator.pop(context);
                 Navigator.push(
                     context, MaterialPageRoute(builder: (context) => Turmas()));
               }),
@@ -65,6 +66,7 @@ class DrawerAdimim extends StatelessWidget {
                 ),
               ),
               onTap: () {
+                Navigator.pop(context);
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => EditorPerguntas()));
               }),
@@ -77,11 +79,12 @@ class DrawerAdimim extends StatelessWidget {
                 ),
               ),
               onTap: () {
+                Navigator.pop(context);
                 Navigator.push(
                     context, MaterialPageRoute(builder: (context) => IFMA()));
               }),
           ListTile(
-              leading: Icon(Icons.first_page),
+              leading: Icon(Icons.school),
               title: Text(
                 'Suap',
                 style: TextStyle(
@@ -89,10 +92,11 @@ class DrawerAdimim extends StatelessWidget {
                 ),
               ),
               onTap: () {
+                Navigator.pop(context);
                 Navigator.push(
                     context, MaterialPageRoute(builder: (context) => Suap()));
               }),
-          new Divider(
+          Divider(
             color: Colors.grey,
           ),
           ListTile(
@@ -104,6 +108,7 @@ class DrawerAdimim extends StatelessWidget {
                 ),
               ),
               onTap: () {
+                Navigator.pop(context);
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => LoginPageAluno()));
               })

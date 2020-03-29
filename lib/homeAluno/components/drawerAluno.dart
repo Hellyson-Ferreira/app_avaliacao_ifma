@@ -55,6 +55,7 @@ class DrawerAluno extends StatelessWidget {
                   ),
                 ),
                 onTap: () {
+                  Navigator.pop(context);
                   Navigator.push(context, MaterialPageRoute(builder: (context) =>IFMA()));
                 }),
 
@@ -66,7 +67,10 @@ class DrawerAluno extends StatelessWidget {
                     fontSize: 18,
                   ),
                 ),
-                onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => Suap())),
+                onTap: () {
+                  Navigator.pop(context);
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => Suap()));
+                }
             ),
 
             ListTile(
@@ -77,10 +81,13 @@ class DrawerAluno extends StatelessWidget {
                     fontSize: 18,
                   ),
                 ),
-                onTap: () =>  Navigator.push(context, MaterialPageRoute(builder: (context) => InforPage())), 
+                onTap: (){
+                  Navigator.pop(context);
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => InforPage()));
+                }
             ),
 
-            new Divider(
+            Divider(
               color: Colors.grey[300],
             ),
 
@@ -92,7 +99,10 @@ class DrawerAluno extends StatelessWidget {
                     fontSize: 18,
                   ),
                 ),
-                onTap: () =>  Navigator.push(context, MaterialPageRoute(builder: (context) => LoginPageAluno())),
+                onTap: () {
+                  Navigator.pop(context);
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => LoginPageAluno()));
+                }
             )
           ],
         ));
