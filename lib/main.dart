@@ -8,10 +8,13 @@ class MyApp extends StatefulWidget {
   _MyAppState createState() => _MyAppState();
 }
 
+
+
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: "Py",
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primaryColor: Colors.green,
