@@ -14,7 +14,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "Py",
+      title: "Avaliação IFMA",
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primaryColor: Colors.green,

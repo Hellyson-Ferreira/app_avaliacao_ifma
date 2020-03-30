@@ -18,6 +18,8 @@ dependencies:
   path_provider: ^1.6.0
   path: ^1.6.4
   sqflite: ^1.2.0
+  firebase_core: ^0.4.3+2
+  cloud_firestore: ^0.13.0+1
 
   
 

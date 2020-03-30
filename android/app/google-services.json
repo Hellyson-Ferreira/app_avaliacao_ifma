@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "814687065175",
+    "firebase_url": "https://avaliacao-ifma.firebaseio.com",
+    "project_id": "avaliacao-ifma",
+    "storage_bucket": "avaliacao-ifma.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:814687065175:android:a38f238b96bfbfb5c43f12",
+        "android_client_info": {
+          "package_name": "ifma.avaliacao.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "814687065175-m1b66stsfcdcao7vjsm2sruda2khsfdf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ifma.avaliacao.app",
+            "certificate_hash": "a0468886fe214e6ada6497ff6e23adbc232fa637"
+          }
+        },
+        {
+          "client_id": "814687065175-go8p7tiiq759s3svnvdptt03eq79irea.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcNBCuxmwbhFaux3ss_45Jg-ORHZm-sgI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "814687065175-go8p7tiiq759s3svnvdptt03eq79irea.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
