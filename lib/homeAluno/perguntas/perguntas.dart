@@ -129,7 +129,7 @@ _simplePopup() => PopupMenuButton<int>(
           shape: BoxShape.rectangle,
           //color: Color(0xFF3333366),
           color: Colors.green,
-          borderRadius: BorderRadius.circular(8.0),
+          borderRadius: BorderRadius.circular(12.0),
           boxShadow: <BoxShadow>[
             BoxShadow(
                 color: Colors.black26,

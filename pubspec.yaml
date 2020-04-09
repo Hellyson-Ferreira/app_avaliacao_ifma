@@ -20,7 +20,7 @@ dependencies:
   sqflite: ^1.2.0
   firebase_core: ^0.4.3+2
   cloud_firestore: ^0.13.0+1
-
+  introduction_screen: ^1.0.7
   
 
 dev_dependencies:

@@ -1,7 +1,7 @@
 import 'dart:math';
 import 'package:app_avaliacao_ifma/LoginAdimim/login_page_adimim.dart';
 import 'package:app_avaliacao_ifma/N%C3%A3o%20consigo%20entrar/erroAoEntrar.dart';
-import 'package:app_avaliacao_ifma/tela_boas_vindas.dart/boas_vindas.dart';
+import 'package:app_avaliacao_ifma/tela_introducao/boas_vindas.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -66,7 +66,7 @@ class _LoginPageAlunoState extends State<LoginPageAluno> {
           borderRadius: BorderRadius.circular(24),
         ),
         onPressed: () {
-          Navigator.push(context, MaterialPageRoute(builder: (context) => BoasVindasAluno()));
+          Navigator.push(context, MaterialPageRoute(builder: (context) => Introduction()));
         },
         // elevation: 12,
         padding: EdgeInsets.all(12),
