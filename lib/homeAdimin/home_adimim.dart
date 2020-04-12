@@ -4,14 +4,14 @@ import 'components/AlertDialogs.dart';
 import 'components/drawerAdimim.dart';
 
 class HomeAdimim extends StatefulWidget {
-
   @override
   _HomeAdimimState createState() => _HomeAdimimState();
 }
 
 class _HomeAdimimState extends State<HomeAdimim> {
   int _selectedIndex = 0;
-  static const double IconSize = 200; 
+  static const double IconSize = 200;
+  double ex = 160.0;
   static List<Widget> _widgetOptions = <Widget>[
     HomePage(),
     Pies(),
@@ -30,10 +30,10 @@ class _HomeAdimimState extends State<HomeAdimim> {
       body: CustomScrollView(
         slivers: <Widget>[
           SliverAppBar(
-            pinned:true,
+            pinned: true,
             snap: false,
             floating: false,
-            expandedHeight: 200.0,
+            expandedHeight:ex,
             flexibleSpace: FlexibleSpaceBar(
               title: Text('Administrador'),
               background: Image.asset(
@@ -54,20 +54,21 @@ class _HomeAdimimState extends State<HomeAdimim> {
           // If the main content is a list, use SliverList instead.
           SliverFillRemaining(
             child: Center(
-                  child: _widgetOptions.elementAt(_selectedIndex),
-      ),
+              child: _widgetOptions.elementAt(_selectedIndex),
+            ),
           ),
         ],
       ),
       drawer: DrawerAdimim(),
       bottomNavigationBar: BottomNavigationBar(
+        elevation: 240,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
             title: Text('Home'),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.cloud_download ),
+            icon: Icon(Icons.cloud_download),
             title: Text('Gráficos'),
           ),
           BottomNavigationBarItem(
@@ -81,7 +82,6 @@ class _HomeAdimimState extends State<HomeAdimim> {
       ),
     );
   }
-  
 }
 
 class HomePage extends StatelessWidget {
@@ -89,36 +89,33 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Wrap(
       children: <Widget>[
-         Card(
-           elevation: 24,
+        Card(
+          margin: EdgeInsets.only(right: 15.0, left: 15.0),
+          elevation: 24,
           color: Colors.white,
           child: Column(
             children: <Widget>[
               Container(
+                margin: EdgeInsets.only(top:15),
                 height: 250,
                 decoration: BoxDecoration(
-                  image: DecorationImage(
-                    image: AssetImage('assets/users.gif')
-                  )
-                ),
-
+                    image:
+                        DecorationImage(image: AssetImage('assets/users.gif'))),
               ),
               Text(
-                    'Avaliação de Professores',
-                    style: Theme.of(context)
-                        .textTheme
-                        .headline
-                        .copyWith(color: Colors.black),
-                        ),
+                'Avaliação de Professores',
+                style: Theme.of(context)
+                    .textTheme
+                    .headline
+                    .copyWith(color: Colors.black),
+              ),
               ButtonBar(
                 alignment: MainAxisAlignment.end,
                 children: <Widget>[
-                
                   FlatButton(
                     child: Text('Tornar disponivel'),
                     onPressed: () {
                       showAlertDialog1Adm(context);
-                      
                     },
                   ),
                   FlatButton(
@@ -142,9 +139,7 @@ class HomePage extends StatelessWidget {
             ],
           ),
         ),
-       
       ],
-
     );
   }
 }
@@ -156,69 +151,63 @@ class Pies extends StatelessWidget {
       // direction: Axis.vertical,
       children: <Widget>[
         Card(
-         elevation: 24,
-        color: Colors.white,
-        child: Column(
-          children: <Widget>[
-            Container(
-              height: 250,
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage('assets/grafico.png')
-                )
+          margin: EdgeInsets.only(right: 15.0, left: 15.0),
+          elevation: 24,
+          color: Colors.white,
+          child: Column(
+            children: <Widget>[
+              Container(
+                margin: EdgeInsets.only(top:15),
+                height: 250,
+                decoration: BoxDecoration(
+                    image: DecorationImage(
+                        image: AssetImage('assets/grafico.png'))),
               ),
-
-            ),
-            Text(
-                  'Gráficos',
-                  style: Theme.of(context)
-                      .textTheme
-                      .headline
-                      .copyWith(color: Colors.black),
-                      ),
-            ButtonBar(
-              alignment: MainAxisAlignment.end,
-              children: <Widget>[
-              
-                FlatButton(
-                  child: Text('Gerar Gráficos'),
-                  onPressed: () {
-                    // showAlertDialog1(context);
-                    
-                  },
-                ),
-                FlatButton(
-                  child: Text('Fazer Download'),
-                  // onPressed: null,
-                  onPressed: () {
-                    // showAlertDialog2(context);
-                    //Navigator.pop(context);
-                  },
-                ),
-                FlatButton(
-                  child: Text('Enviar para o Drive'),
-                  // onPressed: null,
-                  onPressed: () {
-                    // showAlertDialog3(context);
-                    //Navigator.pop(context);
-                  },
-                ),
-              ],
-            ),
-          ],
+              Text(
+                'Gráficos',
+                style: Theme.of(context)
+                    .textTheme
+                    .headline
+                    .copyWith(color: Colors.black),
+              ),
+              ButtonBar(
+                alignment: MainAxisAlignment.end,
+                children: <Widget>[
+                  FlatButton(
+                    child: Text('Gerar Gráficos'),
+                    onPressed: () {
+                      // showAlertDialog1(context);
+                    },
+                  ),
+                  FlatButton(
+                    child: Text('Fazer Download'),
+                    // onPressed: null,
+                    onPressed: () {
+                      // showAlertDialog2(context);
+                      //Navigator.pop(context);
+                    },
+                  ),
+                  FlatButton(
+                    child: Text('Enviar para o Drive'),
+                    // onPressed: null,
+                    onPressed: () {
+                      // showAlertDialog3(context);
+                      //Navigator.pop(context);
+                    },
+                  ),
+                ],
+              ),
+            ],
+          ),
         ),
-      ),
-          ],
-        );
+      ],
+    );
   }
 }
 
 class Help extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Icon(
-      Icons.help, 
-      size: 150
-    );
+    return Icon(Icons.help, size: 150);
   }
 }

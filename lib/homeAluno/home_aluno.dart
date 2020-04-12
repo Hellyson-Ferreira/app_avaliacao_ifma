@@ -22,11 +22,6 @@ class _HomeAlunoState extends State<HomeAluno> {
   ];
 
   void _onItemTapped(int index) {
-    if (index == 1) {
-      ex = 0;
-    } else {
-      ex = 160;
-    }
     setState(() {
       _selectedIndex = index;
     });
@@ -63,6 +58,7 @@ class _HomeAlunoState extends State<HomeAluno> {
         ),
         drawer: DrawerAluno(),
         bottomNavigationBar: BottomNavigationBar(
+          elevation: 240,
           items: const <BottomNavigationBarItem>[
             BottomNavigationBarItem(
               icon: Icon(Icons.home),
@@ -113,52 +109,51 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: Wrap(
-        children: <Widget>[
-          Card(
-            elevation: 24,
-            color: Colors.white,
-            child: Wrap(
-              children: <Widget>[
-                Container(
-                  height: 200,
-                  decoration: BoxDecoration(
-                      image: DecorationImage(
-                          image: AssetImage('assets/users.gif'))),
-                ),
-                Text(
-                  '  Avaliação de Professores',
-                  style: Theme.of(context)
-                      .textTheme
-                      .headline
-                      .copyWith(color: Colors.black),
-                ),
-                ButtonBar(
-                  alignment: MainAxisAlignment.end,
-                  children: <Widget>[
-                    FlatButton(
-                      child: Text('Lembrete'),
-                      onPressed: () {
-                        showNotification();
-                      },
-                    ),
-                    FlatButton(
-                      child: Text('Iniciar'),
-                      // onPressed: null,
-                      onPressed: () {
-                        showAlertDialog1ALuno(context);
-                      },
-                    ),
-                  ],
-                ),
-              ],
-            ),
+    return Wrap(
+      children: <Widget>[
+        Card(
+          margin: EdgeInsets.only(right: 15.0, left: 15.0),
+          elevation: 24,
+          color: Colors.white,
+          child: Column(
+            children: <Widget>[
+              Container(
+                margin: EdgeInsets.only(top:15),
+                height: 200,
+                decoration: BoxDecoration(
+                    image: DecorationImage(
+                        image: AssetImage('assets/users.gif'))),
+              ),
+              Text(
+                'Avaliação de Professores',
+                style: Theme.of(context)
+                    .textTheme
+                    .headline
+                    .copyWith(color: Colors.black),
+              ),
+              ButtonBar(
+                alignment: MainAxisAlignment.end,
+                children: <Widget>[
+                  FlatButton(
+                    child: Text('Lembrete'),
+                    onPressed: () {
+                      showNotification();
+                    },
+                  ),
+                  FlatButton(
+                    child: Text('Iniciar'),
+                    // onPressed: null,
+                    onPressed: () {
+                      showAlertDialog1ALuno(context);
+                    },
+                  ),
+                ],
+              ),
+            ],
           ),
-        ],
-        // ),
-      ),
+        ),
+      ],
+      // ),
     );
   }
 
