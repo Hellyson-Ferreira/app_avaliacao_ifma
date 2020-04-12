@@ -37,12 +37,15 @@ class _PerguntasState extends State<Perguntas> {
             onPressed: () =>
                 i == 0 ? Navigator.pop(context) : _dincrementCounter()),
         actions: <Widget>[
-          IconButton(
-              icon: const Icon(Icons.arrow_forward),
-              tooltip: 'Próxima',
-              onPressed: () => i < 13
-                  ? _incrementCounter()
-                  : showAlertDialog2ALuno(context)),
+          id != 14
+              ? IconButton(
+                  icon: const Icon(Icons.arrow_forward),
+                  tooltip: 'Próxima',
+                  onPressed: () => _incrementCounter())
+              : IconButton(
+                  icon: const Icon(Icons.send),
+                  tooltip: 'Enviar',
+                  onPressed: () => showAlertDialog2ALuno(context)),
         ],
         title: Text(
           'Pergunta $id',
@@ -85,8 +88,7 @@ class _ProfessoresState extends State<Professores> {
     );
   }
 
-  
-_simplePopup() => PopupMenuButton<int>(
+  _simplePopup() => PopupMenuButton<int>(
         icon: Icon(
           Icons.insert_emoticon,
           size: 29,
@@ -123,7 +125,7 @@ _simplePopup() => PopupMenuButton<int>(
   _card(index) {
     double t = professores[index].length.toDouble();
     final card = Container(
-      height: t<=30?130:130+t/2,
+      height: t <= 30 ? 130 : 130 + t / 2,
       margin: EdgeInsets.only(left: 46.0),
       decoration: BoxDecoration(
           shape: BoxShape.rectangle,
@@ -147,10 +149,10 @@ _simplePopup() => PopupMenuButton<int>(
               style: TextStyle(fontSize: 19, color: Colors.white),
             ),
             Container(
-              color: const Color(0xFF00C6FF),
-              width: 100,
-              height: 1.0,
-              margin: const EdgeInsets.symmetric(vertical: 8.0)),
+                color: const Color(0xFF00C6FF),
+                width: 100,
+                height: 1.0,
+                margin: const EdgeInsets.symmetric(vertical: 8.0)),
             Container(
               //color: Colors.amber,
               height: 30,
