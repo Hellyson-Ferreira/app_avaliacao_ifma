@@ -1,4 +1,4 @@
-package com.example.app_avaliacao_ifma
+package com.ifma.avaliacao
 
 import androidx.annotation.NonNull;
 import io.flutter.embedding.android.FlutterActivity

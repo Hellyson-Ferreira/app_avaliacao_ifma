@@ -8,18 +8,18 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:814687065175:android:a38f238b96bfbfb5c43f12",
+        "mobilesdk_app_id": "1:814687065175:android:5118cb8ce0c4813bc43f12",
         "android_client_info": {
-          "package_name": "ifma.avaliacao.app"
+          "package_name": "com.ifma.avaliacao"
         }
       },
       "oauth_client": [
         {
-          "client_id": "814687065175-m1b66stsfcdcao7vjsm2sruda2khsfdf.apps.googleusercontent.com",
+          "client_id": "814687065175-3vjqcf3bs7pg2m4heijtn0vr5u6tvt0l.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "ifma.avaliacao.app",
-            "certificate_hash": "a0468886fe214e6ada6497ff6e23adbc232fa637"
+            "package_name": "com.ifma.avaliacao",
+            "certificate_hash": "ab9072b6aebd5eec85553d3417f941ec2ba02d0b"
           }
         },
         {

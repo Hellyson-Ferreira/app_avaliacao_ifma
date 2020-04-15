@@ -15,11 +15,10 @@ dependencies:
   url_launcher:  ^5.4.1
   pie_chart: ^3.1.1
   flutter_local_notifications: ^1.1.2
-  path_provider: ^1.6.0
+  path_provider: ^1.6.5
   path: ^1.6.4
   sqflite: ^1.2.0
-  firebase_core: ^0.4.3+2
-  cloud_firestore: ^0.13.0+1
+  firebase_database: ^3.1.3
   introduction_screen: ^1.0.7
   
 
@@ -132,3 +131,4 @@ flutter:
       - family: Nunito
         fonts:
           - asset: assets/Nunito.ttf
+#AB:90:72:B6:AE:BD:5E:EC:85:55:3D:34:17:F9:41:EC:2B:A0:2D:0B
