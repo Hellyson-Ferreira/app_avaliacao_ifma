@@ -1,4 +1,4 @@
-import 'package:app_avaliacao_ifma/homeAdimin/adimim.dart';
+import 'package:app_avaliacao_ifma/homeAdimin/home_adimim.dart';
 import 'package:flutter/material.dart';
 
 class LoginPageAdim extends StatefulWidget {
