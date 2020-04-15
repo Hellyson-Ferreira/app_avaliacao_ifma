@@ -13,7 +13,7 @@ class _HomeAdimimState extends State<HomeAdimim> {
   static const double IconSize = 200;
   double ex = 160.0;
   static List<Widget> _widgetOptions = <Widget>[
-    HomePage(),
+   CardAvaliacao(),
     Pies(),
     Help(),
   ];
@@ -84,7 +84,7 @@ class _HomeAdimimState extends State<HomeAdimim> {
   }
 }
 
-class HomePage extends StatelessWidget {
+class CardAvaliacao extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Wrap(
