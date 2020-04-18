@@ -29,7 +29,7 @@ class DrawerAdimim extends StatelessWidget {
                     decoration: BoxDecoration(
                         shape: BoxShape.circle,
                         image: DecorationImage(
-                            image: AssetImage('assets/filho.jpg'),
+                            image: AssetImage('assets/users/filho.jpg'),
                             fit: BoxFit.fill)),
                   ),
                   Text(

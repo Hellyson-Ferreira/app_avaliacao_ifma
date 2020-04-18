@@ -37,7 +37,7 @@ class _HomeAdimimState extends State<HomeAdimim> {
             flexibleSpace: FlexibleSpaceBar(
               title: Text('Administrador'),
               background: Image.asset(
-                'assets/IFMA.jpg',
+                'assets/ifma/IFMA.jpg',
                 fit: BoxFit.fill,
               ),
             ),
@@ -100,7 +100,7 @@ class HomePage extends StatelessWidget {
                 height: 250,
                 decoration: BoxDecoration(
                     image:
-                        DecorationImage(image: AssetImage('assets/users.gif'))),
+                        DecorationImage(image: AssetImage('assets/users/users.gif'))),
               ),
               Text(
                 'Avaliação de Professores',
@@ -161,7 +161,7 @@ class Pies extends StatelessWidget {
                 height: 250,
                 decoration: BoxDecoration(
                     image: DecorationImage(
-                        image: AssetImage('assets/grafico.png'))),
+                        image: AssetImage('assets/ifma/grafico.png'))),
               ),
               Text(
                 'Gráficos',

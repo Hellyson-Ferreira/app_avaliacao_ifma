@@ -28,8 +28,8 @@ class DrawerAluno extends StatelessWidget {
                       decoration: BoxDecoration(
                           shape: BoxShape.circle,
                           image: DecorationImage(
-                              // image: AssetImage('assets/hellyson.jpg'),
-                              image: AssetImage('assets/felipe.jpg'),
+                              // image: AssetImage('assets/users/hellyson.jpg'),
+                              image: AssetImage('assets/users/felipe.jpg'),
                               fit: BoxFit.fill)),
                     ),
                     Text(

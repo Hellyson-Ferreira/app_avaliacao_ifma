@@ -20,7 +20,7 @@ class _InforPageState extends State<InforPage> {
           SizedBox(
             width: 200,
             height: 200,
-            child: Image.asset("assets/programming.gif"),
+            child: Image.asset("assets/gifs/programming.gif"),
           ),
           SizedBox(
             height: 20,

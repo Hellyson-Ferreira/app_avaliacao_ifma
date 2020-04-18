@@ -31,17 +31,19 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - assets/logo.png
-    - assets/IFMA.jpg
+    - assets/logo/logo.png 
+    - assets/logo/anonymous.png
+    - assets/ifma/IFMA.jpg
   
-    - assets/filho.jpg
-    - assets/felipe.jpg
-    - assets/hellyson.jpg
-    - assets/man.png
+    - assets/users/filho.jpg
+    - assets/users/felipe.jpg
+    - assets/users/hellyson.jpg
+    - assets/users/man.png
     - assets/grafico.png
 
-    - assets/users.gif
-    - assets/programming.gif
+    - assets/gifs/users.gif
+    - assets/gifs/programming.gif
+    - assets/gifs/ensino.gif
   
 
     - assets/imgs/img1.png
@@ -130,5 +132,5 @@ flutter:
   fonts:
       - family: Nunito
         fonts:
-          - asset: assets/Nunito.ttf
+          - asset: assets/fonts/Nunito.ttf
 #AB:90:72:B6:AE:BD:5E:EC:85:55:3D:34:17:F9:41:EC:2B:A0:2D:0B

@@ -13,7 +13,7 @@ class HomeAluno extends StatefulWidget {
 class _HomeAlunoState extends State<HomeAluno> {
   int _selectedIndex = 0;
   static const double IconSize = 200;
-  String image = 'assets/IFMA.jpg';
+  String image = 'assets/ifma/IFMA.jpg';
   String title = 'Avaliação Docente';
   double ex = 160.0;
   static List<Widget> _widgetOptions = <Widget>[
@@ -122,7 +122,7 @@ class _HomePageState extends State<HomePage> {
                 height: 200,
                 decoration: BoxDecoration(
                     image: DecorationImage(
-                        image: AssetImage('assets/users.gif'))),
+                        image: AssetImage('assets/gifs/users.gif'))),
               ),
               Text(
                 'Avaliação de Professores',
