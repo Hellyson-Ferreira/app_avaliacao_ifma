@@ -15,38 +15,38 @@ class _IntroductionState extends State<Introduction> {
       titleTextStyle: TextStyle(fontSize: 28.0, fontWeight: FontWeight.w700),
       bodyTextStyle: bodyStyle,
       descriptionPadding: EdgeInsets.fromLTRB(16.0, 0.0, 16.0, 16.0),
-      imagePadding: EdgeInsets.zero,
+      imagePadding: EdgeInsets.only(top: 12),
     );
     return IntroductionScreen(
       pages: [
         PageViewModel(
-          title: "Fractional shares",
+          title: 'Avaliação docente',
           body:
-              "Instead of having to buy an entire share, invest any amount you want.",
-          image: Image.asset('assets/logo.png', width: 350.0),
+              'Com esse App você avaliará seu professor, suas didáticas e outros aspectos.',
+          image: Image.asset('assets/logo/logo.png', width: 350.0),
           decoration: pageDecoration,
         ),
         PageViewModel(
-          title: "Fractional shares",
+          title: 'Ajude a melhorar o ensino',
           body:
-              "Instead of having to buy an entire share, invest any amount you want.",
-          image: Image.asset('assets/logo.png', width: 350.0),
+              'Respondendo a avaliação, você ajudará o setor de ensino a ter mais informações sobre os professores e contribuir para uma melhor aprendizagem.',
+          image: Image.asset('assets/gifs/ensino.gif', width: 350.0),
           decoration: pageDecoration,
         ),
         PageViewModel(
-          title: "Fractional shares",
+          title: 'Anonimato total',
           body:
-              "Instead of having to buy an entire share, invest any amount you want.",
-          image: Image.asset('assets/logo.png', width: 350.0),
+              'E em nenhum momento você será exposto. A avaliação é totalmente confidencial.',
+          image: Image.asset('assets/logo/anonymous.png', width: 350.0),
           decoration: pageDecoration,
         ),
-        PageViewModel(
-          title: "Fractional shares",
-          body:
-              "Instead of having to buy an entire share, invest any amount you want.",
-          image: Image.asset('assets/logo.png', width: 350.0),
-          decoration: pageDecoration,
-        ),
+        // PageViewModel(
+        //   title: "Fractional shares",
+        //   body:
+        //       "Instead of having to buy an entire share, invest any amount you want.",
+        //   image: Image.asset('assets/logo/logo.png', width: 350.0),
+        //   decoration: pageDecoration,
+        // ),
       ],
       onDone: () => Navigator.push(
           context, MaterialPageRoute(builder: (context) => HomeAluno())),
