@@ -1,5 +1,5 @@
 import 'package:app_avaliacao_ifma/LoginAluno/login_page_aluno.dart';
-import 'package:app_avaliacao_ifma/homeAdimin/PageshomeAdim/Editor%20de%20perguntas/Editor-de-perguntas.dart';
+import 'package:app_avaliacao_ifma/homeAdimin/PageshomeAdim/Editor-de-perguntas/Editor-de-perguntas.dart';
 import 'package:app_avaliacao_ifma/homeAdimin/PageshomeAdim/turmas.dart';
 
 import 'package:app_avaliacao_ifma/homeAluno/sites/Ifma.dart';

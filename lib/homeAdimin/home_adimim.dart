@@ -10,7 +10,6 @@ class HomeAdimim extends StatefulWidget {
 
 class _HomeAdimimState extends State<HomeAdimim> {
   int _selectedIndex = 0;
-  static const double IconSize = 200;
   double ex = 160.0;
   static List<Widget> _widgetOptions = <Widget>[
     HomePage(),

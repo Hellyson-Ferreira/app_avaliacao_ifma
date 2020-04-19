@@ -1,9 +1,10 @@
 import 'dart:math';
 import 'package:app_avaliacao_ifma/LoginAdimim/login_page_adimim.dart';
-import 'package:app_avaliacao_ifma/N%C3%A3o%20consigo%20entrar/erroAoEntrar.dart';
 import 'package:app_avaliacao_ifma/tela_introducao/boas_vindas.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+
+import 'erroAoEntrar.dart';
 
 class LoginPageAluno extends StatefulWidget {
   @override

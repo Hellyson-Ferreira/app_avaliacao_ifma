@@ -12,7 +12,6 @@ class HomeAluno extends StatefulWidget {
 
 class _HomeAlunoState extends State<HomeAluno> {
   int _selectedIndex = 0;
-  static const double IconSize = 200;
   String image = 'assets/ifma/IFMA.jpg';
   String title = 'Avaliação Docente';
   double ex = 160.0;
