@@ -17,10 +17,10 @@ class _MyAppState extends State<MyApp> {
       title: "Avaliação IFMA",
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primaryColor: Colors.green,
-        primarySwatch: Colors.green,
+        primaryColor: Color(0xff6a1b9a),
+        primarySwatch: Colors.purple,
         fontFamily: 'Nunito',
-        buttonColor: Colors.green,
+        buttonColor: Colors.purple,
         // brightness: Brightness.dark
       ),
       home: LoadingPage(),
