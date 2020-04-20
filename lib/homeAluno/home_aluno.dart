@@ -40,8 +40,8 @@ class _HomeAlunoState extends State<HomeAluno> {
           slivers: <Widget>[
             SliverAppBar(
               pinned: true,
-              // snap: true,
-              floating: true,
+              snap: false,
+              floating: false,
               expandedHeight: ex,
               flexibleSpace: FlexibleSpaceBar(
                 title: Text("$title"),
@@ -83,17 +83,17 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin;
-  @override
-  void initState() {
-    super.initState();
-    flutterLocalNotificationsPlugin = FlutterLocalNotificationsPlugin();
-    var android = AndroidInitializationSettings('@drawable/icon');
-    var iOS = IOSInitializationSettings();
-    var initSetttings = InitializationSettings(android, iOS);
-    flutterLocalNotificationsPlugin.initialize(initSetttings,
-        onSelectNotification: onSelectNotification);
-  }
+  // FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin;
+  // @override
+  // void initState() {
+  //   super.initState();
+  //   flutterLocalNotificationsPlugin = FlutterLocalNotificationsPlugin();
+  //   var android = AndroidInitializationSettings('@drawable/icon');
+  //   var iOS = IOSInitializationSettings();
+  //   var initSetttings = InitializationSettings(android, iOS);
+  //   flutterLocalNotificationsPlugin.initialize(initSetttings,
+  //       onSelectNotification: onSelectNotification);
+  // }
 
   Future onSelectNotification(String payload) async {
     debugPrint("payload : $payload");
@@ -127,7 +127,7 @@ class _HomePageState extends State<HomePage> {
                 'Avaliação de Professores',
                 style: Theme.of(context)
                     .textTheme
-                    .headline
+                    .headline5
                     .copyWith(color: Colors.black),
               ),
               ButtonBar(
@@ -136,7 +136,7 @@ class _HomePageState extends State<HomePage> {
                   FlatButton(
                     child: Text('Lembrete'),
                     onPressed: () {
-                      showNotification();
+                      //showNotification();
                     },
                   ),
                   FlatButton(
@@ -156,16 +156,16 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  showNotification() async {
-    var android = new AndroidNotificationDetails(
-        'channel id', 'channel NAME', 'CHANNEL DESCRIPTION',
-        priority: Priority.High, importance: Importance.Max);
-    var iOS = new IOSNotificationDetails();
-    var platform = new NotificationDetails(android, iOS);
-    await flutterLocalNotificationsPlugin.show(
-        0, 'Lembrete', 'Você ainda não avaliou os professores.', platform,
-        payload: 'Você ainda não avaliou os professores.');
-  }
+  // showNotification() async {
+  //   var android = new AndroidNotificationDetails(
+  //       'channel id', 'channel NAME', 'CHANNEL DESCRIPTION',
+  //       priority: Priority.High, importance: Importance.Max);
+  //   var iOS = new IOSNotificationDetails();
+  //   var platform = new NotificationDetails(android, iOS);
+  //   await flutterLocalNotificationsPlugin.show(
+  //       0, 'Lembrete', 'Você ainda não avaliou os professores.', platform,
+  //       payload: 'Você ainda não avaliou os professores.');
+  // }
 }
 
 class InfoPage extends StatelessWidget {

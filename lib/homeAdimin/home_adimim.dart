@@ -99,13 +99,13 @@ class HomePage extends StatelessWidget {
                 height: 250,
                 decoration: BoxDecoration(
                     image:
-                        DecorationImage(image: AssetImage('assets/users/users.gif'))),
+                        DecorationImage(image: AssetImage('assets/gifs/users.gif'))),
               ),
               Text(
                 'Avaliação de Professores',
                 style: Theme.of(context)
                     .textTheme
-                    .headline
+                    .headline5
                     .copyWith(color: Colors.black),
               ),
               ButtonBar(
@@ -166,7 +166,7 @@ class Pies extends StatelessWidget {
                 'Gráficos',
                 style: Theme.of(context)
                     .textTheme
-                    .headline
+                    .headline5
                     .copyWith(color: Colors.black),
               ),
               ButtonBar(
