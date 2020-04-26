@@ -31,103 +31,13 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - assets/logo/logo.png 
-    - assets/logo/anonymous.png
-    - assets/ifma/IFMA.jpg
-  
-    - assets/users/filho.jpg
-    - assets/users/felipe.jpg
-    - assets/users/hellyson.jpg
-    - assets/users/man.png
-    - assets/grafico.png
-
-    - assets/gifs/users.gif
-    - assets/gifs/programming.gif
-    - assets/gifs/ensino.gif
-  
-
-    - assets/imgs/img1.png
-    - assets/imgs/img2.png
-    - assets/imgs/img3.png
-    - assets/imgs/img4.png
-    - assets/imgs/img5.png
-    - assets/imgs/img6.png
-    - assets/imgs/img7.png
-    - assets/imgs/img8.png
-    - assets/imgs/img9.png
-    - assets/imgs/img10.png
-    - assets/imgs/img11.png
-    - assets/imgs/img12.png
-    - assets/imgs/img13.png
-    - assets/imgs/img14.png
-    - assets/imgs/img15.png
-    - assets/imgs/img16.png
-    - assets/imgs/img17.png
-    - assets/imgs/img18.png
-    - assets/imgs/img19.png
-    - assets/imgs/img20.png
-    - assets/imgs/img21.png
-    - assets/imgs/img22.png
-    - assets/imgs/img23.png
-    - assets/imgs/img24.png
-    - assets/imgs/img25.png
-    - assets/imgs/img26.png
-    - assets/imgs/img27.png
-    - assets/imgs/img28.png
-    - assets/imgs/img29.png
-    - assets/imgs/img30.png
-    - assets/imgs/img31.png
-    - assets/imgs/img32.png
-    - assets/imgs/img33.png
-    - assets/imgs/img34.png
-    - assets/imgs/img35.png
-    - assets/imgs/img36.png
-    - assets/imgs/img37.png
-    - assets/imgs/img38.png
-    - assets/imgs/img39.png
-    - assets/imgs/img40.png
-    - assets/imgs/img41.png
-    - assets/imgs/img42.png
-    - assets/imgs/img43.png
-    - assets/imgs/img44.png
-    - assets/imgs/img45.png
-    - assets/imgs/img46.png
-
-    - assets/professores/img1.jpg
-    - assets/professores/img2.jpg
-    - assets/professores/img3.jpg
-    - assets/professores/img4.jpg
-    - assets/professores/img5.jpg
-    - assets/professores/img6.jpg
-    - assets/professores/img7.jpg
-    - assets/professores/img8.jpg
-    - assets/professores/img9.jpg
-    - assets/professores/img10.jpg
-    - assets/professores/img11.jpg
-    - assets/professores/img12.jpg
-    - assets/professores/img13.jpg
-    - assets/professores/img14.jpg
-    - assets/professores/img15.jpg
-    - assets/professores/img15.jpg
-    - assets/professores/img16.jpg
-    - assets/professores/img17.jpg
-    - assets/professores/img18.jpg
-    - assets/professores/img19.jpg
-    - assets/professores/img20.jpg
-    - assets/professores/img21.jpg
-    - assets/professores/img22.jpg
-    - assets/professores/img23.jpg
-    - assets/professores/img24.jpg
-    - assets/professores/img25.jpg
-    - assets/professores/img26.jpg
-    - assets/professores/img27.jpg
-    - assets/professores/img28.jpg
-    - assets/professores/img29.jpg
-    - assets/professores/img30.jpg
-    - assets/professores/img31.jpg
-    - assets/professores/img32.jpg
-    - assets/professores/img33.jpg
-
+    - assets/logo/
+    - assets/gifs/
+    - assets/imgs/
+    - assets/ifma/
+    - assets/professores/
+    - assets/users/
+   
     
   fonts:
       - family: Nunito
