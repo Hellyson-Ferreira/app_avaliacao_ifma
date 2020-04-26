@@ -67,7 +67,8 @@ class _LoginPageAlunoState extends State<LoginPageAluno> {
           borderRadius: BorderRadius.circular(24),
         ),
         onPressed: () {
-          Navigator.push(context, MaterialPageRoute(builder: (context) => Introduction()));
+          Navigator.push(
+              context, MaterialPageRoute(builder: (context) => Introduction()));
         },
         // elevation: 12,
         padding: EdgeInsets.all(12),
@@ -80,8 +81,8 @@ class _LoginPageAlunoState extends State<LoginPageAluno> {
         'Não consigo entrar',
         style: TextStyle(color: Colors.black54),
       ),
-      onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => ResetPasswordPage())),
-      
+      onPressed: () => Navigator.push(context,
+          MaterialPageRoute(builder: (context) => ResetPasswordPage())),
     );
 
     //Gerador de elementos da tela
@@ -106,7 +107,8 @@ class _LoginPageAlunoState extends State<LoginPageAluno> {
         ),
         floatingActionButton: FloatingActionButton(
           backgroundColor: Colors.green,
-          onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => LoginPageAdim())),
+          onPressed: () => Navigator.push(context,
+              MaterialPageRoute(builder: (context) => LoginPageAdim())),
           child: Icon(Icons.person),
         ),
       ),
