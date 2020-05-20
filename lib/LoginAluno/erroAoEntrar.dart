@@ -15,7 +15,8 @@ class _ResetPasswordPageState extends State<ResetPasswordPage> {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(24),
         ),
-        onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => Suap())),
+        onPressed: () => Navigator.push(
+            context, MaterialPageRoute(builder: (context) => Suap())),
         padding: EdgeInsets.all(12),
         elevation: 12,
         child: Text('Ir para o Suap', style: TextStyle(color: Colors.white)),
@@ -31,7 +32,8 @@ class _ResetPasswordPageState extends State<ResetPasswordPage> {
           SizedBox(
             width: 200,
             height: 200,
-            child: Image.asset("assets/logo/logo.png"),
+            child:
+                Hero(tag: 'img1', child: Image.asset("assets/logo/logo.png")),
           ),
           SizedBox(
             height: 20,

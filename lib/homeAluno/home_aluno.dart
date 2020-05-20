@@ -27,7 +27,8 @@ class _HomeAlunoState extends State<HomeAluno> {
   }
 
   Future<bool> _onBackPressed() {
-    Navigator.push(context, MaterialPageRoute(builder: (context) => LoginPageAluno()));
+    Navigator.push(
+        context, MaterialPageRoute(builder: (context) => LoginPageAluno()));
     return null;
   }
 
@@ -116,12 +117,15 @@ class _HomePageState extends State<HomePage> {
           color: Colors.white,
           child: Column(
             children: <Widget>[
-              Container(
-                margin: EdgeInsets.only(top:15),
-                height: 200,
-                decoration: BoxDecoration(
-                    image: DecorationImage(
-                        image: AssetImage('assets/gifs/users.gif'))),
+              Hero(
+                tag: 'img1',
+                child: Container(
+                  margin: EdgeInsets.only(top: 15),
+                  height: 200,
+                  decoration: BoxDecoration(
+                      image: DecorationImage(
+                          image: AssetImage('assets/gifs/users.gif'))),
+                ),
               ),
               Text(
                 'Avaliação de Professores',

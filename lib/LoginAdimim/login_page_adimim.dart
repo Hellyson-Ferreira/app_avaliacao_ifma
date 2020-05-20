@@ -9,10 +9,9 @@ class LoginPageAdim extends StatefulWidget {
 class _LoginPageAdimimState extends State<LoginPageAdim> {
   @override
   Widget build(BuildContext context) {
-
-   //Gerador de imagens
+    //Gerador de imagens
     final logo = Hero(
-      tag: 'hero',
+      tag: 'img1',
       child: CircleAvatar(
         backgroundColor: Colors.transparent,
         radius: 66.0,
@@ -32,7 +31,7 @@ class _LoginPageAdimimState extends State<LoginPageAdim> {
         hintText: 'Usuário',
         contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
         border: OutlineInputBorder(borderRadius: BorderRadius.circular(32.0)),
-      ), 
+      ),
     );
 
     //Disign Box senha
@@ -41,7 +40,6 @@ class _LoginPageAdimimState extends State<LoginPageAdim> {
       obscureText: true,
       keyboardType: TextInputType.visiblePassword,
       autofocus: false,
-      
       decoration: InputDecoration(
         hintText: 'Senha',
         contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
@@ -56,15 +54,16 @@ class _LoginPageAdimimState extends State<LoginPageAdim> {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(24),
         ),
-        onPressed: () {   
-            Navigator.push(context, MaterialPageRoute(builder: (context) => HomeAdimim()));
+        onPressed: () {
+          Navigator.push(
+              context, MaterialPageRoute(builder: (context) => HomeAdimim()));
         },
         elevation: 12,
         padding: EdgeInsets.all(12),
         child: Text('Entrar', style: TextStyle(color: Colors.white)),
       ),
     );
-    
+
     //Gerador de elementos da tela
     return Scaffold(
       backgroundColor: Colors.white,

@@ -21,7 +21,7 @@ class _LoginPageAlunoState extends State<LoginPageAluno> {
 
     //Gerador de imagens
     final logo = Hero(
-      tag: 'hero',
+      tag: 'img1',
       child: CircleAvatar(
         backgroundColor: Colors.transparent,
         radius: 60.0,

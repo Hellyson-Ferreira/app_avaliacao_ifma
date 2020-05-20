@@ -23,7 +23,9 @@ class _IntroductionState extends State<Introduction> {
           title: 'Avaliação docente',
           body:
               'Com esse App você avaliará seu professor, suas didáticas e outros aspectos.',
-          image: Image.asset('assets/logo/logo.png', width: 350.0),
+          image: Hero(
+              tag: 'img1',
+              child: Image.asset('assets/logo/logo.png', width: 350.0)),
           decoration: pageDecoration,
         ),
         PageViewModel(
@@ -37,7 +39,9 @@ class _IntroductionState extends State<Introduction> {
           title: 'Anonimato total',
           body:
               'E em nenhum momento você será exposto. A avaliação é totalmente confidencial.',
-          image: Image.asset('assets/logo/anonymous.png', width: 350.0),
+          image: Hero(
+              tag: 'img1',
+              child: Image.asset('assets/logo/anonymous.png', width: 350.0)),
           decoration: pageDecoration,
         ),
         // PageViewModel(
